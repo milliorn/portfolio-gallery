@@ -16,7 +16,7 @@ const Hero = () => (
             <h1 className="hero__title">.NET &amp; Web Full-Stack Developer</h1>
 
             <p className="hero__subtitle">
-                I design &amp; build mobile, web and desktop apps with UX as the primary focus
+                I design &amp; build web and desktop apps with .NET along with websites in ReactJS.
             </p>
 
             <img src={Memoji} alt="Kenneth Kwakye-Gyamfi memoji" className="hero__memoji" />
