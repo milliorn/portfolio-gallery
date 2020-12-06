@@ -4,6 +4,10 @@
     padding: 1.75rem 0;
 }
 
+.navbar__logo:hover {
+    transform: scale(2.0);
+}
+
 .navbar__logo {
     display: block;
     width: 3rem;
