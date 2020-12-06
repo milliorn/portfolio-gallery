@@ -1,13 +1,13 @@
 {
-    "name": "cross-site",
-    "description": "Website for Kenneth Kwakye-Gyamfi, built with Gatsby JS and hosted on Netlify",
-    "version": "2.0.1",
+    "name": "portfolio-site",
+    "description": "Portfolio Landing page built with Gatsby JS and hosted on Netlify",
+    "version": "1.0.1",
     "private": false,
-    "license": "MIT",
+    "license": "GNU General Public License v2.0",
     "author": {
-        "name": "Kenneth Kwakye-Gyamfi",
-        "email": "kenneth.cross95@gmail.com",
-        "url": "https://www.kwakye-gyamfi.com"
+        "name": "Scott",
+        "email": "scottmilliorn@gmail.com",
+        "url": "https://www.google.com"
     },
     "repository": {
         "type": "git",
