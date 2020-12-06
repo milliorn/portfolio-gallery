@@ -7,8 +7,11 @@ import Memoji from '../img/memoji.svg';
 const Hero = () => (
     <div className="hero">
         <nav className="navbar grid grid--padded">
-            <a href="/" className="navbar__logo">
-                <img src={Logo} alt="Kenneth Kwakye-Gyamfi Logo" className="navbar__logo-img" />
+            <a
+                href="https://github.com/milliorn"
+                className="navbar__logo"
+                onClick="location.href='https://github.com/milliorn">
+                <img src={Logo} alt="Scott Milliorn Logo" className="navbar__logo-img" />
             </a>
         </nav>
 
@@ -19,13 +22,13 @@ const Hero = () => (
                 I design &amp; build web and desktop apps with .NET along with websites in ReactJS.
             </p>
 
-            <img src={Memoji} alt="Kenneth Kwakye-Gyamfi memoji" className="hero__memoji" />
+            <img src={Memoji} alt="Scott Milliorn memoji" className="hero__memoji" />
 
             <div className="hero__footer">
                 <img
                     src={HeroFooter}
                     className="hero__footer-img"
-                    alt="Kenneth Kwakye-Gyamfi hero footer"
+                    alt="Scott Milliorn hero footer"
                 />
             </div>
         </div>
