@@ -39,7 +39,7 @@ const Layout = props => (
                 { name: 'og:title', content: title },
                 { name: 'og:description', content: description },
                 { name: 'og:image', content: '/img/logo.jpg' },
-                { name: 'fb:app_id', content: seo.social.fbAppId },
+                { name: 'fb:app_id', content: seo.social.fbAppId }, //  Remove in future
                 { name: 'twitter:card', content: 'summary_large_image' },
                 { name: 'twitter:creator', content: seo.social.twitter },
                 { name: 'twitter:title', content: title },

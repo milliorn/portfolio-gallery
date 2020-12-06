@@ -1,14 +1,15 @@
 module.exports = {
     // Autoload the site metadata.
     siteMetadata: {
-        title: 'Kenneth Kwakye-Gyamfi | Mobile + Web Full Stack Developer',
+        title: 'Scott Milliorn - .NET & Web Full-Stack Developer',
         description:
-            'Mobile & web full stack developer; designer; and basketball fan. currently based in Accra, Ghana.',
-        author: 'Kenneth Kwakye-Gyamfi',
+            'Designing & building web and desktop apps with .NET along with websites in ReactJS.',
+        author: 'Scott Milliorn',
         image: '/favicon.jpg',
         social: {
-            twitter: '@cross19xx',
-            fbAppId: '100009436144652'
+            twitter: '@scottmilliorn',
+            fbAppId: '100009436144652' //  Remove in future
+
         }
     },
 
