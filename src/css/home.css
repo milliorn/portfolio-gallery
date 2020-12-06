@@ -134,6 +134,7 @@
 .about__cv:hover {
     background-color: #ffffff;
     color: #1a9be6;
+    transform: scale(2.0);
 }
 
 .about__breakdowns {
