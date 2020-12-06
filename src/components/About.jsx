@@ -97,11 +97,11 @@ const About = () => {
     return (
         <div className="about">
             <div className="about__inner">
-                <h2 className="about__title">Hello, I&apos;m Scott. Great to meet you! 👋🏼</h2>
+                <h2 className="about__title">Hello, I&apos;m Scott. Great to meet you!</h2>
 
                 <p className="about__text">{description}</p>
 
-                <a href="/Kenneth-Kwakye-Gyamfi-resume.pdf" download="" className="about__cv">
+                <a href="/resume.pdf" download="" className="about__cv">
                     Download my CV &nbsp;
                     <i className="ti-file" />
                 </a>
