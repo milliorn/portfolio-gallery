@@ -5,8 +5,13 @@ import MobileApp from '../img/mobile-app.svg';
 import WebApp from '../img/development.svg';
 
 const About = () => {
-    const description =
-        "I'm a 6'5\" full stack web developer 💪🏽 with a 5-year work experience developing mobile and web applications; and building desktop applications. I currently work for eProcess International, in Accra. I love basketball 🏀 I'm a fan of the Los Angeles Lakers. I am well-adept to developing for formal and non-formal settings.";
+    const description = `I'm an aspiring full stack web developer and .NET developer.
+    Work experience involves websites an applications.
+    Currently seeking work for an ambitious company.
+    I love video game programming as a hobby.
+    Avid weightlifter.
+    Former musician.
+    Passion to learn in C# and .NET.`;
 
     const renderBreakdowns = () => {
         const breakdowns = [
