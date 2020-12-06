@@ -13,7 +13,7 @@ const Hero = () => (
         </nav>
 
         <div className="hero__body">
-            <h1 className="hero__title">Mobile &amp; web full-stack developer, designer</h1>
+            <h1 className="hero__title">.NET &amp; Web Full-Stack Developer</h1>
 
             <p className="hero__subtitle">
                 I design &amp; build mobile, web and desktop apps with UX as the primary focus
