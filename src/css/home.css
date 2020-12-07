@@ -546,6 +546,7 @@
 .footer__social-btn:hover {
     background-color: #ffffff;
     color: #2196f3;
+    transform: scale(1.5);
 }
 
 .footer__copyright {

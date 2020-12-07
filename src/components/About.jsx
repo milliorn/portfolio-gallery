@@ -78,7 +78,7 @@ const About = () => {
                 <p className="about__text">{description}</p>
 
                 <a href="/resume.pdf" download="" className="about__cv">
-                    Download my CV &nbsp;
+                    Download Resume &nbsp;
                     <i className="ti-file" />
                 </a>
             </div>

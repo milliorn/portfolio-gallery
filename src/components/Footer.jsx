@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Logo from '../img/logo_white.png';
-
 const Footer = () => {
     const renderQuote = () => {
         const quotes = [
@@ -51,7 +49,8 @@ const Footer = () => {
             {
                 name: 'Twitter',
                 icon: 'ti-twitter',
-                url: 'https://twitter.com/scottmilliorn' }
+                url: 'https://twitter.com/scottmilliorn'
+            }
         ];
 
         return socials.map(social => (
@@ -69,12 +68,8 @@ const Footer = () => {
 
     return (
         <footer className="footer">
-            <img src={Logo} alt="Kenneth Kwakye-Gyamfi Logo" className="footer__logo" />
-
             <p className="footer__quote">{renderQuote()}</p>
-
             <div className="footer__social">{renderSocials()}</div>
-
             <p className="footer__copyright">Scott Milliorn &copy; {new Date().getFullYear()}</p>
         </footer>
     );
