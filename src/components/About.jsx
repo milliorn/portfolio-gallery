@@ -17,58 +17,32 @@ const About = () => {
         const breakdowns = [
             {
                 img: Design,
-                title: 'Frontend dev / design',
+                title: 'Front-End Development',
                 description:
-                    'I love to work actively on the user experience portion of a software development lifecycle from wireframe prototyping to frontend development.',
-                subTitle: 'Things I love designing',
-                subDesc: 'Wireframes, websites, prototypes',
+                    'I enjoy working on the software development lifecycle of frontend development.',
+                subTitle: 'Things I Enjoy About Front-End',
+                subDesc: 'Websites',
                 listTitle: 'Design Tools + Languages',
-                list: [
-                    'ReactJS',
-                    'AngularJS',
-                    'Vanilla JS',
-                    'Vue JS',
-                    'Adobe Photoshop',
-                    'Adobe XD',
-                    'Sketch',
-                    'Figma'
-                ]
+                list: ['VanillaJS', 'GatsbyJS', 'ReactJS', 'HTML', 'CSS']
             },
             {
                 img: WebApp,
-                title: 'Backend development',
-                description:
-                    'I also love to get down to the dirty stuff and build APIs; websocket servers; microservice architectures; and generally full-fledged backend apps.',
-                subTitle: 'Things I love building',
-                subDesc: 'Web applications, APIs, DevOps',
-                listTitle: 'Dev tools + languages',
-                list: [
-                    'NodeJS',
-                    'GoLang',
-                    'PHP',
-                    'Python',
-                    'Java',
-                    'Google Cloud Platform',
-                    'Amazon Web Services',
-                    'Database management',
-                    'Heroku'
-                ]
+                title: 'Back-End Development',
+                description: 'I love working and building APIs. Experienced with Docker.',
+                subTitle: 'Things I Love Building',
+                subDesc: 'Web Applications, APIs, Docker',
+                listTitle: 'Development Tools + Languages',
+                list: ['NodeJS', 'GoLang', 'Python', 'Java', 'SQL', 'ASP.NET']
             },
             {
                 img: MobileApp,
-                title: 'Mobile app development',
+                title: 'Game & Mobile App Development',
                 description:
-                    'I have experience developing not just Native applications but also (depending on the job) develop hybrid applications, fit for both iOS and Android.',
-                subTitle: 'Types I love developing',
-                subDesc: 'Android, iOS, Hybrid apps',
+                    '15 year Video Game Developer Hobbyist. Excited to work in Mobile Development.',
+                subTitle: 'Things I Love Developing or Aspire to Learn',
+                subDesc: 'Android, iOS, Unity, Unreal, NWScript',
                 listTitle: 'Development tools',
-                list: [
-                    'Java/Kotlin for Android',
-                    'Swift for iOS',
-                    'React Native',
-                    'Ionic',
-                    'Nativescript'
-                ]
+                list: ['Unity', 'NWScript']
             }
         ];
 
