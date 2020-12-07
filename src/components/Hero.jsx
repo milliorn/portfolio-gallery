@@ -1,19 +1,18 @@
 import React from 'react';
 
 import HeroFooter from '../img/hero.svg';
+// eslint-disable-next-line no-unused-vars
 import Logo from '../img/logo.jpg';
 import Memoji from '../img/memoji.svg';
 
 const Hero = () => (
     <div className="hero">
+        {/*
         <nav className="navbar grid grid--padded">
             <a
-                href="https://github.com/milliorn"
-                className="navbar__logo"
-                onClick="location.href='https://github.com/milliorn">
-                <img src={Logo} alt="Scott Milliorn Logo" className="navbar__logo-img" />
             </a>
         </nav>
+        */}
 
         <div className="hero__body">
             <h1 className="hero__title">.NET &amp; Web Full-Stack Developer</h1>
