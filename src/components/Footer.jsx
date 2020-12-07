@@ -5,10 +5,17 @@ import Logo from '../img/logo_white.png';
 const Footer = () => {
     const renderQuote = () => {
         const quotes = [
-            "I'm a greater believer in luck, and I find the harder I work the more I have of it.",
-            "I have learned that real angels don't have gossamer white robes and Cherubic skin, they have calloused hands and smell of the days' sweat",
-            'Greatness is sifted through the grind, therefore don’t despise the hard work now for surely it will be worth it in the end.',
-            'A dream doesn’t become reality through magic; it takes sweat, determination and hard work.'
+            `Programming today is a race between software engineers striving to build bigger and better idiot-proof programs,
+            and the Universe trying to produce bigger and better idiots. So far, the Universe is winning`,
+            `Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.`,
+            `Any fool can write code that a computer can understand. Good programmers write code that humans can understand.`,
+            `I'm not a great programmer; I'm just a good programmer with great habits.`,
+            `How you look at it is pretty much how you'll see it`,
+            `The best thing about a boolean is even if you are wrong, you are only off by a bit.`,
+            `There are two ways to write error-free programs; only the third one works.`,
+            `It’s not a bug – it’s an undocumented feature.`,
+            `Programming today is a race between software engineers striving to build bigger and better idiot-proof programs,
+            and the universe trying to produce bigger and better idiots. So far, the universe is winning.`
         ];
 
         return quotes[Math.floor(Math.random() * quotes.length)];
@@ -53,8 +60,6 @@ const Footer = () => {
         ));
     };
 
-    const currentYear = new Date().getFullYear();
-
     return (
         <footer className="footer">
             <img src={Logo} alt="Kenneth Kwakye-Gyamfi Logo" className="footer__logo" />
@@ -63,7 +68,7 @@ const Footer = () => {
 
             <div className="footer__social">{renderSocials()}</div>
 
-            <p className="footer__copyright">Handcrafted by yours truly 😎 &copy; {currentYear}</p>
+            <p className="footer__copyright">Scott Milliorn &copy; {new Date().getFullYear()}</p>
         </footer>
     );
 };
