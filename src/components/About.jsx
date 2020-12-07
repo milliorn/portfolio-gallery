@@ -14,6 +14,9 @@ const About = () => {
     Passion to learn in C# and .NET.`;
 
     const renderBreakdowns = () => {
+        const date = new Date();
+        const year = date.getFullYear();
+        const yearsDeveloping = year - 2004;
         const breakdowns = [
             {
                 img: Design,
@@ -37,8 +40,7 @@ const About = () => {
             {
                 img: MobileApp,
                 title: 'Game & Mobile App Development',
-                description:
-                    '15 year Video Game Developer Hobbyist. Excited to work in Mobile Development.',
+                description: `${yearsDeveloping} year Video Game Developer Hobbyist. Excited to work in Mobile Development.`,
                 subTitle: 'Things I Love Developing or Aspire to Learn',
                 subDesc: 'Android, iOS, Unity, Unreal, NWScript',
                 listTitle: 'Development tools',
