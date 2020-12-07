@@ -23,28 +23,35 @@ const Footer = () => {
 
     const renderSocials = () => {
         const socials = [
-            { name: 'Github', icon: 'ti-github', url: 'https://www.github.com/cross19xx' },
             {
+                name: 'Github',
+                icon: 'ti-github',
+                url: 'https://github.com/milliorn'
+            },
+            /*{
                 name: 'Facebook',
                 icon: 'ti-facebook',
-                url: 'https://www.facebook.com/profile.php?id=100009436144652'
+                url: 'https://www.facebook.com/'
+            },*/
+            /*{
+                name: 'Instagram',
+                icon: 'ti-instagram',
+                url: 'https://www.instagram.com/'
+            },*/
+            {
+                name: 'LinkedIn',
+                icon: 'ti-linkedin',
+                url: 'https://www.linkedin.com/in/scott-milliorn/'
             },
             {
                 name: 'Stack Overflow',
                 icon: 'ti-stack-overflow',
-                url: 'https://stackoverflow.com/users/3651221/cr05s19xx'
+                url: 'https://stackoverflow.com/users/11986604/milliorn'
             },
             {
-                name: 'Instagram',
-                icon: 'ti-instagram',
-                url: 'https://www.instagram.com/kenneth_kwakyegyamfi/'
-            },
-            {
-                name: 'LinkedIn',
-                icon: 'ti-linkedin',
-                url: 'https://www.linkedin.com/in/kenneth-kwakye-gyamfi/'
-            },
-            { name: 'Twitter', icon: 'ti-twitter', url: 'https://twitter.com/cross19xx' }
+                name: 'Twitter',
+                icon: 'ti-twitter',
+                url: 'https://twitter.com/scottmilliorn' }
         ];
 
         return socials.map(social => (
