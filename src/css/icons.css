@@ -1,3 +1,5 @@
+/*added font-display: swap; to fix invisible text issue*/
+
 @font-face {
     font-family: 'themify';
     src: url('/fonts/Themify/themify.eot?-fvbane');
@@ -7,6 +9,7 @@
         url('/fonts/Themify/themify.svg?-fvbane#themify') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 [class^='ti-'],
