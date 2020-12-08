@@ -106,6 +106,7 @@
     text-align: center;
     color: #ffffff;
     margin-bottom: 1.5rem;
+    color: #082e44;
 }
 
 .about__text {
@@ -113,7 +114,7 @@
     font-size: 1.1rem;
     line-height: 1.5;
     max-width: 54rem;
-    color: #ffffff;
+    color: #2b2b2b;
     font-family: 'Roboto-Light', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
         'Ubuntu', sans-serif;
     margin-bottom: 2rem;
@@ -174,7 +175,7 @@
 }
 
 .about__breakdown-subtitle {
-    color: #2196f3;
+    color: #145c95;
     margin-bottom: 1rem;
     width: 100%;
     text-align: center;
@@ -459,7 +460,7 @@
     padding: 0.75rem;
     border-radius: 2rem;
     cursor: pointer;
-    color: #1a9be6;
+    color: #105e8b;
     transition: 200ms ease;
 }
 
@@ -514,7 +515,7 @@
     text-align: center;
     font-family: 'Roboto-Light', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
         'Ubuntu', sans-serif;
-    color: #ffffff;
+    color: #2b2b2b;
     margin-bottom: 1.5rem;
 }
 
