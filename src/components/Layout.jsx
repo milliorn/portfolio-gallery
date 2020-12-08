@@ -56,6 +56,8 @@ const Layout = props => (
 
                         <title>{title}</title>
 
+                        <html lang="en" />
+
                         {typeof props.canonicalUrl !== 'undefined' && (
                             <link rel="canonical" href={canonicalUrl} />
                         )}

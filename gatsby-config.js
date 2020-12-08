@@ -9,7 +9,6 @@ module.exports = {
         social: {
             twitter: '@scottmilliorn',
             fbAppId: '100009436144652' //  Remove in future
-
         }
     },
 
