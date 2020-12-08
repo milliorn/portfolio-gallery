@@ -23,11 +23,13 @@ const pageQuery = graphql`
     }
 `;
 
+//  Add canonical links to your pages
+//  This needs to be updated later on when the prod URL is found
 const Layout = props => (
     <StaticQuery
         query={pageQuery}
         render={({ site: { siteMetadata: seo } }) => {
-            const canonicalUrl = `https://kwakye-gyamfi.com${props.canonicalUrl}`;
+            const canonicalUrl = `http://localhost:8000${props.canonicalUrl}`;
 
             const title = props.title || seo.title;
             const description = props.description || seo.description;
