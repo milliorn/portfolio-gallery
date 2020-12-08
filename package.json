@@ -46,7 +46,8 @@
         "lint:fix": "eslint --ext jsx --ext js --fix .",
         "lint:check": "eslint --ext jsx --ext js --print-config .eslintrc | eslint-config-prettier-check",
         "serve": "gatsby serve",
-        "start": "npm run develop"
+        "start": "npm run develop",
+        "clean": "gatsby clean"
     },
     "keywords": [
         "gatsby",
