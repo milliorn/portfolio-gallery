@@ -60,8 +60,6 @@ module.exports = {
                 head: false
             }
         },
-        {
-            resolve: `gatsby-plugin-minify`
-        }
+        `gatsby-plugin-minify`
     ]
 };
