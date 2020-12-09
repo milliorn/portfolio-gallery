@@ -59,6 +59,9 @@ module.exports = {
                 trackingId: 'UA-138977349-1',
                 head: false
             }
+        },
+        {
+            resolve: `gatsby-plugin-minify`
         }
     ]
 };
