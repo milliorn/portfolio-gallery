@@ -60,6 +60,7 @@ module.exports = {
                 head: false
             }
         },
+        `gatsby-plugin-preact`,
         `gatsby-plugin-minify`
     ]
 };
