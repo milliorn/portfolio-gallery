@@ -27,15 +27,28 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: 'Kenneth Kwakye-Gyamfi',
-                short_name: 'KKG',
+                name: 'Scott Milliorn',
+                short_name: 'SM',
                 start_url: '/',
                 background_color: '#FFFFFF',
                 theme_color: '#FFFFFF',
                 display: 'minimal-ui',
-                icon: 'src/img/logo.jpg' // This path is relative to the root of the site.
+                icon: `src/img/logo.jpg`, // This path is relative to the root of the site.
+                icons: [
+                    {
+                        src: `/favicons/android-chrome-192x192.png`,
+                        sizes: `192x192`,
+                        type: `image/png`
+                    },
+                    {
+                        src: `/favicons/android-chrome-512x512.png`,
+                        sizes: `512x512`,
+                        type: `image/png`
+                    }
+                ] // Add or remove icon sizes as desired
             }
         },
+        `gatsby-plugin-offline`,
         {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
