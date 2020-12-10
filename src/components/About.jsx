@@ -73,7 +73,7 @@ const About = () => {
     return (
         <div className="about">
             <div className="about__inner">
-                <h2 className="about__title">Hello, I&apos;m Scott. Great to meet you!</h2>
+                <h2 className="about__title">Hello, I&apos;m Scott. Nice to meet you!</h2>
 
                 <p className="about__text">{description}</p>
 
