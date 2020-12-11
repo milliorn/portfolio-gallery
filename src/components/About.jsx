@@ -26,7 +26,7 @@ const About = () => {
                 subTitle: 'Things I Enjoy About Front-End',
                 subDesc: 'Websites',
                 listTitle: 'Design Tools + Languages',
-                list: ['VanillaJS', 'GatsbyJS', 'ReactJS', 'HTML', 'CSS']
+                list: ['VanillaJS', 'ReactJS', 'HTML', 'CSS']
             },
             {
                 img: WebApp,
@@ -35,7 +35,7 @@ const About = () => {
                 subTitle: 'Things I Love Building',
                 subDesc: 'Web Applications, APIs, Docker',
                 listTitle: 'Development Tools + Languages',
-                list: ['NodeJS', 'GoLang', 'Python', 'Java', 'SQL', 'ASP.NET']
+                list: ['NodeJS', 'Python', 'Java', 'SQL', 'ASP.NET', 'GatsbyJS']
             },
             {
                 img: MobileApp,

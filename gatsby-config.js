@@ -52,13 +52,13 @@ module.exports = {
             }
         },
         `gatsby-plugin-offline`,
-        {
+        /*{
             resolve: `gatsby-plugin-google-analytics`,
             options: {
                 trackingId: 'UA-138977349-1',
                 head: false
             }
-        },
+        },*/
         `gatsby-plugin-preact`,
         `gatsby-plugin-minify`
     ]
