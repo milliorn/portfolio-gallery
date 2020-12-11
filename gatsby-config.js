@@ -16,6 +16,13 @@ module.exports = {
     plugins: [
         `gatsby-plugin-react-helmet`,
         {
+            resolve: `gatsby-styled-components-dark-mode`,
+            options: {
+                light: { mainColor: 'brandyRose' },
+                dark: { mainColor: 'manatee' },
+            },
+        },
+        {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `images`,
