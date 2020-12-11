@@ -1,8 +1,6 @@
 import React from 'react';
 
 import HeroFooter from '../img/hero.svg';
-// eslint-disable-next-line no-unused-vars
-import Logo from '../img/logo.jpg';
 import Memoji from '../img/memoji.svg';
 
 const Hero = () => (
