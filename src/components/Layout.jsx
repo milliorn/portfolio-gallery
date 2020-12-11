@@ -28,7 +28,7 @@ const Layout = props => (
     <StaticQuery
         query={pageQuery}
         render={({ site: { siteMetadata: seo } }) => {
-            const canonicalUrl = `http://localhost:8000${props.canonicalUrl}`;
+            const canonicalUrl = `https://scottmilliorn.netlify.app/${props.canonicalUrl}`;
 
             const title = props.title || seo.title;
             const description = props.description || seo.description;
