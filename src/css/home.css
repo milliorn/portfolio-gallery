@@ -517,6 +517,7 @@
         'Ubuntu', sans-serif;
     color: #2b2b2b;
     margin-bottom: 1.5rem;
+    font-style: italic;
 }
 
 .footer__social {
@@ -556,4 +557,5 @@
         'Ubuntu', sans-serif;
     color: #ffffff;
 }
+
 /*#endregion*/
