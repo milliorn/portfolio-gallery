@@ -17,6 +17,51 @@ const About = () => {
         const date = new Date();
         const year = date.getFullYear();
         const yearsDeveloping = year - 2004;
+
+        const designList = ['VanillaJS', 'ReactJS', 'HTML', 'CSS', 'ASP.NET'].sort((a, b) => {
+            if (a < b) return -1;
+            else if (a > b) return 1;
+            return 0;
+        });
+
+        const WebAppList = ['NodeJS', 'Python', 'Java', 'SQL', '.NET', 'GatsbyJS', 'Netlify'].sort(
+            (a, b) => {
+                if (a < b) return -1;
+                else if (a > b) return 1;
+                return 0;
+            }
+        );
+
+        const MobileAppList = ['Unity', 'NwScript'].sort((a, b) => {
+            if (a < b) return -1;
+            else if (a > b) return 1;
+            return 0;
+        });
+
+        const designSubDesc = ['Websites']
+            .sort((a, b) => {
+                if (a < b) return -1;
+                else if (a > b) return 1;
+                return 0;
+            })
+            .join(', ');
+
+        const webAppSubDesc = ['Web Applications', 'APIs', 'Docker']
+            .sort((a, b) => {
+                if (a < b) return -1;
+                else if (a > b) return 1;
+                return 0;
+            })
+            .join(', ');
+
+        const MobileAppSubDesc = ['Android', 'iOS', 'Unity', 'Unreal', 'NWScript']
+            .sort((a, b) => {
+                if (a < b) return -1;
+                else if (a > b) return 1;
+                return 0;
+            })
+            .join(', ');
+
         const breakdowns = [
             {
                 img: Design,
@@ -24,27 +69,27 @@ const About = () => {
                 description:
                     'I enjoy working on the software development lifecycle of frontend development.',
                 subTitle: 'Things I Enjoy About Front-End',
-                subDesc: 'Websites',
+                subDesc: designSubDesc,
                 listTitle: 'Design Tools + Languages',
-                list: ['VanillaJS', 'ReactJS', 'HTML', 'CSS']
+                list: designList
             },
             {
                 img: WebApp,
                 title: 'Back-End Development',
                 description: 'I love working and building APIs. Experienced with Docker.',
                 subTitle: 'Things I Love Building',
-                subDesc: 'Web Applications, APIs, Docker',
+                subDesc: webAppSubDesc,
                 listTitle: 'Development Tools + Languages',
-                list: ['NodeJS', 'Python', 'Java', 'SQL', 'ASP.NET', 'GatsbyJS']
+                list: WebAppList
             },
             {
                 img: MobileApp,
                 title: 'Game & Mobile App Development',
-                description: `${yearsDeveloping} year Video Game Developer Hobbyist. Excited to work in Mobile Development.`,
+                description: `Video Game Developer Hobbyist for ${yearsDeveloping} years. Excited to work in Mobile Development.`,
                 subTitle: 'Things I Love Developing or Aspire to Learn',
-                subDesc: 'Android, iOS, Unity, Unreal, NWScript',
+                subDesc: MobileAppSubDesc,
                 listTitle: 'Development tools',
-                list: ['Unity', 'NWScript']
+                list: MobileAppList
             }
         ];
 
