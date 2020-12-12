@@ -559,4 +559,12 @@
     color: #ffffff;
 }
 
+.footer__policy {
+    line-height: 1.4;
+    font-size: 1.25rem;
+    max-width: 40rem;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 1.5rem;
+}
 /*#endregion*/

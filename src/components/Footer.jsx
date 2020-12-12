@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 const Footer = () => {
     const renderQuote = () => {
@@ -71,6 +72,9 @@ const Footer = () => {
             <p className="footer__quote">{renderQuote()}</p>
             <div className="footer__social">{renderSocials()}</div>
             <p className="footer__copyright">Scott Milliorn &copy; {new Date().getFullYear()}</p>
+            <div>
+                <Link to="/privacy/">Privacy Policy</Link>
+            </div>{' '}
         </footer>
     );
 };
