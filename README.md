@@ -2,7 +2,12 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/287c8f98-261f-44f2-a8cc-08e15a8074f5/deploy-status)](https://app.netlify.com/sites/scottmilliorn/deploys)
 
-[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+[![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://gitHub.com/milliorn/portfolio)
 
-[![Known Vulnerabilities](https://snyk.io/test/github/{username}/{repo}/badge.svg)](https://snyk.io/test/github/{username}/{repo})
+[![Known Vulnerabilities](https://snyk.io/test/github/milliorn/portfolio/badge.svg)](https://snyk.io/test/github/milliorn/portfolio)
 
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://scottmilliorn.netlify.app/)
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://gitHub.com/milliorn/portfolio/graphs/commit-activity)
+
+[![Tweeting](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/scottmilliorn)
