@@ -31,56 +31,81 @@ const NotFound = () => {
             <p className="notFound_p">
                 The words of which the initial letter is capitalized have meanings defined under the
                 following conditions. The following definitions shall have the same meaning
-                regardless of whether they appear in singular or in plural.
+                regardless of whether they appear in singular or in plural. For the purposes of this
+                Privacy Policy:
             </p>
-            <p className="notFound_p">For the purposes of this Privacy Policy:</p>
-            <p className="">
-                <strong>Account:</strong> means a unique account created for You to access our
-                Service or parts of our Service.
+            <p className="notFound_p">
+                <strong>Account</strong>:
             </p>
-            <p className="">
-                <strong>Company:</strong> (referred to as either &quot;the Company&quot;,
-                &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Scott
-                Milliorn Portfolio.
+            <p className="notFound_p">
+                A unique account created for You to access our Service or parts of our Service.
             </p>
-            <p className="">
-                <strong>Cookies:</strong> are small files that are placed on Your computer, mobile
-                device or any other device by a website, containing the details of Your browsing
-                history on that website among its many uses.
+            <p className="notFound_p">
+                <strong>Company:</strong>
             </p>
-            <p className="">
-                <strong>Country</strong> refers to: United States.
+            <p className="notFound_p">
+                (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or
+                &quot;Our&quot; in this Agreement) refers to Scott Milliorn.
             </p>
-            <p className="">
-                <strong>Device</strong> means any device that can access the Service such as a
-                computer, a cellphone or a digital tablet.
+            <p className="notFound_p">
+                <strong>Cookies:</strong>
             </p>
-            <p className="">
-                <strong>Personal Data</strong> is any information that relates to an identified or
-                identifiable individual.
+            <p className="notFound_p">
+                Small files that are placed on Your computer, mobile device or any other device by a
+                website, containing the details of Your browsing history on that website among its
+                many uses.
             </p>
-            <p className="">
-                <strong>Service</strong> refers to the Website.
+            <p className="notFound_p">
+                <strong>Country</strong>
             </p>
-            <p className="">
-                <strong>Service Provider</strong> means any natural or legal person who processes
-                the data on behalf of the Company. It refers to third-party companies or individuals
-                employed by the Company to facilitate the Service, to provide the Service on behalf
-                of the Company, to perform services related to the Service or to assist the Company
-                in analyzing how the Service is used.
+            <p className="notFound_p">United States.</p>
+            <p className="notFound_p">
+                <strong>Device</strong>
             </p>
-            <p className="">
-                <strong>Third-party Social Media Service</strong> refers to any website or any
-                social network website through which a User can log in or create an account to use
-                the Service.
+            <p className="notFound_p">
+                Any device that can access the Service such as a computer, a cellphone or a digital
+                tablet.
             </p>
-            <p className="">
-                <strong>Usage Data</strong> refers to data collected automatically, either generated
-                by the use of the Service or from the Service infrastructure itself (for example,
-                the duration of a page visit).
+            <p className="notFound_p">
+                <strong>Personal Data</strong>
             </p>
-            <p className="">
-                <strong>Website</strong> refers to this website accessible from{' '}
+            <p className="notFound_p">
+                Any information that relates to an identified or identifiable individual.
+            </p>
+            <p className="notFound_p">
+                <strong>Service</strong>
+            </p>
+            <p className="notFound_p">Refers to the Website.</p>
+            <p className="notFound_p">
+                <strong>Service Provider</strong>
+            </p>
+            <p className="notFound_p">
+                Any natural or legal person who processes the data on behalf of the Company. It
+                refers to third-party companies or individuals employed by the Company to facilitate
+                the Service, to provide the Service on behalf of the Company, to perform services
+                related to the Service or to assist the Company in analyzing how the Service is
+                used.
+            </p>
+            <p className="notFound_p">
+                <strong>Third-party Social Media Service</strong>
+            </p>
+            <p className="notFound_p">
+                Any website or any social network website through which a User can log in or create
+                an account to use the Service.
+            </p>
+            <p className="notFound_p">
+                <strong>Usage Data</strong>
+            </p>
+            <p className="notFound_p">
+                refers to data collected automatically, either generated by the use of the Service
+                or from the Service infrastructure itself (for example, the duration of a page
+                visit).
+            </p>
+            <p className="notFound_p">
+                <strong>Website</strong>
+            </p>
+            <p className="notFound_p">
+                {' '}
                 <a
                     href="https://scottmilliorn.netlify.app"
                     rel="external nofollow noopener"
@@ -88,10 +113,12 @@ const NotFound = () => {
                     https://scottmilliorn.netlify.app
                 </a>
             </p>
-            <p className="">
-                <strong>You</strong> means the individual accessing or using the Service, or the
-                company, or other legal entity on behalf of which such individual is accessing or
-                using the Service, as applicable.
+            <p className="notFound_p">
+                <strong>You</strong>
+            </p>
+            <p className="notFound_p">
+                The individual accessing or using the Service, or the company, or other legal entity
+                on behalf of which such individual is accessing or using the Service, as applicable.
             </p>
             <br></br>
             <h2 className="notFound_h2">Types of Data Collected</h2>
@@ -138,83 +165,108 @@ const NotFound = () => {
                 The Company may use Personal Data for the following purposes:
             </p>
             <p className="notFound_p">
-                <strong>To provide and maintain our Service</strong>, including to monitor the usage
-                of our Service.
+                <strong>To provide and maintain our Service:</strong>
             </p>
-            <p>
-                <strong>For the performance of a contract:</strong>
-            </p>{' '}
-            the development, compliance and undertaking of the purchase contract for the products,
-            items or services You have purchased or of any other contract with Us through the
-            Service.
-            <p>
-                <strong>To contact You:</strong>
-            </p>{' '}
-            To contact You by email, telephone calls, SMS, or other equivalent forms of electronic
-            communication, such as a mobile application's push notifications regarding updates or
-            informative communications related to the functionalities, products or contracted
-            services, including the security updates, when necessary or reasonable for their
-            implementation.
+            <p className="notFound_p">including to monitor the usage of our Service.</p>
             <p className="notFound_p">
-                <p>
-                    <strong>To provide You: </strong>
-                </p>{' '}
+                <strong>For the performance of a contract:</strong>
+            </p>
+            <p className="notFound_p">
+                the development, compliance and undertaking of the purchase contract for the
+                products, items or services You have purchased or of any other contract with Us
+                through the Service.
+            </p>
+            <p className="notFound_p">
+                <strong>To contact You:</strong>
+            </p>
+            <p className="notFound_p">
+                by email, telephone calls, SMS, or other equivalent forms of electronic
+                communication, such as a mobile application's push notifications regarding updates
+                or informative communications related to the functionalities, products or contracted
+                services, including the security updates, when necessary or reasonable for their
+                implementation.
+            </p>
+            <p className="notFound_p">
+                <strong>To provide You: </strong>
+            </p>
+            <p className="notFound_p">
                 with news, special offers and general information about other goods, services and
                 events which we offer that are similar to those that you have already purchased or
                 enquired about unless You have opted not to receive such information.
             </p>
             <p className="notFound_p">
-                <strong>To manage Your requests:</strong> To attend and manage Your requests to Us.
+                <strong>To manage Your requests:</strong>
+            </p>
+            <p className="notFound_p">To attend and manage Your requests to Us.</p>
+            <p className="notFound_p">
+                <strong>For business transfers:</strong>
             </p>
             <p className="notFound_p">
-                <strong>For business transfers:</strong> We may use Your information to evaluate or
-                conduct a merger, divestiture, restructuring, reorganization, dissolution, or other
-                sale or transfer of some or all of Our assets, whether as a going concern or as part
-                of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us
-                about our Service users is among the assets transferred.
+                We may use Your information to evaluate or conduct a merger, divestiture,
+                restructuring, reorganization, dissolution, or other sale or transfer of some or all
+                of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or
+                similar proceeding, in which Personal Data held by Us about our Service users is
+                among the assets transferred.
             </p>
             <p className="notFound_p">
-                <strong>For other purposes</strong>: We may use Your information for other purposes,
-                such as data analysis, identifying usage trends, determining the effectiveness of
-                our promotional campaigns and to evaluate and improve our Service, products,
-                services, marketing and your experience.
+                <strong>For other purposes</strong>:
             </p>
             <p className="notFound_p">
-                <strong>We may share Your personal information in the following situations:</strong>
+                We may use Your information for other purposes, such as data analysis, identifying
+                usage trends, determining the effectiveness of our promotional campaigns and to
+                evaluate and improve our Service, products, services, marketing and your experience.
+            </p>
+            <h3 className="notFound_h3">
+                We may share Your personal information in the following situations:
+            </h3>
+            <p className="notFound_p">
+                <strong>Service Providers:</strong>
             </p>
             <p className="notFound_p">
-                <strong>With Service Providers:</strong> We may share Your personal information with
-                Service Providers to monitor and analyze the use of our Service, to contact You.
+                We may share Your personal information with Service Providers to monitor and analyze
+                the use of our Service, to contact You.
             </p>
             <p className="notFound_p">
-                <strong>For business transfers:</strong> We may share or transfer Your personal
-                information in connection with, or during negotiations of, any merger, sale of
-                Company assets, financing, or acquisition of all or a portion of Our business to
-                another company.
+                <strong>For business transfers:</strong>
             </p>
             <p className="notFound_p">
-                <strong>With Affiliates:</strong> We may share Your information with Our affiliates,
-                in which case we will require those affiliates to honor this Privacy Policy.
-                Affiliates include Our parent company and any other subsidiaries, joint venture
-                partners or other companies that We control or that are under common control with
-                Us.
+                We may share or transfer Your personal information in connection with, or during
+                negotiations of, any merger, sale of Company assets, financing, or acquisition of
+                all or a portion of Our business to another company.
             </p>
             <p className="notFound_p">
-                <strong>With business partners:</strong> We may share Your information with Our
-                business partners to offer You certain products, services or promotions.
+                <strong>With Affiliates:</strong>
             </p>
             <p className="notFound_p">
-                <strong>With other users:</strong> when You share personal information or otherwise
-                interact in the public areas with other users, such information may be viewed by all
-                users and may be publicly distributed outside. If You interact with other users or
-                register through a Third-Party Social Media Service, Your contacts on the
-                Third-Party Social Media Service may see Your name, profile, pictures and
-                description of Your activity. Similarly, other users will be able to view
-                descriptions of Your activity, communicate with You and view Your profile.
+                We may share Your information with Our affiliates, in which case we will require
+                those affiliates to honor this Privacy Policy. Affiliates include Our parent company
+                and any other subsidiaries, joint venture partners or other companies that We
+                control or that are under common control with Us.
             </p>
             <p className="notFound_p">
-                <strong>With Your consent</strong>: We may disclose Your personal information for
-                any other purpose with Your consent.
+                <strong>With business partners:</strong>
+            </p>
+            <p className="notFound_p">
+                We may share Your information with Our business partners to offer You certain
+                products, services or promotions.
+            </p>
+            <p className="notFound_p">
+                <strong>With other users:</strong>
+            </p>
+            <p className="notFound_p">
+                When You share personal information or otherwise interact in the public areas with
+                other users, such information may be viewed by all users and may be publicly
+                distributed outside. If You interact with other users or register through a
+                Third-Party Social Media Service, Your contacts on the Third-Party Social Media
+                Service may see Your name, profile, pictures and description of Your activity.
+                Similarly, other users will be able to view descriptions of Your activity,
+                communicate with You and view Your profile.
+            </p>
+            <p className="notFound_p">
+                <strong>With Your consent</strong>:
+            </p>
+            <p className="notFound_p">
+                We may disclose Your personal information for any other purpose with Your consent.
             </p>
             <h3 className="notFound_h3">Retention of Your Personal Data</h3>
             <p className="notFound_p">
@@ -268,22 +320,21 @@ const NotFound = () => {
             </p>
             <h3 className="notFound_h3"> Other legal requirements</h3>
             <p className="notFound_p">
-                The Company may disclose Your Personal Data in the good faith belief that such
-                action is necessary to:
+                <strong>
+                    The Company may disclose Your Personal Data in the good faith belief that such
+                    action is necessary to:
+                </strong>
             </p>
-            <ul>
-                <li>Comply with a legal obligation</li>
-                <br></br>
-                <li>Protect and defend the rights or property of the Company</li>
-                <br></br>
-                <li>Prevent or investigate possible wrongdoing in connection with the Service</li>
-                <br></br>
-                <li>Protect the personal safety of Users of the Service or the public</li>
-                <br></br>
-                <li>Protect against legal liability</li>
-                <br></br>
-            </ul>
-            <br></br>
+
+            <p className="notFound_p">Comply with a legal obligation</p>
+            <p className="notFound_p">Protect and defend the rights or property of the Company</p>
+            <p className="notFound_p">
+                Prevent or investigate possible wrongdoing in connection with the Service
+            </p>
+            <p className="notFound_p">
+                Protect the personal safety of Users of the Service or the public
+            </p>
+            <p className="notFound_p">Protect against legal liability</p>
             <h3 className="notFound_h3"> Security of Your Personal Data</h3>
             <p className="notFound_p">
                 The security of Your Personal Data is important to Us, but remember that no method

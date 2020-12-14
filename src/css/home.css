@@ -579,7 +579,7 @@
     max-width: 40rem;
     margin-bottom: 1.5rem;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
@@ -591,19 +591,9 @@
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-}
-
-.notFound_p_li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1.5rem;
-
 }
 /*#endregion*/
