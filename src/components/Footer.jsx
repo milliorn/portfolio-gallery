@@ -72,9 +72,9 @@ const Footer = () => {
             <p className="footer__quote">{renderQuote()}</p>
             <div className="footer__social">{renderSocials()}</div>
             <p className="footer__copyright">Scott Milliorn &copy; {new Date().getFullYear()}</p>
-            <div>
-                <Link to="/privacy/">Privacy Policy</Link>
-            </div>{' '}
+            <Link className="footer__policy" to="/privacy/">
+                Privacy Policy
+            </Link>
         </footer>
     );
 };

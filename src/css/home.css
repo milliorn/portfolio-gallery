@@ -561,10 +561,49 @@
 
 .footer__policy {
     line-height: 1.4;
-    font-size: 1.25rem;
     max-width: 40rem;
     text-align: center;
-    color: #ffffff;
     margin-top: 1.5rem;
+    color: white;
+}
+
+.notFound_home_link {
+    line-height: 1.4;
+    font-size: 1.25rem;
+    max-width: 40rem;
+    margin-bottom: 1.5rem;
+}
+
+.notFound_h1, .notFound_h2, .notFound_h3, .notFound_h4 {
+    line-height: 1.4;
+    max-width: 40rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.notFound_p {
+    line-height: 1.4;
+    max-width: 40rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.notFound_p_li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+
 }
 /*#endregion*/
