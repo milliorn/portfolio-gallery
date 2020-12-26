@@ -51,14 +51,26 @@ module.exports = {
                 }
             }
         },
+        {
+            resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
+            options: {
+                //openAnalyzer: true,
+                analyzerMode: 'server',
+                //analyzerPort: '8888',
+                devMode: true
+                //disable: true
+                //analyzerHost: 'http://myhost.com',
+                //defaultSizes: 'gzip'
+            }
+        },
         `gatsby-plugin-offline`,
         /*{
-            resolve: `gatsby-plugin-google-analytics`,
-            options: {
-                trackingId: 'UA-138977349-1',
-                head: false
-            }
-        },*/
+			resolve: `gatsby-plugin-google-analytics`,
+			options: {
+				trackingId: 'UA-138977349-1',
+				head: false
+			}
+		},*/
         `gatsby-plugin-preact`,
         `gatsby-plugin-minify`
     ]
