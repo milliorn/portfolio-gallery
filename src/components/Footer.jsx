@@ -27,16 +27,6 @@ const Footer = () => {
                 icon: 'ti-github',
                 url: 'https://github.com/milliorn'
             },
-            /*{
-                name: 'Facebook',
-                icon: 'ti-facebook',
-                url: 'https://www.facebook.com/'
-            },*/
-            /*{
-                name: 'Instagram',
-                icon: 'ti-instagram',
-                url: 'https://www.instagram.com/'
-            },*/
             {
                 name: 'LinkedIn',
                 icon: 'ti-linkedin',
