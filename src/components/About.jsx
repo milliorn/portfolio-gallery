@@ -13,30 +13,25 @@ const About = () => {
     Former musician.
     Passion to learn in C# and .NET.`;
 
+    const sortArray = arr =>
+        arr.sort((a, b) => {
+            if (a < b) return -1;
+            else if (a > b) return 1;
+            return 0;
+        });
+
     const renderBreakdowns = () => {
         const date = new Date();
         const year = date.getFullYear();
         const yearsDeveloping = year - 2004;
 
-        const designList = ['VanillaJS', 'ReactJS', 'HTML', 'CSS', 'ASP.NET'].sort((a, b) => {
-            if (a < b) return -1;
-            else if (a > b) return 1;
-            return 0;
-        });
+        const designList = ['VanillaJS', 'ReactJS', 'HTML', 'CSS', 'ASP.NET'];
+        const WebAppList = ['NodeJS', 'Python', 'Java', 'SQL', '.NET', 'GatsbyJS', 'Netlify'];
+        const MobileAppList = ['Unity', 'NwScript'];
 
-        const WebAppList = ['NodeJS', 'Python', 'Java', 'SQL', '.NET', 'GatsbyJS', 'Netlify'].sort(
-            (a, b) => {
-                if (a < b) return -1;
-                else if (a > b) return 1;
-                return 0;
-            }
-        );
-
-        const MobileAppList = ['Unity', 'NwScript'].sort((a, b) => {
-            if (a < b) return -1;
-            else if (a > b) return 1;
-            return 0;
-        });
+        sortArray(designList);
+        sortArray(WebAppList);
+        sortArray(MobileAppList);
 
         const designSubDesc = ['Websites']
             .sort((a, b) => {
