@@ -51,7 +51,7 @@ module.exports = {
                 }
             }
         },
-        {
+        /*{
             resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
             options: {
                 //openAnalyzer: true,
@@ -62,7 +62,7 @@ module.exports = {
                 //analyzerHost: 'http://myhost.com',
                 //defaultSizes: 'gzip'
             }
-        },
+        },*/
         `gatsby-plugin-offline`,
         /*{
 			resolve: `gatsby-plugin-google-analytics`,
