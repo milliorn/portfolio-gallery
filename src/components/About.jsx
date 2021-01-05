@@ -26,7 +26,7 @@ const About = () => {
         const yearsDeveloping = year - 2004;
 
         const designList = ['VanillaJS', 'ReactJS', 'HTML', 'CSS', 'ASP.NET', 'Bootstrap'];
-        const WebAppList = ['NodeJS', 'SQL', '.NET', 'GatsbyJS', 'Netlify'];
+        const WebAppList = ['NodeJS', 'SQL', '.NET', 'GatsbyJS', 'Netlify', 'Firebase'];
         const MobileAppList = ['Unity', 'NwScript'];
 
         sortArray(designList);
