@@ -8,8 +8,8 @@ module.exports = {
         image: 'src/img/logo.jpg',
         siteUrl: `https://scottmilliorn.netlify.app/`,
         social: {
-            twitter: '@scottmilliorn'
-        }
+            twitter: '@scottmilliorn',
+        },
     },
 
     // Gatsby plugins
@@ -19,8 +19,8 @@ module.exports = {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `images`,
-                path: `${__dirname}/src/img`
-            }
+                path: `${__dirname}/src/img`,
+            },
         },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
@@ -38,18 +38,18 @@ module.exports = {
                     {
                         src: `/favicons/android-chrome-192x192.png`,
                         sizes: `192x192`,
-                        type: `image/png`
+                        type: `image/png`,
                     },
                     {
                         src: `/favicons/android-chrome-512x512.png`,
                         sizes: `512x512`,
-                        type: `image/png`
-                    }
+                        type: `image/png`,
+                    },
                 ], // Add or remove icon sizes as desired
                 icon_options: {
-                    purpose: `any maskable`
-                }
-            }
+                    purpose: `any maskable`,
+                },
+            },
         },
         /*{
             resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
@@ -72,6 +72,6 @@ module.exports = {
 			}
 		},*/
         `gatsby-plugin-preact`,
-        `gatsby-plugin-minify`
-    ]
+        `gatsby-plugin-minify`,
+    ],
 };

@@ -13,7 +13,7 @@ const About = () => {
     Former musician.
     Passion to learn in C# and .NET.`;
 
-    const sortArray = arr =>
+    const sortArray = (arr) =>
         arr.sort((a, b) => {
             if (a < b) return -1;
             else if (a > b) return 1;
@@ -66,7 +66,7 @@ const About = () => {
                 subTitle: 'Things I Enjoy About Front-End',
                 subDesc: designSubDesc,
                 listTitle: 'Design Tools + Languages',
-                list: designList
+                list: designList,
             },
             {
                 img: WebApp,
@@ -75,7 +75,7 @@ const About = () => {
                 subTitle: 'Things I Love Building',
                 subDesc: webAppSubDesc,
                 listTitle: 'Development Tools + Languages',
-                list: WebAppList
+                list: WebAppList,
             },
             {
                 img: MobileApp,
@@ -84,11 +84,11 @@ const About = () => {
                 subTitle: 'Things I Love Developing or Aspire to Learn',
                 subDesc: MobileAppSubDesc,
                 listTitle: 'Development tools',
-                list: MobileAppList
-            }
+                list: MobileAppList,
+            },
         ];
 
-        return breakdowns.map(breakdown => (
+        return breakdowns.map((breakdown) => (
             <div className="about__breakdown col" key={breakdown.title.toLowerCase()}>
                 <img src={breakdown.img} alt={breakdown.title} className="about__breakdown-img" />
 
@@ -100,7 +100,7 @@ const About = () => {
 
                 <p className="about__breakdown-subtitle">{breakdown.listTitle}</p>
                 <ul className="about__breakdown-list">
-                    {breakdown.list.map(elem => (
+                    {breakdown.list.map((elem) => (
                         <li key={elem} className="about__breakdown-elem">
                             {elem}
                         </li>
