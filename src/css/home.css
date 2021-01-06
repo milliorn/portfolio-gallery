@@ -50,6 +50,8 @@
     display: block;
     width: 9rem;
     margin: 0 auto 4rem;
+    min-width: 2254;
+    min-height: 280;
 }
 
 .hero__footer {

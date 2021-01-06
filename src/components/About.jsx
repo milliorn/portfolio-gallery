@@ -94,7 +94,7 @@ const About = () => {
                     src={breakdown.img}
                     alt={breakdown.title}
                     className="about__breakdown-img"
-                    width="264"
+                    width="254"
                     height="280"
                 />
 
