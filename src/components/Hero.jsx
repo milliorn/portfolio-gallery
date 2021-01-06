@@ -15,7 +15,7 @@ const Hero = () => (
         <div className="hero__body">
             <h1 className="hero__title">.NET &amp; Web Full-Stack Developer</h1>
 
-            <p className="hero__subtitle">
+            <p className="hero__subtitle" width="1024" height="46">
                 Designing &amp; building web and desktop apps with .NET along with websites in
                 ReactJS.
             </p>
