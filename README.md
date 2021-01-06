@@ -4,3 +4,4 @@
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://scottmilliorn.netlify.app/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://gitHub.com/milliorn/portfolio/graphs/commit-activity)
 [![Tweeting](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/scottmilliorn)
+[![CodeFactor](https://www.codefactor.io/repository/github/milliorn/portfolio/badge/master)](https://www.codefactor.io/repository/github/milliorn/portfolio/overview/master)
