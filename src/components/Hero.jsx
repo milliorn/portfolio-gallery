@@ -20,13 +20,21 @@ const Hero = () => (
                 ReactJS.
             </p>
 
-            <img src={Memoji} alt="Scott Milliorn memoji" className="hero__memoji" />
+            <img
+                src={Memoji}
+                alt="Scott Milliorn memoji"
+                className="hero__memoji"
+                width="264"
+                height="280"
+            />
 
             <div className="hero__footer">
                 <img
                     src={HeroFooter}
                     className="hero__footer-img"
                     alt="Scott Milliorn hero footer"
+                    width="264"
+                    height="280"
                 />
             </div>
         </div>

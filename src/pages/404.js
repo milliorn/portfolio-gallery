@@ -12,6 +12,8 @@ const NotFound = () => {
                 <img
                     src="https://www.vizion.com/wp-content/uploads/2018/09/shutterstock_479042983-636x344.jpg"
                     alt=""
+                    width="264"
+                    height="280"
                 />
                 <Link to="/">Take me home</Link>
             </p>
