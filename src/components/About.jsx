@@ -121,7 +121,9 @@ const About = () => {
             <div className="about__inner">
                 <h2 className="about__title">Hello, I&apos;m Scott. Nice to meet you!</h2>
 
-                <p className="about__text">{description}</p>
+                <p className="about__text" width="864" height="90">
+                    {description}
+                </p>
 
                 <a href="scott-milliorn-resume.pdf" download="" className="about__cv">
                     Download Resume &nbsp;

@@ -23,7 +23,7 @@ const pageQuery = graphql`
 `;
 
 //  Add canonical links to your pages
-const Layout = (props) => (
+const Layout = props => (
     <StaticQuery
         query={pageQuery}
         render={({ site: { siteMetadata: seo } }) => {
@@ -43,7 +43,7 @@ const Layout = (props) => (
                 { name: 'twitter:creator', content: seo.social.twitter },
                 { name: 'twitter:title', content: title },
                 { name: 'twitter:description', content: description },
-                { name: 'twitter:image', content: image },
+                { name: 'twitter:image', content: image }
             ];
 
             return (
@@ -76,11 +76,11 @@ Layout.propTypes = {
     path: PropTypes.string,
     canonicalUrl: PropTypes.string,
     children: PropTypes.node.isRequired,
-    className: PropTypes.string,
+    className: PropTypes.string
 };
 
 Layout.defaultProps = {
-    className: 'cross-site',
+    className: 'cross-site'
 };
 
 export default Layout;
