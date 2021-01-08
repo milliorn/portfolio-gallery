@@ -1,6 +1,6 @@
 
 name: Cache
-on: [push, pull_request, create, delete]
+on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-16.04
