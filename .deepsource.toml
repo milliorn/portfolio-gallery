@@ -5,6 +5,9 @@ name = "javascript"
 enabled = true
 
   [analyzers.meta]
-  environment = ["nodejs"]
+  environment = [
+    "nodejs",
+    "jquery"
+  ]
   plugins = ["react"]
-  style_guide = "google"
+  style_guide = "standard"
