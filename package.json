@@ -24,7 +24,7 @@
         "gatsby-plugin-sharp": "2.12.1",
         "gatsby-source-filesystem": "2.9.0",
         "gatsby-transformer-sharp": "2.10.1",
-        "preact": "10.5.9",
+        "preact": "10.5.10",
         "preact-render-to-string": "5.1.12",
         "prop-types": "15.7.2",
         "react": "17.0.1",
