@@ -14,11 +14,11 @@
         "url": "https://github.com/milliorn/portfolio.git"
     },
     "dependencies": {
-        "gatsby": "2.32.3",
+        "gatsby": "2.32.4",
         "gatsby-cli": "2.19.1",
         "gatsby-plugin-manifest": "2.12.0",
         "gatsby-plugin-minify": "0.3.0",
-        "gatsby-plugin-offline": "3.10.0",
+        "gatsby-plugin-offline": "3.10.1",
         "gatsby-plugin-preact": "4.7.0",
         "gatsby-plugin-react-helmet": "3.10.0",
         "gatsby-plugin-sharp": "2.14.1",
