@@ -14,7 +14,7 @@
         "url": "https://github.com/milliorn/portfolio.git"
     },
     "dependencies": {
-        "gatsby": "2.32.5",
+        "gatsby": "2.32.6",
         "gatsby-cli": "2.19.2",
         "gatsby-plugin-manifest": "2.12.1",
         "gatsby-plugin-minify": "0.3.0",
