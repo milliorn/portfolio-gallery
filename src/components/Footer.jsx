@@ -14,7 +14,7 @@ const Footer = () => {
             `There are two ways to write error-free programs; only the third one works.`,
             `It’s not a bug – it’s an undocumented feature.`,
             `Programming today is a race between software engineers striving to build bigger and better idiot-proof programs,
-            and the universe trying to produce bigger and better idiots. So far, the universe is winning.`
+            and the universe trying to produce bigger and better idiots. So far, the universe is winning.`,
         ];
 
         return quotes[Math.floor(Math.random() * quotes.length)];
@@ -25,26 +25,26 @@ const Footer = () => {
             {
                 name: 'Github',
                 icon: 'ti-github',
-                url: 'https://github.com/milliorn'
+                url: 'https://github.com/milliorn',
             },
             {
                 name: 'LinkedIn',
                 icon: 'ti-linkedin',
-                url: 'https://www.linkedin.com/in/scott-milliorn/'
+                url: 'https://www.linkedin.com/in/scott-milliorn/',
             },
             {
                 name: 'Stack Overflow',
                 icon: 'ti-stack-overflow',
-                url: 'https://stackoverflow.com/users/11986604/milliorn'
+                url: 'https://stackoverflow.com/users/11986604/milliorn',
             },
             {
                 name: 'Twitter',
                 icon: 'ti-twitter',
-                url: 'https://twitter.com/scottmilliorn'
-            }
+                url: 'https://twitter.com/scottmilliorn',
+            },
         ];
 
-        return socials.map(social => (
+        return socials.map((social) => (
             <a
                 target="_blank"
                 href={social.url}
