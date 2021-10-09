@@ -5,6 +5,5 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://gitHub.com/milliorn/portfolio/graphs/commit-activity)
 [![CodeFactor](https://www.codefactor.io/repository/github/milliorn/portfolio/badge/master)](https://www.codefactor.io/repository/github/milliorn/portfolio/overview/master)
 ![CodeQL](https://github.com/milliorn/portfolio/workflows/CodeQL/badge.svg)
-![Cache](https://github.com/milliorn/portfolio/workflows/Cache/badge.svg)
 ![OSSAR](https://github.com/milliorn/portfolio/workflows/OSSAR/badge.svg)
 ![Screenshot](Lighthouse_Score.jpg)
