@@ -6,4 +6,5 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/milliorn/portfolio/badge/master)](https://www.codefactor.io/repository/github/milliorn/portfolio/overview/master)
 ![CodeQL](https://github.com/milliorn/portfolio/workflows/CodeQL/badge.svg)
 ![OSSAR](https://github.com/milliorn/portfolio/workflows/OSSAR/badge.svg)
+[![Lint Code Base](https://github.com/milliorn/portfolio/actions/workflows/super-linter.yml/badge.svg)](https://github.com/milliorn/portfolio/actions/workflows/super-linter.yml)
 ![Screenshot](Lighthouse_Score.jpg)
