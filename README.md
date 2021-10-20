@@ -8,3 +8,5 @@
 ![OSSAR](https://github.com/milliorn/portfolio/workflows/OSSAR/badge.svg)
 [![Lint Code Base](https://github.com/milliorn/portfolio/actions/workflows/super-linter.yml/badge.svg)](https://github.com/milliorn/portfolio/actions/workflows/super-linter.yml)
 ![Screenshot](Lighthouse_Score.jpg)
+
+Version 1. No longer maintained. GatsbyJS static site.
