@@ -1,0 +1,20 @@
+{
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+    "endOfLine": "lf",
+    "htmlWhitespaceSensitivity": "css",
+    "insertPragma": false,
+    "jsxBracketSameLine": false,
+    "jsxSingleQuote": true,
+    "printWidth": 80,
+    "proseWrap": "preserve",
+    "quoteProps": "as-needed",
+    "requirePragma": false,
+    "semi": false,
+    "singleQuote": false,
+    "tabWidth": 4,
+    "trailingComma": "es5",
+    "useTabs": false,
+    "filepath": "c:\\Users\\scott\\Documents\\Coding\\freeCodeCamp\\Responsive Web Design Certification\\Responsive Web Design Projects\\Build a Personal Portfolio Webpage\\index.html",
+    "parser": "html"
+}

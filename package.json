@@ -1,63 +1,21 @@
 {
-    "name": "portfolio-site",
-    "description": "Portfolio Landing page built with Gatsby JS and hosted on Netlify",
-    "version": "1.0.1",
-    "private": false,
-    "license": "GNU General Public License v2.0",
-    "author": {
-        "name": "Scott",
-        "email": "scottmilliorn@gmail.com",
-        "url": "https://scottmilliorn.netlify.app"
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "personal portfolio site",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/milliorn/portfolio.git"
-    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
     "dependencies": {
-        "gatsby": "3.14.3",
-        "gatsby-cli": "3.14.2",
-        "gatsby-plugin-manifest": "3.14.0",
-        "gatsby-plugin-minify": "0.4.0",
-        "gatsby-plugin-offline": "4.14.0",
-        "gatsby-plugin-preact": "5.14.0",
-        "gatsby-plugin-react-helmet": "4.14.0",
-        "gatsby-plugin-sharp": "3.14.1",
-        "gatsby-source-filesystem": "3.14.0",
-        "gatsby-transformer-sharp": "3.14.0",
-        "preact": "10.5.15",
-        "preact-render-to-string": "5.1.19",
-        "prop-types": "15.7.2",
-        "react": "17.0.2",
-        "react-dom": "17.0.2",
-        "react-helmet": "6.1.0"
+        "bootstrap": "^5.1.3",
+        "bootstrap-icons": "^1.6.0",
+        "jquery": "^3.6.0",
+        "popper.js": "^1.16.1"
     },
     "devDependencies": {
-        "babel-eslint": "10.1.0",
-        "eslint": "8.0.1",
-        "eslint-config-prettier": "8.3.0",
-        "eslint-plugin-babel": "5.3.1",
-        "eslint-plugin-import": "2.25.2",
-        "eslint-plugin-prettier": "4.0.0",
-        "eslint-plugin-react": "7.26.1",
-        "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.25",
         "prettier": "2.4.1"
-    },
-    "scripts": {
-        "build": "gatsby build",
-        "develop": "gatsby develop",
-        "lint": "eslint --ext jsx --ext js .",
-        "lint:fix": "eslint --ext jsx --ext js --fix .",
-        "lint:check": "eslint --ext jsx --ext js --print-config .eslintrc | eslint-config-prettier-check",
-        "serve": "gatsby serve",
-        "start": "npm run develop",
-        "clean": "gatsby clean"
-    },
-    "keywords": [
-        "gatsby",
-        "react",
-        "javascript",
-        "eslint",
-        "jest",
-        "website"
-    ]
+    }
 }

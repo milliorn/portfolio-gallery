@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Scott Milliorn Developer Portfolio" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <!-- Social Footer, Colour Matching Icons -->
+    <!-- Include Font Awesome Stylesheet in Header -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <title>Portfolio</title>
+</head>
+
+<body class="bg-secondary">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow" id="navbar">
+        <div class="container">
+            <a href="https://github.com/milliorn" target="_blank" class="navbar-brand text-capitalize sticky-top social" id="welcome" href="#" rel="noopener">Welcome!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#" id="home-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" id="projects-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" id="footer-link" href="#footer">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Full Page Image Header with Vertically Centered Content -->
+    <header class="masthead" id="welcome-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="fw-light text-light text-capitalize h1">
+                        Developer For hire
+                    </h1>
+                    <div class="lead text-secondary">
+                        All open source content below
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projects Content -->
+    <section class="py-4 bg-dark" id="projects">
+        <div class="container">
+            <div class="text-light lead text-center text-capitalize display-6 p-5">
+                Lifelong hobbyist programmer looking to change careers with experience in developing and deploying software.
+            </div>
+        </div>
+        <ul class="row portfolio list-unstyled mb-0 boxed-portfolio">
+
+            <li class="col-lg-12 project-tile" data-groups="[&quot;skill1&quot;]">
+                <div class="card mb-0">
+                    <div class="project m-0">
+                        <figure class="portfolio-item">
+                            <a href="https://reactjs-movie-database.netlify.app/" class="hovereffect" target="_blank" rel="noopener" aria-label="reactdb">
+                                <img class="card-img-top" src="./img/rmdb.png" alt="reactjs-movie-database">
+                                <div class="overlay">
+                                </div>
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="card-body">
+                        <a href="https://github.com/milliorn/React-Movie-Database" class="card-title title-link fs-16 fw-bold text-capitalize" aria-label="reactdb" rel="noopener" target="_blank">reactJS movie database</a>
+                        <div class="lead card-text mt-5 mb-0 fs-14"><b>Movie database done in ReactJS.</b>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="col-lg-12 project-tile" data-groups="[&quot;skill1&quot;]">
+                <div class="card mb-0">
+                    <div class="project m-0">
+                        <figure class="portfolio-item">
+                            <a href="https://github.com/milliorn/Galaxy" class="hovereffect" rel="noopener" target="_blank" aria-label="galaxy">
+                                <img class="card-img-top" src="./img/galaxy.png" alt="">
+                                <div class="overlay">
+                                </div>
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="card-body">
+                        <a href="https://github.com/milliorn/Galaxy" class="card-title title-link fs-16 fw-bold" aria-label="galaxy" rel="noopener" target="_blank">Galaxy</a>
+                        <div class="lead card-text mt-5 mb-0 fs-14"><b>Game done in Kivy Python Framework</b>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="col-lg-12 project-tile" data-groups="[&quot;skill1&quot;]">
+                <div class="card mb-0">
+                    <div class="project m-0">
+                        <figure class="portfolio-item">
+                            <a href="https://react-material-ui-dictionary.netlify.app" class="hovereffect" aria-label="dictionary" rel="noopener" target="_blank">
+                                <img class="card-img-top" src="./img/dictionary.png" alt="">
+                                <div class="overlay">
+                                </div>
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="card-body">
+                        <a href="https://github.com/milliorn/React-Material-UI-Dictionary" class="card-title title-link fs-16 fw-bold text-capitalize" aria-label="dictionary" rel="noopener" target="_blank">React material-UI dictionary</a>
+                        <div class="lead card-text mt-5 mb-0 fs-14"><b>Dictionary App using React JS and Material UI
+                                with support of over 12 languages.</b>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- Footer Content -->
+    <footer class="bg-secondary" id="footer">
+        <div class="container-fluid">
+            <div class="text-capitalize text-center h3 text-light">
+                Want to contact me?
+            </div>
+            <hr />
+            <div class="text-center center-block">
+                <a aria-label="github" href="https://github.com/milliorn" target="_blank" rel="noopener" id="profile-link"><i id="social-gh" class="fa fab fa-github-square fa-5x social"></i>
+                    <a aria-label="linkedin" href="https://www.linkedin.com/in/scott-milliorn" target="_blank"
+                        rel="noopener"><i id="social-gp" class="fa fa-linkedin-square fa-5x social"></i></a>
+                <a aria-label="gmail" href="mailto:scottmilliorn@gmail.com" target="_blank" rel="noopener"><i
+                            id="social-em" class="fa fa-envelope-square fa-5x social"></i></a></a>
+                <a aria-label="twitter" href="https://twitter.com/scottmilliorn" target="_blank" rel="noopener"><i
+                        id="social-tw" class="fa fa-twitter-square fa-5x social"></i></a>
+            </div>
+            <hr />
+        </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.js" defer></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js" defer></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+</body>
+
+</html>
