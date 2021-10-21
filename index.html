@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Scott Milliorn Developer Portfolio" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/media.css" />
     <!-- Social Footer, Colour Matching Icons -->
@@ -19,7 +19,7 @@
 
 <body class="bg-secondary">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow overflow-hidden" id="navbar">
         <div class="container">
             <a href="https://github.com/milliorn" target="_blank" class="navbar-brand text-capitalize sticky-top social" id="welcome" href="#" rel="noopener">Welcome!</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@
 
     <!-- Full Page Image Header with Vertically Centered Content -->
     <header class="masthead" id="welcome-section">
-        <div class="container h-100">
+        <div class="container h-100 overflow-hidden">
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-center">
                     <h1 class="fw-light text-light text-capitalize h1">
@@ -59,7 +59,7 @@
     </header>
 
     <!-- Projects Content -->
-    <section class="py-4 bg-dark" id="projects">
+    <section class="py-4 bg-dark overflow-hidden" id="projects">
         <div class="container">
             <div class="text-light lead text-center text-capitalize display-6 p-5">
                 Lifelong hobbyist programmer looking to change careers with experience in developing and deploying software.
@@ -72,7 +72,7 @@
                     <div class="project m-0">
                         <figure class="portfolio-item">
                             <a href="https://reactjs-movie-database.netlify.app/" class="hovereffect" target="_blank" rel="noopener" aria-label="reactdb">
-                                <img class="card-img-top" src="./img/rmdb.png" alt="reactjs-movie-database">
+                                <img class="img-fluid img-thumbnail" src="./img/rmdb.png" alt="reactjs-movie-database">
                                 <div class="overlay">
                                 </div>
                             </a>
@@ -92,7 +92,7 @@
                     <div class="project m-0">
                         <figure class="portfolio-item">
                             <a href="https://github.com/milliorn/Galaxy" class="hovereffect" rel="noopener" target="_blank" aria-label="galaxy">
-                                <img class="card-img-top" src="./img/galaxy.png" alt="">
+                                <img class="img-fluid img-thumbnail" src="./img/galaxy.png" alt="">
                                 <div class="overlay">
                                 </div>
                             </a>
@@ -112,7 +112,7 @@
                     <div class="project m-0">
                         <figure class="portfolio-item">
                             <a href="https://react-material-ui-dictionary.netlify.app" class="hovereffect" aria-label="dictionary" rel="noopener" target="_blank">
-                                <img class="card-img-top" src="./img/dictionary.png" alt="">
+                                <img class="img-fluid img-thumbnail" src="./img/dictionary.png" alt="">
                                 <div class="overlay">
                                 </div>
                             </a>
@@ -133,8 +133,8 @@
 
     <!-- Footer Content -->
     <footer class="bg-secondary" id="footer">
-        <div class="container-fluid">
-            <div class="text-capitalize text-center h3 text-light">
+        <div class="container">
+            <div class="text-capitalize text-center h3 text-white">
                 Want to contact me?
             </div>
             <hr />
@@ -152,8 +152,7 @@
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
