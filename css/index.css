@@ -189,6 +189,11 @@ default effect
   background-color: rgba(215, 48, 39, 0.95);
 }
 
+.hovereffect-title .hover-icons a {
+  opacity: 0.7;
+  margin: 0 4px;
+}
+
 .white .hovereffect .overlay {
   background-color: rgba(255, 255, 255, 0.75);
 }
@@ -218,10 +223,24 @@ default effect
   border-bottom-right-radius: 0;
 }
 
-.no-image-border.no-gutter .hovereffect img,
-.no-image-border.no-gutter .hovereffect .overlay {
-  border: none;
-  border-radius: 0;
+.white .hovereffect-title p {
+  color: #686c6d;
+}
+
+.hovereffect-title.project-icons .hover-icons {
+  color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 0;
+  opacity: 1;
+}
+
+.project-icons a:hover,
+.project-icons a:first-child:hover {
+  background-color: #505254 !important;
+  opacity: 1;
 }
 
 .no-image-border .hovereffect img {
@@ -233,6 +252,12 @@ default effect
   -webkit-transform: rotate(-7deg) scale(1.33);
   -ms-transform: rotate(-7deg) scale(1.33);
   transform: rotate(-7deg) scale(1.33);
+}
+
+.no-image-border.no-gutter .hovereffect img,
+.no-image-border.no-gutter .hovereffect .overlay {
+  border: none;
+  border-radius: 0;
 }
 
 .hovereffect-title .project-title-wrapper {
@@ -267,10 +292,6 @@ default effect
   margin: 0;
 }
 
-.white .hovereffect-title p {
-  color: #686c6d;
-}
-
 .hovereffect-title .hover-icons {
   font-size: 16px;
   background: transparent;
@@ -280,16 +301,6 @@ default effect
   right: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-.hovereffect-title.project-icons .hover-icons {
-  color: #fff;
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin-top: 0;
-  opacity: 1;
 }
 
 .white .hovereffect-title .hover-icons {
@@ -321,18 +332,6 @@ default effect
   transition: all 0.5s ease-in-out;
 }
 
-.hovereffect-title.project-icons a {
-  display: inline-block;
-  position: relative;
-  color: #fff;
-  font-size: 11px;
-  line-height: 40px;
-  width: 45px;
-  height: 38px;
-  background: #8e9294;
-  opacity: 0.75;
-}
-
 .hovereffect-title.project-icons a i {
   margin-right: -2px;
 }
@@ -340,12 +339,6 @@ default effect
 .hovereffect-title.project-icons a:first-child {
   background-color: #7c8284;
   margin-right: -4px;
-}
-
-.project-icons a:hover,
-.project-icons a:first-child:hover {
-  background-color: #505254 !important;
-  opacity: 1;
 }
 
 .hovereffect-title.project-icons a:hover {
@@ -360,13 +353,20 @@ default effect
   color: #d73027;
 }
 
-.white .hovereffect-title.project-icons .hover-icons {
-  color: #171819;
+.hovereffect-title.project-icons a {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  font-size: 11px;
+  line-height: 40px;
+  width: 45px;
+  height: 38px;
+  background: #8e9294;
+  opacity: 0.75;
 }
 
-.hovereffect-title .hover-icons a {
-  opacity: 0.7;
-  margin: 0 4px;
+.white .hovereffect-title.project-icons .hover-icons {
+  color: #171819;
 }
 
 .hovereffect-title .hover-icons a {
