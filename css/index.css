@@ -248,10 +248,13 @@ default effect
   border-radius: 5px;
 }
 
+/*
+changed from -7 to 0 so it doesn't twist anymore
+*/
 .hovereffect:hover img {
-  -webkit-transform: rotate(-7deg) scale(1.33);
-  -ms-transform: rotate(-7deg) scale(1.33);
-  transform: rotate(-7deg) scale(1.33);
+  -webkit-transform: rotate(0deg) scale(1.33);
+  -ms-transform: rotate(0deg) scale(1.33);
+  transform: rotate(0deg) scale(1.33);
 }
 
 .no-image-border.no-gutter .hovereffect img,
