@@ -1,4 +1,4 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "style-src https://*.fontawesome.com https://maxcdn.bootstrapcdn.com 'self' ;"
+    Content-Security-Policy = "style-src https://*.jsdelivr.net https://*.fontawesome.com https://maxcdn.bootstrapcdn.com 'self' ;"
