@@ -1,0 +1,7 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "0"
+    X-Content-Type-Options = "nosniff"
+    Content-Security-Policy = "default-src 'self' jsdelivr.net *.jsdelivr.net bootstrapcdn.com *.bootstrapcdn.com; frame-ancestors 'self'; form-action 'self'"
