@@ -15,6 +15,7 @@
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
+    "netlify-plugin-csp-headers": "0.0.1-alpha.8",
     "prettier": "2.4.1"
   }
 }
