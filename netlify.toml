@@ -1,4 +1,4 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self' *.bootstrapcdn.com *.jsdelivr.net"
+    Content-Security-Policy = "default-src 'unsafe-inline' *.bootstrapcdn.com *.jsdelivr.net"
