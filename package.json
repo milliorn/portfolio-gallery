@@ -6,7 +6,8 @@
   "author": "Scott Milliorn",
   "license": "ISC",
   "scripts": {
-    "lint": "npx prettier --write ."
+    "lint": "npx prettier --write .",
+    "clean": "npm prune && npm dedupe && npm install"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
