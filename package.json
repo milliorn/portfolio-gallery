@@ -16,6 +16,6 @@
   },
   "devDependencies": {
     "netlify-plugin-csp-headers": "0.0.1-alpha.8",
-    "prettier": "2.6.1"
+    "prettier": "2.6.2"
   }
 }
