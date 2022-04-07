@@ -1,25 +1,33 @@
 import "./App.css";
-import hero from "./images/hero.jpg";
 
 export default function App() {
   return (
-    <div className="mx-auto 2xl:container">
-      <div className="relative">
-        <img src={hero} alt="hero" className="absolute w-screen h-100" />
-        <div class="table w-full z-10 relative text-white">
-          <div class="table-header-group">
-            <div class="table-row">
-              <div class="table-cell text-center">Home</div>
-              <div class="table-cell text-center">About</div>
-              <div class="table-cell text-center">Skills</div>
-              <div class="table-cell text-center">Contact</div>
-            </div>
+    <div className="mx-auto 2xl:container text-white">
+      <nav id="navbar" className="fixed z-10 table w-full drop-shadow-2xl	">
+        <div className="table-header-group">
+          <div className="table-row text-2xl">
+            <a href="/" className="table-cell text-center">
+              <span className="">Home</span>
+            </a>
+            <a href="/" className="table-cell text-center">
+              <span>About</span>
+            </a>
+            <a href="/" className="table-cell text-center">
+              <span>Skills</span>
+            </a>
+            <a href="/" className="table-cell text-center">
+              <span>Contact</span>
+            </a>
           </div>
         </div>
-        <div class="relative">
-          <h1 className="absolute w-screen text-3xl text-center text-white h-100">
-            React Developer
-          </h1>
+      </nav>
+
+      <div
+        id="hero"
+        className="h-screen w-screen bg-slate-300 bg-[url('./images/hero.jpg')] bg-cover bg-no-repeat"
+      >
+        <div className="grid h-screen w-screen content-center justify-center">
+          <span className=" text-4xl capitalize text-white">Web Developer</span>
         </div>
       </div>
     </div>
