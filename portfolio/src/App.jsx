@@ -3,7 +3,7 @@ import "./App.css";
 export default function App() {
   return (
     <div className="mx-auto 2xl:container text-white">
-      <nav id="navbar" className="fixed z-10 table w-full drop-shadow-2xl	">
+      <nav id="navbar" className="fixed z-10 table w-full drop-shadow-2xl	m-1 p-1">
         <div className="table-header-group">
           <div className="table-row text-2xl">
             <a href="/" className="table-cell text-center">
