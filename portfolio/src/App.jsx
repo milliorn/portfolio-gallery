@@ -11,18 +11,21 @@ export default function App() {
         className="fixed z-10 table w-full p-1 mx-0 bg-black 2xl:container drop-shadow-2xl"
       >
         <div className="table-header-group">
-          <div className="table-row text-2xl">
+          <div className="table-row text-base capitalize">
             <a href="/" className="table-cell text-center">
-              <span className="">Home</span>
+              <span className="">home</span>
             </a>
             <a href="/" className="table-cell text-center">
-              <span>About</span>
+              <span>about</span>
             </a>
             <a href="/" className="table-cell text-center">
-              <span>Skills</span>
+              <span>skills</span>
             </a>
             <a href="/" className="table-cell text-center">
-              <span>Contact</span>
+              <span>projects</span>
+            </a>
+            <a href="/" className="table-cell text-center">
+              <span>contact</span>
             </a>
           </div>
         </div>
@@ -40,7 +43,7 @@ export default function App() {
       </header>
 
       <section id="about">
-        <div className="items-center w-screen mx-auto mb-12 2xl:container sm:flex sm:flex-row sm:mb-24">
+        <div className="items-center w-screen mx-auto my-4 2xl:container sm:flex sm:flex-row">
           {/*<!--Left Col-->*/}
           <div className="flex flex-col items-start justify-center w-full p-8 text-center text-white lg:w-1/2">
             <h1 className="mx-auto my-0 text-4xl font-semibold capitalize">
@@ -56,7 +59,7 @@ export default function App() {
             </button>
           </div>
           {/*<!--Right Col-->*/}
-          <div className="w-screen p-4 ">
+          <div className="w-screen px-4 ">
             <img src={aboutImage} alt="about" className="" />
           </div>
         </div>
@@ -65,7 +68,7 @@ export default function App() {
       <section id="skills" className="bg-white">
         <div className="p-4 mx-auto my-0">
           <p className="text-4xl font-semibold text-center text-black capitalize">
-            Click on the icons to see my work
+            Click an icons to see my work
           </p>
         </div>
         <div className="flex items-center justify-center w-full">
@@ -91,7 +94,7 @@ export default function App() {
             <div class=" text-white bg-purple-800 text-7xl font-bold text-center p-4">
               <SiGatsby />
             </div>
-                        <div class=" text-white bg-purple-700 text-7xl font-bold text-center p-4">
+            <div class=" text-white bg-purple-700 text-7xl font-bold text-center p-4">
               <SiBootstrap />
             </div>
           </div>
