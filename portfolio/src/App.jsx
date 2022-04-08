@@ -1,26 +1,31 @@
 import "./App.css";
 import aboutImage from "./images/about.jpg";
+import { DiReact, DiJavascript1, DiHtml5, DiCss3 } from "react-icons/di";
+import { SiCsharp, SiTailwindcss, SiGatsby, SiBootstrap } from "react-icons/si";
 
 export default function App() {
   return (
-    <div className="container text-white bg-black">
+    <div className="mx-auto text-white 2xl:container">
       <nav
         id="navbar"
-        className="fixed z-10 table w-full drop-shadow-2xl mx-0 p-1 bg-black"
+        className="fixed z-10 table w-full p-1 mx-0 bg-black 2xl:container drop-shadow-2xl"
       >
         <div className="table-header-group">
-          <div className="table-row text-2xl">
+          <div className="table-row text-base capitalize">
             <a href="/" className="table-cell text-center">
-              <span className="">Home</span>
+              <span className="">home</span>
             </a>
             <a href="/" className="table-cell text-center">
-              <span>About</span>
+              <span>about</span>
             </a>
             <a href="/" className="table-cell text-center">
-              <span>Skills</span>
+              <span>skills</span>
             </a>
             <a href="/" className="table-cell text-center">
-              <span>Contact</span>
+              <span>projects</span>
+            </a>
+            <a href="/" className="table-cell text-center">
+              <span>contact</span>
             </a>
           </div>
         </div>
@@ -28,34 +33,70 @@ export default function App() {
 
       <header
         id="hero"
-        className="h-screen w-screen bg-[url('./images/hero.jpg')] bg-cover bg-no-repeat"
+        className="h-screen w-screen bg-[url('./images/hero.jpg')] bg-cover bg-no-repeat 2xl:container"
       >
-        <div className="grid h-screen w-screen content-center justify-center">
-          <span className=" text-4xl capitalize text-white">
+        <div className="grid content-center justify-center w-screen h-screen 2xl:container">
+          <span className="text-4xl text-white capitalize ">
             React Developer
           </span>
         </div>
       </header>
 
       <section id="about">
-        <div className="sm:flex items-center mx-auto mb-12 sm:flex-row sm:mb-24 w-screen">
+        <div className="items-center w-screen mx-auto my-4 2xl:container sm:flex sm:flex-row">
           {/*<!--Left Col-->*/}
-          <div className="flex flex-col text-center items-start justify-center w-full px-8 py-8 lg:w-1/2 text-white">
+          <div className="flex flex-col items-start justify-center w-full p-8 text-center text-white lg:w-1/2">
             <h1 className="mx-auto my-0 text-4xl font-semibold capitalize">
               <span className="">Scott Milliorn</span>
             </h1>
-            <p className="my-4 leading-normal mx-auto">
+            <p className="mx-auto my-4 leading-normal">
               Passionate developer. Experienced game developer. Focused on
               mobile first web development using React and Tailwind. Want to
               know more? Download my resume by clicking on the button.
             </p>
-            <button className="p-1 mx-auto my-0 capitalize bg-gray-500 border border-gray-900 shadow hover:animate-pulse hover:bg-gray-400 text-white hover:text-gray-50 rounded-xl hover:shadow-lg hover:border-transparent">
-              download resume
+            <button className="p-2 mx-auto my-0 text-white capitalize bg-gray-500 border border-gray-900 rounded shadow hover:animate-pulse hover:bg-gray-400 hover:text-gray-50 hover:shadow-lg hover:border-transparent">
+              resume
             </button>
           </div>
           {/*<!--Right Col-->*/}
-          <div className="p-4 w-screen bg-black">
+          <div className="w-screen px-4 ">
             <img src={aboutImage} alt="about" className="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" className="bg-white">
+        <div className="p-4 mx-auto my-0">
+          <p className="text-4xl font-semibold text-center text-black capitalize">
+            Click an icons to see my work
+          </p>
+        </div>
+        <div className="flex items-center justify-center w-full">
+          <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 p-4">
+            <div class=" text-cyan-300 text-7xl font-bold text-center p-4 border">
+              <DiReact />
+            </div>
+            <div class=" text-black bg-amber-300 text-7xl font-bold text-center p-4">
+              <DiJavascript1 />
+            </div>
+            <div class=" text-white bg-orange-600 text-7xl font-bold text-center p-4">
+              <DiHtml5 />
+            </div>
+            <div class=" text-white bg-lightBlue-700 text-7xl font-bold text-center p-4">
+              <DiCss3 />
+            </div>
+            <div class=" text-white bg-green-600 text-7xl font-bold text-center p-4">
+              <SiCsharp />
+            </div>
+            <div class=" text-white bg-lightBlue-400 text-7xl font-bold text-center p-4">
+              <SiTailwindcss />
+            </div>
+            <div class=" text-white bg-purple-800 text-7xl font-bold text-center p-4">
+              <SiGatsby />
+            </div>
+            <div class=" text-white bg-purple-700 text-7xl font-bold text-center p-4">
+              <SiBootstrap />
+            </div>
           </div>
         </div>
       </section>
