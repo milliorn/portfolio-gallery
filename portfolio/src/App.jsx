@@ -14,7 +14,7 @@ import {
 
 export default function App() {
   return (
-    <div className="mx-auto text-white 2xl:container font-sans">
+    <div className="mx-auto font-sans text-white 2xl:container">
       <nav
         id="navbar"
         className="fixed z-10 table w-full px-0 py-2 mx-0 bg-black 2xl:container drop-shadow-2xl"
@@ -30,13 +30,14 @@ export default function App() {
               <span className="text-sm">bout</span>
             </a>
             <a href="/" className="table-cell text-center">
-              <span className="">s</span>
-              <span className="text-xs">kills</span>
-            </a>
-            <a href="/" className="table-cell text-center">
               <span className="">p</span>
               <span className="text-xs">rojects</span>
             </a>
+            <a href="/" className="table-cell text-center">
+              <span className="">s</span>
+              <span className="text-xs">kills</span>
+            </a>
+
             <a href="/" className="table-cell text-center">
               <span className="">c</span>
               <span className="text-xs">ontact</span>
@@ -47,7 +48,7 @@ export default function App() {
 
       <header
         id="hero"
-        className="h-screen w-screen bg-[url('./images/hero.jpg')] bg-cover bg-no-repeat 2xl:container"
+        className="h-screen w-full bg-[url('./images/hero.jpg')] bg-cover bg-no-repeat 2xl:container"
       >
         <div className="grid content-center justify-center w-screen h-screen 2xl:container">
           <span className="text-4xl text-white capitalize ">
@@ -60,7 +61,7 @@ export default function App() {
         <div className="items-center w-screen mx-auto my-4 2xl:container sm:flex sm:flex-row">
           {/*<!--Left Col-->*/}
           <div className="flex flex-col items-start justify-center w-full p-8 text-center text-white lg:w-1/2">
-            <h1 className="mx-auto my-0 text-4xl font-semibold capitalize leading-loose">
+            <h1 className="mx-auto my-0 text-4xl font-semibold leading-loose capitalize">
               <span className="">Scott Milliorn</span>
             </h1>
             <p className="mx-auto my-2 leading-normal">
@@ -68,28 +69,119 @@ export default function App() {
               mobile first web development using React and Tailwind. Want to
               know more? Download my resume by clicking on the button.
             </p>
-            <button className="p-2 outline outline-offset-1 outline-white  mx-auto my-4  text-white capitalize bg-gray-500 border border-gray-900 rounded shadow hover:animate-pulse hover:bg-gray-400 hover:text-gray-50 hover:shadow-lg hover:border-transparent">
+            <button className="p-2 mx-auto my-4 text-white capitalize bg-gray-500 border border-gray-900 rounded shadow outline outline-offset-1 outline-white hover:animate-pulse hover:bg-gray-400 hover:text-gray-50 hover:shadow-lg hover:border-transparent">
               resume
             </button>
           </div>
           {/*<!--Right Col-->*/}
-          <div className="w-screen sm:w-full px-4 sm:px-0 sm:pr-4">
+          <div className="w-screen px-4 sm:w-full sm:px-0 sm:pr-4">
             <img src={aboutImage} alt="about" className="" />
           </div>
         </div>
       </section>
 
-      <section className="sm:flex p-1">
-        <div className="bg-neutral-900 flex-1 sm:order-2 leading-loose">
+      <section id="projects" className="pt-4 m-4 bg-neutral-900">
+        <h1 className="text-2xl text-center capitalize ">
+          open source projects
+        </h1>
+
+        <div className="m-4 sm:flex">
+          <div className="relative border rounded-lg shadow-md max-w-fit bg-neutral-100 border-neutral-500">
+            <div className="p-5">
+              <h5 className="mb-2 text-lg font-bold text-center text-gray-900 capitalize">
+                Neverwinter Nights .NET
+              </h5>
+              <p className="mb-3 text-sm text-center text-neutral-900">
+                Open source organization for Neverwinter Nights: Enhanced
+                Edition. We have developed an API called Anvil for the
+                Neverwinter Nights Server. NWN.Masterlist is used to consume
+                Master Server API. NWN.Core is used to interlop functions for
+                NWNX .Net and wrap core functions. NWN.Native is a Low-level
+                NWNXLib bindings for managed to native interop. lorem
+              </p>
+              <br />
+              <div className="absolute bottom-0 left-0 right-0 m-1 text-center">
+                <a
+                  className="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center capitalize rounded-lg text-neutral-50 bg-neutral-700 neutral:bg-neutral-900 focus:ring-4 neutral:ring-neutral-700"
+                  href="https://github.com/nwn-dotnet"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  learn more
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="m-4 sm:flex">
+          <div className="relative border rounded-lg shadow-md max-w-fit bg-neutral-100 border-neutral-500">
+            <div className="p-5">
+              <h5 className="mb-2 text-lg font-bold text-center text-gray-900 capitalize">
+                Gatsby Recipe Page
+              </h5>
+              <p className="mb-3 text-sm text-center text-neutral-900">
+                Recipe website done in GatsbyJS full stack frontend framework.
+                It uses Contentful CMS, source controlled on Github, built in
+                Gatsby Cloud and deployed onto Netlify. It also serves as my
+                personal site for cooking recipes.
+              </p>
+              <br />
+
+              <div className="absolute bottom-0 left-0 right-0 m-1 text-center">
+                <a
+                  className="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center capitalize rounded-lg text-neutral-50 bg-neutral-700 neutral:bg-neutral-900 focus:ring-4 neutral:ring-neutral-700"
+                  href="https://gatsby-recipe-page.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Visit my site
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="m-4 sm:flex">
+          <div className="relative border rounded-lg shadow-md max-w-fit bg-neutral-100 border-neutral-500">
+            <div className="p-5">
+              <h5 className="mb-2 text-lg font-bold text-center text-gray-900 capitalize">
+                Everyday Iron Workout Warehouse
+              </h5>
+              <p className="mb-3 text-sm text-center text-neutral-900">
+                Open source code for Everyday Iron Workout Warehouse Gym in
+                Fresno, California. I develop there website, assist with other
+                tech and internet duties and consult them on there social media
+                sites. I also workout here and help assist coaches.
+              </p>
+              <br />
+
+              <div className="absolute bottom-0 left-0 right-0 m-1 text-center">
+                <a
+                  className="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center capitalize rounded-lg text-neutral-50 bg-neutral-700 neutral:bg-neutral-900 focus:ring-4 neutral:ring-neutral-700"
+                  href="https://milliorn.github.io/Everyday-Iron/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  See my work
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="p-1 sm:flex">
+        <div className="flex-1 leading-loose bg-neutral-900 sm:order-2">
           <div className="p-4 mx-auto my-0">
-            <h2 className="text-3xl text-center capitalize leading-loose">
+            <h2 className="text-3xl leading-loose text-center capitalize">
               what i enjoy doing
             </h2>
-            <h3 className="text-center text-lg font-semibold leading-loose">
+            <h3 className="text-lg font-semibold leading-loose text-center">
               Click an icon to see my work.
             </h3>
           </div>
-          <p className="leading-loose m-4 hidden sm:flex">
+          <p className="hidden m-4 leading-loose sm:flex">
             My experience with Javascript is mostly with ReactJS. My CSS
             experience beyond vanilla is with Bootstrap and Tailwind. These days
             I prefer to use Tailwind, even with vanilla HTML sites. GatsbyJS
@@ -99,10 +191,10 @@ export default function App() {
             API. Recently I have been learning Rust.
           </p>
         </div>
-        <div className="bg-neutral-900 flex-1	p-4">
+        <div className="flex-1 p-4 bg-neutral-900">
           <div className="flex items-center justify-center w-full">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 gap-4 pb-4">
-              <div className=" text-black bg-amber-300 text-7xl p-4">
+            <div className="grid grid-cols-2 gap-4 pb-4 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6">
+              <div className="p-4 text-black bg-amber-300 text-7xl">
                 <a
                   href="https://github.com/milliorn?tab=repositories&q=&type=public&language=javascript&sort="
                   target="_blank"
@@ -112,7 +204,7 @@ export default function App() {
                   <DiJavascript1 />
                 </a>
               </div>
-              <div className=" text-white bg-orange-600 text-7xl text-center p-4">
+              <div className="p-4 text-center text-white bg-orange-600 text-7xl">
                 <a
                   href="https://github.com/milliorn?tab=repositories&q=&type=public&language=html&sort="
                   target="_blank"
@@ -122,7 +214,7 @@ export default function App() {
                   <DiHtml5 />
                 </a>
               </div>
-              <div className=" text-white bg-lightBlue-700 text-7xl text-center p-4">
+              <div className="p-4 text-center text-white bg-lightBlue-700 text-7xl">
                 <a
                   href="https://github.com/milliorn?tab=repositories&q=css&type=public&language=&sort="
                   target="_blank"
@@ -132,7 +224,7 @@ export default function App() {
                   <DiCss3 />
                 </a>
               </div>
-              <div className=" text-lightBlue-500 bg-white text-7xl text-center p-4 border-2">
+              <div className="p-4 text-center bg-white border-2 text-lightBlue-500 text-7xl">
                 <a
                   href="https://github.com/milliorn?tab=repositories&q=react&type=public&language=&sort="
                   target="_blank"
@@ -142,7 +234,7 @@ export default function App() {
                   <DiReact />
                 </a>
               </div>
-              <div className=" text-white bg-green-600 text-7xl text-center p-4">
+              <div className="p-4 text-center text-white bg-green-600 text-7xl">
                 <a
                   href="https://github.com/milliorn?tab=repositories&q=&type=public&language=c%23&sort="
                   target="_blank"
@@ -152,7 +244,7 @@ export default function App() {
                   <SiCsharp />
                 </a>
               </div>
-              <div className=" text-lightBlue-500 bg-white text-7xl text-center p-4 border-2">
+              <div className="p-4 text-center bg-white border-2 text-lightBlue-500 text-7xl">
                 <a
                   href="https://github.com/milliorn?tab=repositories&q=tailwind&type=public&language=&sort="
                   target="_blank"
@@ -162,7 +254,7 @@ export default function App() {
                   <SiTailwindcss />
                 </a>
               </div>
-              <div className=" text-white bg-purple-700 text-7xl text-center p-4">
+              <div className="p-4 text-center text-white bg-purple-700 text-7xl">
                 <a
                   href="https://github.com/milliorn?tab=repositories&q=gatsby&type=public&language=&sort="
                   target="_blank"
@@ -172,7 +264,7 @@ export default function App() {
                   <SiGatsby />
                 </a>
               </div>
-              <div className=" text-white bg-purple-800 text-7xl text-center p-4">
+              <div className="p-4 text-center text-white bg-purple-800 text-7xl">
                 <a
                   href="https://github.com/milliorn?tab=repositories&q=bootstrap&type=public&language=&sort="
                   target="_blank"
@@ -182,7 +274,7 @@ export default function App() {
                   <SiBootstrap />
                 </a>
               </div>
-              <div className=" text-white bg-orange-700 text-7xl text-center p-4">
+              <div className="p-4 text-center text-white bg-orange-700 text-7xl">
                 <a
                   href="https://github.com/milliorn?tab=repositories&q=postcss&type=public&language=&sort="
                   target="_blank"
@@ -192,7 +284,7 @@ export default function App() {
                   <SiPostcss />
                 </a>
               </div>
-              <div className=" text-black bg-white text-7xl text-center p-4 border-2">
+              <div className="p-4 text-center text-black bg-white border-2 text-7xl">
                 <a
                   href="https://github.com/milliorn?tab=repositories&q=&type=public&language=rust&sort="
                   target="_blank"
@@ -202,7 +294,7 @@ export default function App() {
                   <SiRust />
                 </a>
               </div>
-              <div className=" text-lightBlue-500 bg-white text-7xl text-center p-4 border-2">
+              <div className="p-4 text-center bg-white border-2 text-lightBlue-500 text-7xl">
                 <a
                   href="https://github.com/milliorn?tab=repositories&q=docker&type=public&language=&sort="
                   target="_blank"
@@ -212,7 +304,7 @@ export default function App() {
                   <SiDocker />
                 </a>
               </div>
-              <div className=" text-white bg-orange-600 text-7xl text-center p-4">
+              <div className="p-4 text-center text-white bg-orange-600 text-7xl">
                 <a
                   href="https://github.com/milliorn"
                   target="_blank"
