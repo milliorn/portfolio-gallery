@@ -1,31 +1,45 @@
 import "./App.css";
 import aboutImage from "./images/about.jpg";
 import { DiReact, DiJavascript1, DiHtml5, DiCss3 } from "react-icons/di";
-import { SiCsharp, SiTailwindcss, SiGatsby, SiBootstrap } from "react-icons/si";
+import {
+  SiCsharp,
+  SiTailwindcss,
+  SiGatsby,
+  SiBootstrap,
+  SiPostcss,
+  SiRust,
+  SiDocker,
+  SiGit,
+} from "react-icons/si";
 
 export default function App() {
   return (
-    <div className="mx-auto text-white 2xl:container">
+    <div className="mx-auto text-white 2xl:container font-sans">
       <nav
         id="navbar"
-        className="fixed z-10 table w-full p-1 mx-0 bg-black 2xl:container drop-shadow-2xl"
+        className="fixed z-10 table w-full px-0 py-2 mx-0 bg-black 2xl:container drop-shadow-2xl"
       >
         <div className="table-header-group">
-          <div className="table-row text-base capitalize">
+          <div className="table-row text-lg capitalize divide-x">
             <a href="/" className="table-cell text-center">
-              <span className="">home</span>
+              <span className="">h</span>
+              <span className="text-sm">ome</span>
             </a>
             <a href="/" className="table-cell text-center">
-              <span>about</span>
+              <span className="">a</span>
+              <span className="text-sm">bout</span>
             </a>
             <a href="/" className="table-cell text-center">
-              <span>skills</span>
+              <span className="">s</span>
+              <span className="text-xs">kills</span>
             </a>
             <a href="/" className="table-cell text-center">
-              <span>projects</span>
+              <span className="">p</span>
+              <span className="text-xs">rojects</span>
             </a>
             <a href="/" className="table-cell text-center">
-              <span>contact</span>
+              <span className="">c</span>
+              <span className="text-xs">ontact</span>
             </a>
           </div>
         </div>
@@ -42,7 +56,7 @@ export default function App() {
         </div>
       </header>
 
-      <section id="about">
+      <section id="about" className="bg-neutral-900">
         <div className="items-center w-screen mx-auto my-4 2xl:container sm:flex sm:flex-row">
           {/*<!--Left Col-->*/}
           <div className="flex flex-col items-start justify-center w-full p-8 text-center text-white lg:w-1/2">
@@ -54,48 +68,149 @@ export default function App() {
               mobile first web development using React and Tailwind. Want to
               know more? Download my resume by clicking on the button.
             </p>
-            <button className="p-2 mx-auto my-0 text-white capitalize bg-gray-500 border border-gray-900 rounded shadow hover:animate-pulse hover:bg-gray-400 hover:text-gray-50 hover:shadow-lg hover:border-transparent">
+            <button className="p-2 outline outline-offset-1 outline-white  mx-auto my-0  text-white capitalize bg-gray-500 border border-gray-900 rounded shadow hover:animate-pulse hover:bg-gray-400 hover:text-gray-50 hover:shadow-lg hover:border-transparent">
               resume
             </button>
           </div>
           {/*<!--Right Col-->*/}
-          <div className="w-screen px-4 ">
+          <div className="w-screen sm:w-full px-4 sm:px-0 sm:pr-4">
             <img src={aboutImage} alt="about" className="" />
           </div>
         </div>
       </section>
 
-      <section id="skills" className="bg-white">
-        <div className="p-4 mx-auto my-0">
-          <p className="text-4xl font-semibold text-center text-black capitalize">
-            Click an icons to see my work
-          </p>
+      <section className="sm:flex p-1">
+        <div className="bg-neutral-900 flex-1 sm:order-2">
+          <div className="p-4 mx-auto my-0">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center capitalize">
+              what i enjoy doing
+            </h2>
+            <p className="text-center">Click an icon to see my work. </p>
+          </div>
         </div>
-        <div className="flex items-center justify-center w-full">
-          <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 p-4">
-            <div class=" text-cyan-300 text-7xl font-bold text-center p-4 border">
-              <DiReact />
-            </div>
-            <div class=" text-black bg-amber-300 text-7xl font-bold text-center p-4">
-              <DiJavascript1 />
-            </div>
-            <div class=" text-white bg-orange-600 text-7xl font-bold text-center p-4">
-              <DiHtml5 />
-            </div>
-            <div class=" text-white bg-lightBlue-700 text-7xl font-bold text-center p-4">
-              <DiCss3 />
-            </div>
-            <div class=" text-white bg-green-600 text-7xl font-bold text-center p-4">
-              <SiCsharp />
-            </div>
-            <div class=" text-white bg-lightBlue-400 text-7xl font-bold text-center p-4">
-              <SiTailwindcss />
-            </div>
-            <div class=" text-white bg-purple-800 text-7xl font-bold text-center p-4">
-              <SiGatsby />
-            </div>
-            <div class=" text-white bg-purple-700 text-7xl font-bold text-center p-4">
-              <SiBootstrap />
+        <div className="bg-neutral-900 flex-1	p-4">
+          <div className="flex items-center justify-center w-full">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 pb-4">
+              <div className=" text-black bg-amber-300 text-7xl p-4">
+                <a
+                  href="https://github.com/milliorn?tab=repositories&q=&type=public&language=javascript&sort="
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cursor-pointer"
+                >
+                  <DiJavascript1 />
+                </a>
+              </div>
+              <div className=" text-white bg-orange-600 text-7xl text-center p-4">
+                <a
+                  href="https://github.com/milliorn?tab=repositories&q=&type=public&language=html&sort="
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cursor-pointer"
+                >
+                  <DiHtml5 />
+                </a>
+              </div>
+              <div className=" text-white bg-lightBlue-700 text-7xl text-center p-4">
+                <a
+                  href="https://github.com/milliorn?tab=repositories&q=css&type=public&language=&sort="
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cursor-pointer"
+                >
+                  <DiCss3 />
+                </a>
+              </div>
+              <div className=" text-lightBlue-500 bg-white text-7xl text-center p-4 border-2">
+                <a
+                  href="https://github.com/milliorn?tab=repositories&q=react&type=public&language=&sort="
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cursor-pointer"
+                >
+                  <DiReact />
+                </a>
+              </div>
+              <div className=" text-white bg-green-600 text-7xl text-center p-4">
+                <a
+                  href="https://github.com/milliorn?tab=repositories&q=&type=public&language=c%23&sort="
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cursor-pointer"
+                >
+                  <SiCsharp />
+                </a>
+              </div>
+              <div className=" text-lightBlue-500 bg-white text-7xl text-center p-4 border-2">
+                <a
+                  href="https://github.com/milliorn?tab=repositories&q=tailwind&type=public&language=&sort="
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cursor-pointer"
+                >
+                  <SiTailwindcss />
+                </a>
+              </div>
+              <div className=" text-white bg-purple-700 text-7xl text-center p-4">
+                <a
+                  href="https://github.com/milliorn?tab=repositories&q=gatsby&type=public&language=&sort="
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cursor-pointer"
+                >
+                  <SiGatsby />
+                </a>
+              </div>
+              <div className=" text-white bg-purple-800 text-7xl text-center p-4">
+                <a
+                  href="https://github.com/milliorn?tab=repositories&q=bootstrap&type=public&language=&sort="
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cursor-pointer"
+                >
+                  <SiBootstrap />
+                </a>
+              </div>
+              <div className=" text-white bg-orange-700 text-7xl text-center p-4">
+                <a
+                  href="https://github.com/milliorn?tab=repositories&q=postcss&type=public&language=&sort="
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cursor-pointer"
+                >
+                  <SiPostcss />
+                </a>
+              </div>
+              <div className=" text-black bg-white text-7xl text-center p-4 border-2">
+                <a
+                  href="https://github.com/milliorn?tab=repositories&q=&type=public&language=rust&sort="
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cursor-pointer"
+                >
+                  <SiRust />
+                </a>
+              </div>
+              <div className=" text-lightBlue-500 bg-white text-7xl text-center p-4 border-2">
+                <a
+                  href="https://github.com/milliorn?tab=repositories&q=docker&type=public&language=&sort="
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cursor-pointer"
+                >
+                  <SiDocker />
+                </a>
+              </div>
+              <div className=" text-white bg-orange-600 text-7xl text-center p-4">
+                <a
+                  href="https://github.com/milliorn"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cursor-pointer"
+                >
+                  <SiGit />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -103,3 +218,136 @@ export default function App() {
     </div>
   );
 }
+
+/*      <section id="skills" className="">
+        <div className="p-4 mx-auto my-0 sm:order-2">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center capitalize">
+            Click an icon to see my work
+          </p>
+        </div>
+        <div className="flex items-center justify-center w-full">
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-4 pb-4">
+            <div className=" text-black bg-amber-300 text-7xl p-4">
+              <a
+                href="https://github.com/milliorn?tab=repositories&q=&type=public&language=javascript&sort="
+                target="_blank"
+                rel="noreferrer"
+                className="cursor-pointer"
+              >
+                <DiJavascript1 />
+              </a>
+            </div>
+            <div className=" text-white bg-orange-600 text-7xl text-center p-4">
+              <a
+                href="https://github.com/milliorn?tab=repositories&q=&type=public&language=html&sort="
+                target="_blank"
+                rel="noreferrer"
+                className="cursor-pointer"
+              >
+                <DiHtml5 />
+              </a>
+            </div>
+            <div className=" text-white bg-lightBlue-700 text-7xl text-center p-4">
+              <a
+                href="https://github.com/milliorn?tab=repositories&q=css&type=public&language=&sort="
+                target="_blank"
+                rel="noreferrer"
+                className="cursor-pointer"
+              >
+                <DiCss3 />
+              </a>
+            </div>
+            <div className=" text-lightBlue-500 bg-white text-7xl text-center p-4 border-2">
+              <a
+                href="https://github.com/milliorn?tab=repositories&q=react&type=public&language=&sort="
+                target="_blank"
+                rel="noreferrer"
+                className="cursor-pointer"
+              >
+                <DiReact />
+              </a>
+            </div>
+            <div className=" text-white bg-green-600 text-7xl text-center p-4">
+              <a
+                href="https://github.com/milliorn?tab=repositories&q=&type=public&language=c%23&sort="
+                target="_blank"
+                rel="noreferrer"
+                className="cursor-pointer"
+              >
+                <SiCsharp />
+              </a>
+            </div>
+            <div className=" text-lightBlue-500 bg-white text-7xl text-center p-4 border-2">
+              <a
+                href="https://github.com/milliorn?tab=repositories&q=tailwind&type=public&language=&sort="
+                target="_blank"
+                rel="noreferrer"
+                className="cursor-pointer"
+              >
+                <SiTailwindcss />
+              </a>
+            </div>
+            <div className=" text-white bg-purple-700 text-7xl text-center p-4">
+              <a
+                href="https://github.com/milliorn?tab=repositories&q=gatsby&type=public&language=&sort="
+                target="_blank"
+                rel="noreferrer"
+                className="cursor-pointer"
+              >
+                <SiGatsby />
+              </a>
+            </div>
+            <div className=" text-white bg-purple-800 text-7xl text-center p-4">
+              <a
+                href="https://github.com/milliorn?tab=repositories&q=bootstrap&type=public&language=&sort="
+                target="_blank"
+                rel="noreferrer"
+                className="cursor-pointer"
+              >
+                <SiBootstrap />
+              </a>
+            </div>
+            <div className=" text-white bg-orange-700 text-7xl text-center p-4">
+              <a
+                href="https://github.com/milliorn?tab=repositories&q=postcss&type=public&language=&sort="
+                target="_blank"
+                rel="noreferrer"
+                className="cursor-pointer"
+              >
+                <SiPostcss />
+              </a>
+            </div>
+            <div className=" text-black bg-white text-7xl text-center p-4 border-2">
+              <a
+                href="https://github.com/milliorn?tab=repositories&q=&type=public&language=rust&sort="
+                target="_blank"
+                rel="noreferrer"
+                className="cursor-pointer"
+              >
+                <SiRust />
+              </a>
+            </div>
+            <div className=" text-lightBlue-500 bg-white text-7xl text-center p-4 border-2">
+              <a
+                href="https://github.com/milliorn?tab=repositories&q=docker&type=public&language=&sort="
+                target="_blank"
+                rel="noreferrer"
+                className="cursor-pointer"
+              >
+                <SiDocker />
+              </a>
+            </div>
+            <div className=" text-white bg-orange-600 text-7xl text-center p-4">
+              <a
+                href="https://github.com/milliorn"
+                target="_blank"
+                rel="noreferrer"
+                className="cursor-pointer"
+              >
+                <SiGit />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      */
