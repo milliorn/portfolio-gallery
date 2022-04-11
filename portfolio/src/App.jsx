@@ -22,6 +22,7 @@ import "./App.css";
 import resumePDF from "./assets/psm-resume.pdf";
 import aboutImage from "./images/about.jpg";
 import NavBar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 export default function App() {
   const homeRef = useRef();
@@ -58,16 +59,13 @@ export default function App() {
         spanClassName="text-sm"
       />
 
-      <header
+      <Hero
         id="hero"
         className="h-screen w-full bg-[url('./images/hero.jpg')] bg-cover bg-no-repeat container"
-      >
-        <div className="container grid content-center justify-center w-screen h-screen">
-          <span className="text-4xl text-white capitalize ">
-            React Developer
-          </span>
-        </div>
-      </header>
+        divClassName="container grid content-center justify-center w-screen h-screen"
+        spanClassName="text-4xl text-white capitalize "
+        spanText="React Developer"
+      />
 
       <section id="about" className="bg-neutral-900" ref={aboutRef}>
         <div className="container items-center w-screen mx-auto my-4 sm:flex sm:flex-row">
