@@ -19,8 +19,9 @@ import {
   SiTwitter,
 } from "react-icons/si";
 import "./App.css";
-import resumePDF from "./data/psm-resume.pdf";
+import resumePDF from "./assets/psm-resume.pdf";
 import aboutImage from "./images/about.jpg";
+import NavBar from "./components/Navbar";
 
 export default function App() {
   const homeRef = useRef();
@@ -29,7 +30,7 @@ export default function App() {
   const skillsRef = useRef();
   const contactRef = useRef();
 
-  function handleScroll(e) {
+  function onClick(e) {
     switch (e.currentTarget.id) {
       case "aboutNav":
         aboutRef.current.scrollIntoView({ behavior: "smooth" });
@@ -51,56 +52,11 @@ export default function App() {
 
   return (
     <div className="container mx-auto font-sans text-white" ref={homeRef}>
-      <nav
-        id="navbar"
-        className="container fixed z-10 table px-0 py-2 mx-0 bg-black drop-shadow-2xl"
-      >
-        <div className="table-header-group">
-          <div className="table-row text-xl capitalize divide-x">
-            <div
-              className="table-cell text-center cursor-pointer"
-              onClick={handleScroll}
-              id="homeNav"
-            >
-              <span className="">h</span>
-              <span className="text-sm">ome</span>
-            </div>
-            <div
-              className="table-cell text-center cursor-pointer"
-              onClick={handleScroll}
-              id="aboutNav"
-            >
-              <span className="">a</span>
-              <span className="text-sm">bout</span>
-            </div>
-            <div
-              className="table-cell text-center cursor-pointer"
-              onClick={handleScroll}
-              id="projectNav"
-            >
-              <span className="">p</span>
-              <span className="text-sm">rojects</span>
-            </div>
-            <div
-              className="table-cell text-center cursor-pointer"
-              onClick={handleScroll}
-              id="skillsNav"
-            >
-              <span className="">s</span>
-              <span className="text-sm">kills</span>
-            </div>
-
-            <div
-              className="table-cell text-center cursor-pointer"
-              onClick={handleScroll}
-              id="contactNav"
-            >
-              <span className="">c</span>
-              <span className="text-sm">ontact</span>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <NavBar
+        className="table-cell text-center cursor-pointer"
+        onClick={onClick}
+        spanClassName="text-sm"
+      />
 
       <header
         id="hero"
