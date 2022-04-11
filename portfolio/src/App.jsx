@@ -1,16 +1,24 @@
+import {
+  SiBootstrap,
+  SiCsharp,
+  SiCss3,
+  SiDocker,
+  SiGatsby,
+  SiGit,
+  SiGithub,
+  SiGmail,
+  SiHtml5,
+  SiJavascript,
+  SiLeetcode,
+  SiLinkedin,
+  SiPostcss,
+  SiReact,
+  SiRust,
+  SiTailwindcss,
+  SiTwitter,
+} from "react-icons/si";
 import "./App.css";
 import aboutImage from "./images/about.jpg";
-import { DiReact, DiJavascript1, DiHtml5, DiCss3 } from "react-icons/di";
-import {
-  SiCsharp,
-  SiTailwindcss,
-  SiGatsby,
-  SiBootstrap,
-  SiPostcss,
-  SiRust,
-  SiDocker,
-  SiGit,
-} from "react-icons/si";
 
 export default function App() {
   return (
@@ -21,24 +29,24 @@ export default function App() {
       >
         <div className="table-header-group">
           <div className="table-row text-xl capitalize divide-x">
-            <a href="/" className="table-cell text-center">
+            <a href="#hero" className="table-cell text-center">
               <span className="">h</span>
               <span className="text-sm">ome</span>
             </a>
-            <a href="/" className="table-cell text-center">
+            <a href="#about" className="table-cell text-center">
               <span className="">a</span>
               <span className="text-sm">bout</span>
             </a>
-            <a href="/" className="table-cell text-center">
+            <a href="#projects" className="table-cell text-center">
               <span className="">p</span>
               <span className="text-sm">rojects</span>
             </a>
-            <a href="/" className="table-cell text-center">
+            <a href="#skills" className="table-cell text-center">
               <span className="">s</span>
               <span className="text-sm">kills</span>
             </a>
 
-            <a href="/" className="table-cell text-center">
+            <a href="#contact" className="table-cell text-center">
               <span className="">c</span>
               <span className="text-sm">ontact</span>
             </a>
@@ -59,7 +67,6 @@ export default function App() {
 
       <section id="about" className="bg-neutral-900">
         <div className="container items-center w-screen mx-auto my-4 sm:flex sm:flex-row">
-          {/*<!--Left Col-->*/}
           <div className="flex flex-col items-start justify-center w-full p-8 text-center text-white lg:w-1/2">
             <h1 className="mx-auto my-0 text-4xl font-semibold leading-loose capitalize">
               <span className="">Scott Milliorn</span>
@@ -69,11 +76,14 @@ export default function App() {
               mobile first web development using React and Tailwind. Want to
               know more? Download my resume by clicking on the button.
             </p>
-            <button className="p-2 mx-auto my-4 text-white capitalize bg-gray-500 border border-gray-900 rounded shadow outline outline-offset-1 outline-white hover:animate-pulse hover:bg-gray-400 hover:text-gray-50 hover:shadow-lg hover:border-transparent">
+            <a
+              download
+              href="./data/psm-resume.pdf"
+              className="p-2 mx-auto my-4 text-white capitalize bg-gray-500 border border-gray-900 rounded shadow outline outline-offset-1 outline-white hover:animate-pulse hover:bg-gray-400 hover:text-gray-50 hover:shadow-lg hover:border-transparent"
+            >
               resume
-            </button>
+            </a>
           </div>
-          {/*<!--Right Col-->*/}
           <div className="w-screen px-4 sm:w-full sm:px-0">
             <img src={aboutImage} alt="about" className="" />
           </div>
@@ -171,7 +181,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="p-1 sm:flex">
+      <section className="p-1 sm:flex" id="skills">
         <div className="flex-1 leading-loose bg-neutral-900 sm:order-2">
           <div className="p-4 mx-auto my-0">
             <h2 className="text-3xl leading-loose text-center capitalize">
@@ -201,7 +211,7 @@ export default function App() {
                   rel="noreferrer"
                   className="cursor-pointer"
                 >
-                  <DiJavascript1 />
+                  <SiJavascript />
                 </a>
               </div>
               <div className="p-4 text-center text-white bg-orange-600 text-7xl">
@@ -211,7 +221,7 @@ export default function App() {
                   rel="noreferrer"
                   className="cursor-pointer"
                 >
-                  <DiHtml5 />
+                  <SiHtml5 />
                 </a>
               </div>
               <div className="p-4 text-center text-white bg-lightBlue-700 text-7xl">
@@ -221,7 +231,7 @@ export default function App() {
                   rel="noreferrer"
                   className="cursor-pointer"
                 >
-                  <DiCss3 />
+                  <SiCss3 />
                 </a>
               </div>
               <div className="p-4 text-center bg-white border-2 text-lightBlue-500 text-7xl">
@@ -231,7 +241,7 @@ export default function App() {
                   rel="noreferrer"
                   className="cursor-pointer"
                 >
-                  <DiReact />
+                  <SiReact />
                 </a>
               </div>
               <div className="p-4 text-center text-white bg-green-600 text-7xl">
@@ -318,6 +328,55 @@ export default function App() {
           </div>
         </div>
       </section>
+
+      <footer className="m-1 bg-neutral-900" id="contact">
+        <h2 className="m-4 text-2xl text-center capitalize">
+          how to contact me?
+        </h2>
+        <p className="text-center capitalize">
+          Click a button to find me on the web.
+        </p>
+        <div class="flex flex-row justify-center">
+          <a
+            href="mailto: scottmilliorn@gmail.com"
+            className="mx-2 my-4 text-3xl text-red-600 sm:text-4xl"
+          >
+            <SiGmail />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/scott-milliorn/"
+            target="_blank"
+            rel="noreferrer"
+            className="mx-2 my-4 text-3xl bg-white text-lightBlue-600 sm:text-4xl"
+          >
+            <SiLinkedin />
+          </a>
+          <a
+            href="https://twitter.com/scottmilliorn"
+            target="_blank"
+            rel="noreferrer"
+            className="mx-2 my-4 text-3xl rounded-full text-lightBlue-500 sm:text-4xl"
+          >
+            <SiTwitter />
+          </a>
+          <a
+            href="https://github.com/milliorn"
+            target="_blank"
+            rel="noreferrer"
+            className="mx-2 my-4 text-3xl text-black bg-white border-black sm:text-4xl"
+          >
+            <SiGithub />
+          </a>
+          <a
+            href="https://leetcode.com/milliorn/"
+            target="_blank"
+            rel="noreferrer"
+            className="mx-2 my-4 text-3xl text-yellow-600 sm:text-4xl"
+          >
+            <SiLeetcode />
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
