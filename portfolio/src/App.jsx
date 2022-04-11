@@ -14,10 +14,10 @@ import {
 
 export default function App() {
   return (
-    <div className="mx-auto font-sans text-white 2xl:container">
+    <div className="container mx-auto font-sans text-white">
       <nav
         id="navbar"
-        className="fixed z-10 table w-full px-0 py-2 mx-0 bg-black 2xl:container drop-shadow-2xl"
+        className="fixed z-10 table w-full px-0 py-2 mx-0 bg-black drop-shadow-2xl"
       >
         <div className="table-header-group">
           <div className="table-row text-lg capitalize divide-x">
@@ -48,9 +48,9 @@ export default function App() {
 
       <header
         id="hero"
-        className="h-screen w-full bg-[url('./images/hero.jpg')] bg-cover bg-no-repeat 2xl:container"
+        className="h-screen w-full bg-[url('./images/hero.jpg')] bg-cover bg-no-repeat container"
       >
-        <div className="grid content-center justify-center w-screen h-screen 2xl:container">
+        <div className="container grid content-center justify-center w-screen h-screen">
           <span className="text-4xl text-white capitalize ">
             React Developer
           </span>
@@ -58,7 +58,7 @@ export default function App() {
       </header>
 
       <section id="about" className="bg-neutral-900">
-        <div className="items-center w-screen mx-auto my-4 2xl:container sm:flex sm:flex-row">
+        <div className="container items-center w-screen mx-auto my-4 sm:flex sm:flex-row">
           {/*<!--Left Col-->*/}
           <div className="flex flex-col items-start justify-center w-full p-8 text-center text-white lg:w-1/2">
             <h1 className="mx-auto my-0 text-4xl font-semibold leading-loose capitalize">
@@ -80,7 +80,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="projects" className="pt-4 m-4 bg-neutral-900">
+      <section id="projects" className="pt-4 m-4 sm:m-0 bg-neutral-900">
         <h1 className="text-2xl text-center capitalize ">
           open source projects
         </h1>
@@ -93,11 +93,11 @@ export default function App() {
               </h5>
               <p className="mb-3 text-sm text-center text-neutral-900">
                 Open source organization for Neverwinter Nights: Enhanced
-                Edition. We have developed an API called Anvil for the
-                Neverwinter Nights Server. NWN.Masterlist is used to consume
-                Master Server API. NWN.Core is used to interlop functions for
-                NWNX .Net and wrap core functions. NWN.Native is a Low-level
-                NWNXLib bindings for managed to native interop. lorem
+                Edition. We developed an API called Anvil for the Neverwinter
+                Nights Server. NWN.Masterlist is used to consume Master Server
+                API. NWN.Core is used to interlop functions for NWNX .Net and
+                wrap core functions. NWN.Native is a Low-level NWNXLib bindings
+                for managed to native interop.
               </p>
               <br />
               <div className="absolute bottom-0 left-0 right-0 m-1 text-center">
@@ -122,9 +122,9 @@ export default function App() {
               </h5>
               <p className="mb-3 text-sm text-center text-neutral-900">
                 Recipe website done in GatsbyJS full stack frontend framework.
-                It uses Contentful CMS, source controlled on Github, built in
-                Gatsby Cloud and deployed onto Netlify. It also serves as my
-                personal site for cooking recipes.
+                It uses Contentful CMS, source controlled on Github, built and
+                previewed in Gatsby Cloud, deployed onto Netlify Serverless
+                Jamstack. It also acts as my personal site for cooking recipes.
               </p>
               <br />
 
@@ -193,7 +193,7 @@ export default function App() {
         </div>
         <div className="flex-1 p-4 bg-neutral-900">
           <div className="flex items-center justify-center w-full">
-            <div className="grid grid-cols-2 gap-4 pb-4 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6">
+            <div className="grid grid-cols-2 gap-4 pb-4 md:grid-cols-3 lg:grid-cols-4">
               <div className="p-4 text-black bg-amber-300 text-7xl">
                 <a
                   href="https://github.com/milliorn?tab=repositories&q=&type=public&language=javascript&sort="
