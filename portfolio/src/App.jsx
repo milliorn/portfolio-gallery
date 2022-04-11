@@ -19,6 +19,7 @@ import {
 } from "react-icons/si";
 import "./App.css";
 import aboutImage from "./images/about.jpg";
+import resumePDF from "./data/psm-resume.pdf";
 
 export default function App() {
   return (
@@ -77,9 +78,11 @@ export default function App() {
               know more? Download my resume by clicking on the button.
             </p>
             <a
-              download
-              href="./data/psm-resume.pdf"
+              download="PSM-Resume"
+              href={resumePDF}
+              target="_blank"
               className="p-2 mx-auto my-4 text-white capitalize bg-gray-500 border border-gray-900 rounded shadow outline outline-offset-1 outline-white hover:animate-pulse hover:bg-gray-400 hover:text-gray-50 hover:shadow-lg hover:border-transparent"
+              rel="noreferrer"
             >
               resume
             </a>
