@@ -17,10 +17,10 @@ export default function App() {
     <div className="container mx-auto font-sans text-white">
       <nav
         id="navbar"
-        className="fixed z-10 table w-full px-0 py-2 mx-0 bg-black drop-shadow-2xl"
+        className="container fixed z-10 table px-0 py-2 mx-0 bg-black drop-shadow-2xl"
       >
         <div className="table-header-group">
-          <div className="table-row text-lg capitalize divide-x">
+          <div className="table-row text-xl capitalize divide-x">
             <a href="/" className="table-cell text-center">
               <span className="">h</span>
               <span className="text-sm">ome</span>
@@ -31,16 +31,16 @@ export default function App() {
             </a>
             <a href="/" className="table-cell text-center">
               <span className="">p</span>
-              <span className="text-xs">rojects</span>
+              <span className="text-sm">rojects</span>
             </a>
             <a href="/" className="table-cell text-center">
               <span className="">s</span>
-              <span className="text-xs">kills</span>
+              <span className="text-sm">kills</span>
             </a>
 
             <a href="/" className="table-cell text-center">
               <span className="">c</span>
-              <span className="text-xs">ontact</span>
+              <span className="text-sm">ontact</span>
             </a>
           </div>
         </div>
@@ -74,7 +74,7 @@ export default function App() {
             </button>
           </div>
           {/*<!--Right Col-->*/}
-          <div className="w-screen px-4 sm:w-full sm:px-0 sm:pr-4">
+          <div className="w-screen px-4 sm:w-full sm:px-0">
             <img src={aboutImage} alt="about" className="" />
           </div>
         </div>
