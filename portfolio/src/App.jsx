@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import {
   SiBootstrap,
   SiCsharp,
@@ -18,39 +19,85 @@ import {
   SiTwitter,
 } from "react-icons/si";
 import "./App.css";
-import aboutImage from "./images/about.jpg";
 import resumePDF from "./data/psm-resume.pdf";
+import aboutImage from "./images/about.jpg";
 
 export default function App() {
+  const homeRef = useRef();
+  const aboutRef = useRef();
+  const projectRef = useRef();
+  const skillsRef = useRef();
+  const contactRef = useRef();
+
+  function handleScroll(e) {
+    switch (e.currentTarget.id) {
+      case "aboutNav":
+        aboutRef.current.scrollIntoView({ behavior: "smooth" });
+        break;
+      case "projectNav":
+        projectRef.current.scrollIntoView({ behavior: "smooth" });
+        break;
+      case "skillsNav":
+        skillsRef.current.scrollIntoView({ behavior: "smooth" });
+        break;
+      case "contactNav":
+        contactRef.current.scrollIntoView({ behavior: "smooth" });
+        break;
+      default:
+        homeRef.current.scrollIntoView({ behavior: "smooth" });
+        break;
+    }
+  }
+
   return (
-    <div className="container mx-auto font-sans text-white">
+    <div className="container mx-auto font-sans text-white" ref={homeRef}>
       <nav
         id="navbar"
         className="container fixed z-10 table px-0 py-2 mx-0 bg-black drop-shadow-2xl"
       >
         <div className="table-header-group">
           <div className="table-row text-xl capitalize divide-x">
-            <a href="#hero" className="table-cell text-center">
+            <div
+              className="table-cell text-center cursor-pointer"
+              onClick={handleScroll}
+              id="homeNav"
+            >
               <span className="">h</span>
               <span className="text-sm">ome</span>
-            </a>
-            <a href="#about" className="table-cell text-center">
+            </div>
+            <div
+              className="table-cell text-center cursor-pointer"
+              onClick={handleScroll}
+              id="aboutNav"
+            >
               <span className="">a</span>
               <span className="text-sm">bout</span>
-            </a>
-            <a href="#projects" className="table-cell text-center">
+            </div>
+            <div
+              className="table-cell text-center cursor-pointer"
+              onClick={handleScroll}
+              id="projectNav"
+            >
               <span className="">p</span>
               <span className="text-sm">rojects</span>
-            </a>
-            <a href="#skills" className="table-cell text-center">
+            </div>
+            <div
+              className="table-cell text-center cursor-pointer"
+              onClick={handleScroll}
+              id="skillsNav"
+            >
               <span className="">s</span>
               <span className="text-sm">kills</span>
-            </a>
+            </div>
 
-            <a href="#contact" className="table-cell text-center">
+            <div
+              className="table-cell text-center cursor-pointer"
+              onClick={handleScroll}
+              id="contactNav"
+            >
               <span className="">c</span>
               <span className="text-sm">ontact</span>
-            </a>
+            </div>
           </div>
         </div>
       </nav>
@@ -66,7 +113,7 @@ export default function App() {
         </div>
       </header>
 
-      <section id="about" className="bg-neutral-900">
+      <section id="about" className="bg-neutral-900" ref={aboutRef}>
         <div className="container items-center w-screen mx-auto my-4 sm:flex sm:flex-row">
           <div className="flex flex-col items-start justify-center w-full p-8 text-center text-white lg:w-1/2">
             <h1 className="mx-auto my-0 text-4xl font-semibold leading-loose capitalize">
@@ -93,7 +140,11 @@ export default function App() {
         </div>
       </section>
 
-      <section id="projects" className="pt-4 m-4 sm:m-0 bg-neutral-900">
+      <section
+        id="projects"
+        className="pt-4 m-4 sm:m-0 bg-neutral-900"
+        ref={projectRef}
+      >
         <h1 className="text-2xl text-center capitalize ">
           open source projects
         </h1>
@@ -184,7 +235,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="p-1 sm:flex" id="skills">
+      <section className="p-1 sm:flex" id="skills" ref={skillsRef}>
         <div className="flex-1 leading-loose bg-neutral-900 sm:order-2">
           <div className="p-4 mx-auto my-0">
             <h2 className="text-3xl leading-loose text-center capitalize">
@@ -332,7 +383,7 @@ export default function App() {
         </div>
       </section>
 
-      <footer className="m-1 bg-neutral-900" id="contact">
+      <footer className="m-1 bg-neutral-900" id="contact" ref={contactRef}>
         <h2 className="m-4 text-2xl text-center capitalize">
           how to contact me?
         </h2>
