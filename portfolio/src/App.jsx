@@ -56,7 +56,7 @@ export default function App() {
         paragraph="Passionate developer. Experienced game developer. Focused on mobile
             first web development using React and Tailwind. Want to know more?
             Download my resume by clicking on the button."
-        download="SM-Resume"
+        download="Scott-Milliorn-Resume"
         href={resumePDF}
         target="_blank"
         rel="noreferrer"
