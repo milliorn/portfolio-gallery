@@ -23,6 +23,7 @@ import resumePDF from "./assets/psm-resume.pdf";
 import aboutImage from "./images/about.jpg";
 import NavBar from "./components/Navbar";
 import Hero from "./components/Hero";
+import About from "./components/About";
 
 export default function App() {
   const homeRef = useRef();
@@ -67,32 +68,21 @@ export default function App() {
         spanText="React Developer"
       />
 
-      <section id="about" className="bg-neutral-900" ref={aboutRef}>
-        <div className="container items-center w-screen mx-auto my-4 sm:flex sm:flex-row">
-          <div className="flex flex-col items-start justify-center w-full p-8 text-center text-white lg:w-1/2">
-            <h1 className="mx-auto my-0 text-4xl font-semibold leading-loose capitalize">
-              <span className="">Scott Milliorn</span>
-            </h1>
-            <p className="mx-auto my-2 leading-normal">
-              Passionate developer. Experienced game developer. Focused on
-              mobile first web development using React and Tailwind. Want to
-              know more? Download my resume by clicking on the button.
-            </p>
-            <a
-              download="PSM-Resume"
-              href={resumePDF}
-              target="_blank"
-              className="p-2 mx-auto my-4 text-white capitalize bg-gray-500 border border-gray-900 rounded shadow outline outline-offset-1 outline-white hover:animate-pulse hover:bg-gray-400 hover:text-gray-50 hover:shadow-lg hover:border-transparent"
-              rel="noreferrer"
-            >
-              resume
-            </a>
-          </div>
-          <div className="w-screen px-4 sm:w-full sm:px-0">
-            <img src={aboutImage} alt="about" className="" />
-          </div>
-        </div>
-      </section>
+      <div ref={aboutRef}>
+        <About
+          span="Scott Milliorn"
+          paragraph="Passionate developer. Experienced game developer. Focused on mobile
+            first web development using React and Tailwind. Want to know more?
+            Download my resume by clicking on the button."
+          download="PSM-Resume"
+          href={resumePDF}
+          target="_blank"
+          rel="noreferrer"
+          text="resume"
+          img={aboutImage}
+          alt="about"
+        />
+      </div>
 
       <section
         id="projects"
