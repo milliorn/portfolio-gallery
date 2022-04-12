@@ -20,10 +20,10 @@ import {
 } from "react-icons/si";
 import "./App.css";
 import resumePDF from "./assets/psm-resume.pdf";
-import aboutImage from "./images/about.jpg";
-import NavBar from "./components/Navbar";
-import Hero from "./components/Hero";
 import About from "./components/About";
+import Hero from "./components/Hero";
+import NavBar from "./components/Navbar";
+import aboutImage from "./images/about.jpg";
 
 export default function App() {
   const homeRef = useRef();
@@ -60,13 +60,7 @@ export default function App() {
         spanClassName="text-sm"
       />
 
-      <Hero
-        id="hero"
-        className="h-screen w-full bg-[url('./images/hero.jpg')] bg-cover bg-no-repeat container"
-        divClassName="container grid content-center justify-center w-screen h-screen"
-        spanClassName="text-4xl text-white capitalize "
-        spanText="React Developer"
-      />
+      <Hero id="hero" spanText="React Developer" />
 
       <div ref={aboutRef}>
         <About
