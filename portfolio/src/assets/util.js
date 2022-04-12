@@ -1,0 +1,1 @@
+export const randomElement = (arr) => arr.sort(() => .5 - Math.random());

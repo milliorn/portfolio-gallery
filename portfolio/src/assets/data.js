@@ -49,13 +49,13 @@ export const projectsData = [
     message: "learn more"
   },
   {
-    h3: "Gatsby Recipe Page",
+    h3: "Gatsby Recipes",
     p: "Recipe website done in GatsbyJS full stack frontend framework. It uses Contentful CMS, source controlled on Github, built and previewed in Gatsby Cloud, deployed onto Netlify Serverless Jamstack. It also acts as my personal site for cooking recipes.",
     href: "https://gatsby-recipe-page.netlify.app",
     message: "visit my site"
   },
   {
-    h3: "Neverwinter Nights .NET",
+    h3: "Everyday Iron",
     p: "Open source code for Everyday Iron Workout Warehouse Gym in Fresno, California. I develop there website, assist with other tech and internet duties and consult them on there social media sites. I also workout here and help assist coaches.",
     href: "https://milliorn.github.io/Everyday-Iron/",
     message: "see my work"

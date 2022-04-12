@@ -11,9 +11,9 @@ import resumePDF from "./assets/psm-resume.pdf";
 import About from "./components/About";
 import Hero from "./components/Hero";
 import NavBar from "./components/Navbar";
-import aboutImage from "./images/about.jpg";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import aboutImage from "./images/about.jpg";
 
 export default function App() {
   const homeRef = useRef();
@@ -59,7 +59,7 @@ export default function App() {
         paragraph="Passionate developer. Experienced game developer. Focused on mobile
             first web development using React and Tailwind. Want to know more?
             Download my resume by clicking on the button."
-        download="PSM-Resume"
+        download="SM-Resume"
         href={resumePDF}
         target="_blank"
         rel="noreferrer"

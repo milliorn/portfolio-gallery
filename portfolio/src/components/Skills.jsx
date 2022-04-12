@@ -1,5 +1,6 @@
 import React from "react";
 import { skillsData } from "../assets/data";
+import { randomElement } from "../assets/util";
 
 const Skills = (props) => {
   const buildSkills = skillsData.map((e, i) => (
@@ -31,7 +32,7 @@ const Skills = (props) => {
       <div className="flex-1 p-4 bg-neutral-900">
         <div className="flex items-center justify-center w-full">
           <div className="grid grid-cols-2 gap-4 pb-4 md:grid-cols-3 lg:grid-cols-4">
-            {buildSkills}
+            {randomElement(buildSkills)}
           </div>
         </div>
       </div>
