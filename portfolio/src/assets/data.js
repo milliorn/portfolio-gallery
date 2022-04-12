@@ -5,13 +5,18 @@ import {
   SiDocker,
   SiGatsby,
   SiGit,
+  SiGithub,
   SiHtml5,
   SiJavascript,
+  SiLeetcode,
+  SiLinkedin,
   SiPostcss,
   SiReact,
   SiRust,
   SiTailwindcss,
+  SiTwitter
 } from "react-icons/si";
+
 
 export const navData = [
   {
@@ -122,5 +127,29 @@ export const skillsData = [
     href: "https://github.com/milliorn",
     icon: <SiGit />,
     className: "p-4 text-center text-white bg-orange-600 text-7xl"
+  }
+]
+
+export const footerData = [
+  {
+    href: "https://www.linkedin.com/in/scott-milliorn",
+    className: "mx-2 my-4 text-3xl bg-white text-lightBlue-600 sm:text-4xl border rounded border-lightBlue-600",
+    icon: <SiLinkedin />
+  },
+  {
+    href: "https://twitter.com/scottmilliorn",
+    className: "mx-2 my-4 text-3xl rounded-full text-lightBlue-500 sm:text-4xl",
+    icon: <SiTwitter />
+  },
+  {
+    href: "https://github.com/milliorn",
+    className: "mx-2 my-4 text-3xl text-black bg-white sm:text-4xl rounded-full border",
+    icon: <SiGithub />
+  },
+  {
+    href: "https://leetcode.com/milliorn/",
+    className: "mx-2 my-4 text-3xl text-yellow-600 sm:text-4xl",
+    icon: <SiLeetcode />
+
   }
 ]

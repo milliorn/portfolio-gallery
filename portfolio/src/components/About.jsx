@@ -2,7 +2,7 @@ import React from "react";
 
 const About = (props) => {
   return (
-    <section id="about" className="bg-neutral-900">
+    <section className="bg-neutral-900">
       <div className="container items-center w-screen mx-auto my-4 sm:flex sm:flex-row">
         <div className="flex flex-col items-start justify-center w-full p-8 text-center text-white lg:w-1/2">
           <div className="mx-auto my-0 text-4xl font-semibold leading-loose capitalize">

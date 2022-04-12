@@ -28,7 +28,7 @@ const Projects = (props) => {
   ));
 
   return (
-    <section id="projects" className="pt-4 m-4 sm:m-0 bg-neutral-900">
+    <section className="pt-4 m-4 sm:m-0 bg-neutral-900">
       <h2 className="text-2xl text-center capitalize ">{props.h2}</h2>
       {randomElement(buildProjects)}
     </section>
