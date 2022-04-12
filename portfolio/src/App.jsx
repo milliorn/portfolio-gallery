@@ -24,6 +24,7 @@ import About from "./components/About";
 import Hero from "./components/Hero";
 import NavBar from "./components/Navbar";
 import aboutImage from "./images/about.jpg";
+import Projects from "./components/Projects";
 
 export default function App() {
   const homeRef = useRef();
@@ -59,8 +60,9 @@ export default function App() {
         onClick={onClick}
         spanClassName="text-sm"
       />
-
       <Hero id="hero" spanText="React Developer" />
+
+      <br />
 
       <div ref={aboutRef}>
         <About
@@ -78,102 +80,17 @@ export default function App() {
         />
       </div>
 
-      <section
-        id="projects"
-        className="pt-4 m-4 sm:m-0 bg-neutral-900"
-        ref={projectRef}
-      >
-        <h1 className="text-2xl text-center capitalize ">
-          open source projects
-        </h1>
+      <div ref={projectRef}>
+        <br />
+      </div>
 
-        <div className="m-4 sm:flex">
-          <div className="relative border rounded-lg shadow-md max-w-fit bg-neutral-100 border-neutral-500">
-            <div className="p-5">
-              <h5 className="mb-2 text-lg font-bold text-center text-gray-900 capitalize">
-                Neverwinter Nights .NET
-              </h5>
-              <p className="mb-3 text-sm text-center text-neutral-900">
-                Open source organization for Neverwinter Nights: Enhanced
-                Edition. We developed an API called Anvil for the Neverwinter
-                Nights Server. NWN.Masterlist is used to consume Master Server
-                API. NWN.Core is used to interlop functions for NWNX .Net and
-                wrap core functions. NWN.Native is a Low-level NWNXLib bindings
-                for managed to native interop.
-              </p>
-              <br />
-              <div className="absolute bottom-0 left-0 right-0 m-1 text-center">
-                <a
-                  className="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center capitalize rounded-lg text-neutral-50 bg-neutral-700 neutral:bg-neutral-900 focus:ring-4 neutral:ring-neutral-700"
-                  href="https://github.com/nwn-dotnet"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  learn more
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <Projects h2="open source projects" />
 
-        <div className="m-4 sm:flex">
-          <div className="relative border rounded-lg shadow-md max-w-fit bg-neutral-100 border-neutral-500">
-            <div className="p-5">
-              <h5 className="mb-2 text-lg font-bold text-center text-gray-900 capitalize">
-                Gatsby Recipe Page
-              </h5>
-              <p className="mb-3 text-sm text-center text-neutral-900">
-                Recipe website done in GatsbyJS full stack frontend framework.
-                It uses Contentful CMS, source controlled on Github, built and
-                previewed in Gatsby Cloud, deployed onto Netlify Serverless
-                Jamstack. It also acts as my personal site for cooking recipes.
-              </p>
-              <br />
+      <div ref={skillsRef}>
+        <br />
+      </div>
 
-              <div className="absolute bottom-0 left-0 right-0 m-1 text-center">
-                <a
-                  className="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center capitalize rounded-lg text-neutral-50 bg-neutral-700 neutral:bg-neutral-900 focus:ring-4 neutral:ring-neutral-700"
-                  href="https://gatsby-recipe-page.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Visit my site
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="m-4 sm:flex">
-          <div className="relative border rounded-lg shadow-md max-w-fit bg-neutral-100 border-neutral-500">
-            <div className="p-5">
-              <h5 className="mb-2 text-lg font-bold text-center text-gray-900 capitalize">
-                Everyday Iron Workout Warehouse
-              </h5>
-              <p className="mb-3 text-sm text-center text-neutral-900">
-                Open source code for Everyday Iron Workout Warehouse Gym in
-                Fresno, California. I develop there website, assist with other
-                tech and internet duties and consult them on there social media
-                sites. I also workout here and help assist coaches.
-              </p>
-              <br />
-
-              <div className="absolute bottom-0 left-0 right-0 m-1 text-center">
-                <a
-                  className="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center capitalize rounded-lg text-neutral-50 bg-neutral-700 neutral:bg-neutral-900 focus:ring-4 neutral:ring-neutral-700"
-                  href="https://milliorn.github.io/Everyday-Iron/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  See my work
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="p-1 sm:flex" id="skills" ref={skillsRef}>
+      <section className="p-1 sm:flex" id="skills">
         <div className="flex-1 leading-loose bg-neutral-900 sm:order-2">
           <div className="p-4 mx-auto my-0">
             <h2 className="text-3xl leading-loose text-center capitalize">
