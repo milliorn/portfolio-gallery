@@ -56,7 +56,7 @@ export const projectsData = [
   {
     h3: "Gatsby Recipes",
     p: "Recipe website done in GatsbyJS full stack frontend framework. It uses Contentful CMS, source controlled on Github, built and previewed in Gatsby Cloud, deployed onto Netlify Serverless Jamstack. It also acts as my personal site for cooking recipes.",
-    href: "https://gatsby-recipe-page.netlify.app",
+    href: "https://gatsbyrecipes.gatsbyjs.io/",
     message: "visit my site"
   },
   {
