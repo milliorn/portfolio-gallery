@@ -62,7 +62,7 @@ export const projectsData = [
   {
     h3: "Everyday Iron",
     p: "Open source code for Everyday Iron Workout Warehouse Gym in Fresno, California. I develop there website, assist with other tech and internet duties and consult them on there social media sites. I also workout here and help assist coaches.",
-    href: "https://milliorn.github.io/Everyday-Iron/",
+    href: "https://everyday-iron.netlify.app/",
     message: "see my work"
   }
 ]
