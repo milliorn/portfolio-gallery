@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import NavLogo from "../public/assets/navbarLogo.png";
+import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 // Global navigation bar
 function Navbar(): JSX.Element {
@@ -36,6 +39,9 @@ function Navbar(): JSX.Element {
               </li>
             </Link>
           </ul>
+          <div className="md:hidden">
+            <AiOutlineMenu size={25} />
+          </div>
         </div>
       </div>
     </div>

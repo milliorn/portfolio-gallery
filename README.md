@@ -28,3 +28,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Logo
 
 <https://www.canva.com/>
+
+## react-icons
+
+<https://github.com/react-icons/react-icons>
