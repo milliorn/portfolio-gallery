@@ -20,3 +20,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Getting Started
 
 <https://nextjs.org/docs/getting-started#automatic-setup>
+
+## Install Tailwind CSS with Next.js
+
+<https://tailwindcss.com/docs/guides/nextjs>
