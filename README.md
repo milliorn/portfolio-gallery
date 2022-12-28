@@ -24,3 +24,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Install Tailwind CSS with Next.js
 
 <https://tailwindcss.com/docs/guides/nextjs>
+
+## Logo
+
+<https://www.canva.com/>
