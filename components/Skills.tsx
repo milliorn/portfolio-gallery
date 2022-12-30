@@ -19,6 +19,7 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiVercel,
+  SiBulma,
 } from "react-icons/si";
 
 import { TbBrandNextjs } from "react-icons/tb";
@@ -32,7 +33,7 @@ function Skills(): JSX.Element {
         </p>
         <h2 className="py-4">What Can I Do?</h2>
 
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <a
               href="https://github.com/milliorn?tab=repositories&q=js&type=public&language=html&sort="
@@ -427,6 +428,54 @@ function Skills(): JSX.Element {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Electron</h3>
+              </div>
+            </a>
+          </div>
+
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <a
+              href="https://github.com/milliorn?tab=repositories&q=bulma&type=&language=&sort="
+              target="_blank"
+              className="grid grid-cols-2 gap-4 justify-center items-center"
+              rel="noreferrer"
+            >
+              <div className="m-auto p-1 text-5xl text-teal-500">
+                <SiBulma />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Bulma</h3>
+              </div>
+            </a>
+          </div>
+
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <a
+              href="https://github.com/milliorn?tab=repositories&q=express&type=&language=&sort="
+              target="_blank"
+              className="grid grid-cols-2 gap-4 justify-center items-center"
+              rel="noreferrer"
+            >
+              <div className="m-auto p-1 text-5xl text-black bg-yellow-400">
+                <SiJavascript />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>ExpressJs</h3>
+              </div>
+            </a>
+          </div>
+
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <a
+              href="https://github.com/milliorn?tab=repositories&q=preact&type=&language=&sort="
+              target="_blank"
+              className="grid grid-cols-2 gap-4 justify-center items-center"
+              rel="noreferrer"
+            >
+              <div className="m-auto p-1 text-5xl text-white bg-violet-800">
+                <SiReact />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Preact</h3>
               </div>
             </a>
           </div>
