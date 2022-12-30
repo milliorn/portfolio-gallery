@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import NavLogo from "../public/assets/navbarLogo.png";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+
 // Global navigation bar
 function Navbar(): JSX.Element {
   const [nav, setNav] = useState(false);
@@ -21,33 +22,39 @@ function Navbar(): JSX.Element {
           src={NavLogo}
           alt="/"
           width="125"
-          height="50"
+          height="125"
           className="cursor-pointer"
         />
 
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+              <li className="ml-10 text-sm uppercase hover:border-b font-bold">
+                Home
+              </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+              <li className="ml-10 text-sm uppercase hover:border-b font-bold">
+                About
+              </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+              <li className="ml-10 text-sm uppercase hover:border-b font-bold">
+                Skills
+              </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-sm uppercase hover:border-b font-bold">
                 Projects
               </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-sm uppercase hover:border-b font-bold">
                 Contact
               </li>
             </Link>
           </ul>
-          <div className="md:hidden" onClick={handleNav}>
+          <div className="sm:hidden" onClick={handleNav}>
             <AiOutlineMenu size={25} />
           </div>
         </div>
@@ -57,7 +64,7 @@ function Navbar(): JSX.Element {
       {/* Overlay */}
       <div
         className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+          nav ? "sm:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : "invisible"
         }
       >
         <div
@@ -67,9 +74,9 @@ function Navbar(): JSX.Element {
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
-          <div>
+          <div className="scroll-smooth">
             <div className="flex w-full items-center justify-between">
-              <Image src={NavLogo} width="87" height="35" alt="/" />
+              <Image src={NavLogo} width="50" height="50" alt="/" />
               <div
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
                 onClick={handleNav}
@@ -78,7 +85,7 @@ function Navbar(): JSX.Element {
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4">
+              <p className="w-[85%] md:w-[90%] py-4 font-bold">
                 Let&apos;s collaborate on web applications!
               </p>
             </div>
@@ -86,19 +93,19 @@ function Navbar(): JSX.Element {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li className="py-4 text-sm">Home</li>
+                <li className="py-1 text-sm font-bold">Home</li>
               </Link>
               <Link href="/">
-                <li className="py-4 text-sm">About</li>
+                <li className="py-1 text-sm font-bold">About</li>
               </Link>
               <Link href="/">
-                <li className="py-4 text-sm">Skills</li>
+                <li className="py-1 text-sm font-bold">Skills</li>
               </Link>
               <Link href="/">
-                <li className="py-4 text-sm">Project</li>
+                <li className="py-1 text-sm font-bold">Project</li>
               </Link>
               <Link href="/">
-                <li className="py-4 text-sm">Contact</li>
+                <li className="py-1 text-sm font-bold">Contact</li>
               </Link>
             </ul>
             <div className="pt-40">
