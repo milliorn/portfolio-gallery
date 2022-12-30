@@ -1,6 +1,6 @@
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 // Main component on front page
 function Main(): JSX.Element {
@@ -20,18 +20,42 @@ function Main(): JSX.Element {
             learning back-end technologies.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaGithub />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaLinkedinIn />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <AiOutlineMail />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <BsFillPersonLinesFill />
-            </div>
+            <a
+              href="https://github.com/milliorn"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <FaGithub />
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/scott-milliorn/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-sky-600">
+                <FaLinkedinIn />
+              </div>
+            </a>
+            <a
+              href="https://twitter.com/scottmilliorn"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-sky-500">
+                <FaTwitter />
+              </div>
+            </a>
+            <a
+              href="https://milliorn.github.io/digital-resume/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-pink-500">
+                <BsFillPersonLinesFill />
+              </div>
+            </a>
           </div>
         </div>
       </div>
