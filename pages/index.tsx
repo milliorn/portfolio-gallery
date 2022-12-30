@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import About from "../components/About";
 import Main from "../components/Main";
+import Skills from "../components/Skills";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function Home() {
       </Head>
       <Main />
       <About />
+      <Skills />
     </>
   );
 }
