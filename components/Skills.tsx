@@ -1,4 +1,4 @@
-import { DiLinux, DiWindows, DiCode } from "react-icons/di";
+import { DiLinux, DiWindows, DiCode, DiSass } from "react-icons/di";
 import { FaStrava, FaNodeJs } from "react-icons/fa";
 import {
   SiBootstrap,
@@ -16,7 +16,6 @@ import {
   SiPostcss,
   SiReact,
   SiRust,
-  SiSass,
   SiTailwindcss,
   SiTypescript,
   SiVercel,
@@ -36,7 +35,7 @@ function Skills(): JSX.Element {
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-8">
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-white bg-orange-600  text-5xl">
                 <SiHtml5 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -47,7 +46,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 bg-blue-700 text-white text-5xl">
                 <SiCss3 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -58,7 +57,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-black bg-amber-300 text-5xl">
                 <SiJavascript />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -69,7 +68,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-blue-500 text-5xl">
                 <SiReact />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -80,7 +79,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-blue-500 text-5xl">
                 <SiTailwindcss />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -91,7 +90,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-amber-400 text-5xl">
                 <SiFirebase />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -102,18 +101,18 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-5xl">
                 <TbBrandNextjs />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Next</h3>
+                <h3>NextJS</h3>
               </div>
             </div>
           </div>
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-white bg-purple-800 text-5xl">
                 <SiBootstrap />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -124,7 +123,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 bg-indigo-700 text-white text-5xl">
                 <SiDotnet />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -135,7 +134,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-blue-500 text-5xl">
                 <SiDocker />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -146,7 +145,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-purple-800 text-5xl">
                 <SiGatsby />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -157,7 +156,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-5xl text-red-500">
                 <SiGit />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -168,7 +167,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-5xl bg-orange-700 text-white">
                 <SiPostcss />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -179,7 +178,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-black text-5xl">
                 <SiRust />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -190,7 +189,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-5xl">
                 <FaStrava />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -201,7 +200,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-5xl text-teal-400">
                 <SiNetlify />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -212,7 +211,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-5xl">
                 <SiVercel />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -223,7 +222,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-5xl text-green-500">
                 <FaNodeJs />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -234,7 +233,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-5xl">
                 <DiLinux />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -245,7 +244,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-5xl text-sky-500">
                 <DiWindows />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -256,7 +255,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-5xl text-blue-600">
                 <SiTypescript />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -267,7 +266,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-5xl">
                 <DiCode />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -278,7 +277,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-5xl text-sky-500">
                 <SiMaterialui />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -289,8 +288,8 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <SiSass />
+              <div className="m-auto p-1 text-5xl text-pink-500">
+                <DiSass />
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Sass</h3>
@@ -300,7 +299,7 @@ function Skills(): JSX.Element {
 
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
+              <div className="m-auto p-1 text-5xl text-cyan-200 bg-slate-800">
                 <SiElectron />
               </div>
               <div className="flex flex-col items-center justify-center">
