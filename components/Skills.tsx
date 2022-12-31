@@ -41,7 +41,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-white bg-orange-600  text-5xl">
+              <div className="m-auto p-1 text-white bg-orange-600 sm:text-5xl">
                 <SiHtml5 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -57,7 +57,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 bg-blue-700 text-white text-5xl">
+              <div className="m-auto p-1 bg-blue-700 text-white sm:text-5xl">
                 <SiCss3 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -73,7 +73,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-black bg-amber-300 text-5xl">
+              <div className="m-auto p-1 text-black bg-amber-300 sm:text-5xl">
                 <SiJavascript />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -89,7 +89,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-blue-500 text-5xl">
+              <div className="m-auto p-1 text-blue-500 sm:text-5xl">
                 <SiReact />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -105,7 +105,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-blue-500 text-5xl">
+              <div className="m-auto p-1 text-blue-500 sm:text-5xl">
                 <SiTailwindcss />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -121,7 +121,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-amber-400 text-5xl">
+              <div className="m-auto p-1 text-amber-400 sm:text-5xl">
                 <SiFirebase />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -137,7 +137,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-5xl">
+              <div className="m-auto p-1 sm:text-5xl">
                 <TbBrandNextjs />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -153,7 +153,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-white bg-purple-800 text-5xl">
+              <div className="m-auto p-1 text-white bg-purple-800 sm:text-5xl">
                 <SiBootstrap />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -169,7 +169,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 bg-indigo-700 text-white text-5xl">
+              <div className="m-auto p-1 bg-indigo-700 text-white sm:text-5xl">
                 <SiDotnet />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -183,7 +183,7 @@ function Skills(): JSX.Element {
               href=""
               className="grid grid-cols-2 gap-4 justify-center items-center"
             >
-              <div className="m-auto p-1 text-blue-500 text-5xl">
+              <div className="m-auto p-1 text-blue-500 sm:text-5xl">
                 <SiDocker />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -199,7 +199,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-purple-800 text-5xl">
+              <div className="m-auto p-1 text-purple-800 sm:text-5xl">
                 <SiGatsby />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -215,7 +215,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-5xl text-red-500">
+              <div className="m-auto p-1 sm:text-5xl text-red-500">
                 <SiGit />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -231,7 +231,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-5xl bg-orange-700 text-white">
+              <div className="m-auto p-1 sm:text-5xl bg-orange-700 text-white">
                 <SiPostcss />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -247,7 +247,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-black text-5xl">
+              <div className="m-auto p-1 text-black sm:text-5xl">
                 <SiRust />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -263,7 +263,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-5xl">
+              <div className="m-auto p-1 sm:text-5xl">
                 <FaStrava />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -279,7 +279,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-5xl text-teal-400">
+              <div className="m-auto p-1 sm:text-5xl text-teal-400">
                 <SiNetlify />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -295,7 +295,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-5xl">
+              <div className="m-auto p-1 sm:text-5xl">
                 <SiVercel />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -311,7 +311,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-5xl text-green-500">
+              <div className="m-auto p-1 sm:text-5xl text-green-500">
                 <FaNodeJs />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -327,7 +327,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-5xl">
+              <div className="m-auto p-1 sm:text-5xl">
                 <DiLinux />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -343,7 +343,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-5xl text-sky-500">
+              <div className="m-auto p-1 sm:text-5xl text-sky-500">
                 <DiWindows />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -359,7 +359,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-5xl text-blue-600">
+              <div className="m-auto p-1 sm:text-5xl text-blue-600">
                 <SiTypescript />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -375,7 +375,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-5xl">
+              <div className="m-auto p-1 sm:text-5xl">
                 <DiCode />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -391,7 +391,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-5xl text-sky-500">
+              <div className="m-auto p-1 sm:text-5xl text-sky-500">
                 <SiMaterialui />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -407,7 +407,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-5xl text-pink-500">
+              <div className="m-auto p-1 sm:text-5xl text-pink-500">
                 <DiSass />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -423,7 +423,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-5xl text-cyan-200 bg-slate-800">
+              <div className="m-auto p-1 sm:text-5xl text-cyan-200 bg-slate-800">
                 <SiElectron />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -439,7 +439,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-5xl text-teal-500">
+              <div className="m-auto p-1 sm:text-5xl text-teal-500">
                 <SiBulma />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -455,7 +455,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-5xl text-black bg-yellow-400">
+              <div className="m-auto p-1 sm:text-5xl text-black bg-yellow-400">
                 <SiJavascript />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -471,7 +471,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 text-5xl text-white bg-violet-800">
+              <div className="m-auto p-1 sm:text-5xl text-white bg-violet-800">
                 <SiReact />
               </div>
               <div className="flex flex-col items-center justify-center">
