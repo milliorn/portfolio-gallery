@@ -455,7 +455,7 @@ function Skills(): JSX.Element {
               className="grid grid-cols-2 gap-4 justify-center items-center"
               rel="noreferrer"
             >
-              <div className="m-auto p-1 sm:text-5xl text-black bg-yellow-400">
+              <div className="m-auto p-1 sm:text-5xl bg-black text-yellow-400">
                 <SiJavascript />
               </div>
               <div className="flex flex-col items-center justify-center text-sm lg:text-lg">
