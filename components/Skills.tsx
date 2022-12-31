@@ -33,7 +33,7 @@ function Skills(): JSX.Element {
         </p>
         <h2 className="py-4">What Can I Do?</h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <a
               href="https://github.com/milliorn?tab=repositories&q=js&type=public&language=html&sort="

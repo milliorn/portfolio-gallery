@@ -1,60 +1,77 @@
 import Image from "next/image";
 import Link from "next/link";
-import NavLogo from "../public/assets/navbarLogo.png";
 import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import NavLogo from "../public/assets/navbarLogo.png";
 
-// Global navigation bar
 function Navbar(): JSX.Element {
   const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
 
-  // onclick handler
+  // handler events
   function handleNav(): void {
     setNav(!nav);
   }
 
-  return (
-    <div className="fixed w-full h-22 bg-white shadow-xl z-50">
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image
-          src={NavLogo}
-          alt="/"
-          width="125"
-          height="125"
-          className="cursor-pointer"
-        />
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
 
+  return (
+    <div
+      style={{ backgroundColor: `#ecf0f3` }}
+      className={
+        shadow
+          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
+          : "fixed w-full h-20 z-[100]"
+      }
+    >
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+        <Link href="/">
+          <Image src={NavLogo} alt="/" className="cursor-pointer w-20" />
+        </Link>
         <div>
           <ul className="hidden md:flex">
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b font-bold">
-                Home
-              </li>
-            </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b font-bold">
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link href="/">Home</Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link scroll={false} href="/#about">
                 About
-              </li>
-            </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b font-bold">
+              </Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link scroll={false} href="/#skills">
                 Skills
-              </li>
-            </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b font-bold">
+              </Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link scroll={false} href="/#projects">
                 Projects
-              </li>
-            </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b font-bold">
+              </Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link scroll={false} href="/resume">
+                Resume
+              </Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link scroll={false} href="/#contact">
                 Contact
-              </li>
-            </Link>
+              </Link>
+            </li>
           </ul>
-          <div className="sm:hidden" onClick={handleNav}>
+          {/* Hamburger Icon */}
+          <div onClick={handleNav} className="md:hidden">
             <AiOutlineMenu size={25} />
           </div>
         </div>
@@ -64,48 +81,68 @@ function Navbar(): JSX.Element {
       {/* Overlay */}
       <div
         className={
-          nav ? "sm:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : "invisible"
+          nav
+            ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70"
+            : "invisible"
         }
       >
+        {/* Side Drawer Menu */}
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white p-10 ease-in duration-500"
+              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
-          <div className="scroll-smooth">
+          <div>
             <div className="flex w-full items-center justify-between">
-              <Image src={NavLogo} width="50" height="50" alt="/" />
+              <Link href="/">
+                <Image src={NavLogo} width="100" height="100" alt="/" />
+              </Link>
               <div
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
                 onClick={handleNav}
+                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
               >
                 <AiOutlineClose />
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4 font-bold">
-                Let&apos;s collaborate on web applications!
+              <p className="w-[85%] md:w-[90%] py-4">
+                Let&apos;s build web applications!
               </p>
             </div>
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li className="py-1 text-sm font-bold">Home</li>
+                <li onClick={() => setNav(false)} className="py-2 text-sm">
+                  Home
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-1 text-sm font-bold">About</li>
+              <Link scroll={false} href="/#about">
+                <li onClick={() => setNav(false)} className="py-2 text-sm">
+                  About
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-1 text-sm font-bold">Skills</li>
+              <Link scroll={false} href="/#skills">
+                <li onClick={() => setNav(false)} className="py-2 text-sm">
+                  Skills
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-1 text-sm font-bold">Project</li>
+              <Link scroll={false} href="/#projects">
+                <li onClick={() => setNav(false)} className="py-2 text-sm">
+                  Projects
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-1 text-sm font-bold">Contact</li>
+              <Link scroll={false} href="/resume">
+                <li onClick={() => setNav(false)} className="py-2 text-sm">
+                  Resume
+                </li>
+              </Link>
+              <Link scroll={false} href="/#contact">
+                <li onClick={() => setNav(false)} className="py-2 text-sm">
+                  Contact
+                </li>
               </Link>
             </ul>
             <div className="pt-40">
@@ -113,18 +150,40 @@ function Navbar(): JSX.Element {
                 Let&#39;s Connect
               </p>
               <div className="flex items-center justify-evenly my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsFillPersonLinesFill />
-                </div>
+                <a
+                  href="https://www.linkedin.com/in/scott-milliorn/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <FaLinkedinIn />
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/milliorn"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <FaGithub />
+                  </div>
+                </a>
+                <Link scroll={false} href="/#contact">
+                  <div
+                    onClick={() => setNav(!nav)}
+                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                  >
+                    <AiOutlineMail />
+                  </div>
+                </Link>
+                <Link scroll={false} href="/resume">
+                  <div
+                    onClick={() => setNav(!nav)}
+                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                  >
+                    <BsFillPersonLinesFill />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
