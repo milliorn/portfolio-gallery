@@ -7,24 +7,24 @@ function About(): JSX.Element {
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">
-            About
+            About Me
           </p>
           <h2 className="py-4">Diligent Developer</h2>
           <p className="py-2 text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-            recusandae rem, distinctio ullam asperiores maiores vitae nisi eum!
-            Distinctio aliquid voluptate soluta laborum delectus quis provident
-            dolorum? Magnam, nesciunt excepturi.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
+            aperiam sint dignissimos, vel possimus porro nam atque, laboriosam,
+            sit ullam rem quo laborum fugiat. Consequuntur, ipsam! Accusantium
+            pariatur cupiditate cum?
           </p>
           <p className="py-2 text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Exercitationem eum saepe eos eaque. Neque blanditiis maiores eveniet
-            hic totam laudantium eaque itaque voluptatem rem, rerum omnis
-            tenetur ipsam, explicabo at.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+            aspernatur, deserunt obcaecati eligendi aliquam expedita odit
+            doloremque neque facilis commodi in tenetur aperiam explicabo natus.
+            Iure eaque suscipit possimus? Voluptates.
           </p>
           <Link href="/#projects">
             <p className="py-2 text-gray-600 underline cursor-pointer">
-              Check out some of my latest projects.
+              Click to see my latest projects.
             </p>
           </Link>
         </div>
