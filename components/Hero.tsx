@@ -2,7 +2,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 // Main component on front page
-function Main(): JSX.Element {
+function Hero(): JSX.Element {
   return (
     <div className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
@@ -62,4 +62,4 @@ function Main(): JSX.Element {
   );
 }
 
-export default Main;
+export default Hero;
