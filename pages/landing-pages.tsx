@@ -25,9 +25,9 @@ function LandingPage(): JSX.Element {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            I built many mock landing pages with various technologies.
-            Objcective was to learn front end technologies and frameworks.
-            SpaceX landing page was made with{" "}
+            I built many mock landing pages with various technologies. Objective
+            was to learn front end technologies and frameworks. SpaceX landing
+            page was made with{" "}
             <a
               href="https://milliorn.github.io/SpaceX-Website/"
               target="_blank"
@@ -66,7 +66,7 @@ function LandingPage(): JSX.Element {
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
           <div className="p-2">
-            <p className="text-center font-bold pb-2">Technologies</p>
+            <p className="text-center font-bold pb-2">Tech Stacks</p>
             <div className="grid grid-cols-3 md:grid-cols-1 ">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> React
@@ -87,7 +87,7 @@ function LandingPage(): JSX.Element {
           </div>
         </div>
         <Link href="/#projects">
-          <p className="underline cursor-pointer">Back</p>
+          <p className="underline cursor-pointer ml-4">Back</p>
         </Link>
       </div>
     </div>
