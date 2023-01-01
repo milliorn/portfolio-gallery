@@ -35,7 +35,7 @@ function Navbar(): JSX.Element {
           : "fixed w-full h-20 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-white">
         <Link href="/">
           <Image src={NavLogo} alt="/" className="cursor-pointer w-20" />
         </Link>
@@ -92,7 +92,7 @@ function Navbar(): JSX.Element {
             : "invisible"
         }
       >
-        {/* Side Drawer Menu */}
+        {/* Side Menu */}
         <div
           className={
             nav

@@ -22,8 +22,8 @@ function LandingPage(): JSX.Element {
 
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
         <div className="col-span-4">
-          <p>Project</p>
-          <h2>Overview</h2>
+          <p className="my-1">Project</p>
+          <h2 className="mb-4">Overview</h2>
           <p>
             I built many mock landing pages with various technologies. Objective
             was to learn front end technologies and frameworks. SpaceX landing
@@ -67,21 +67,21 @@ function LandingPage(): JSX.Element {
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Tech Stacks</p>
-            <div className="grid grid-cols-3 md:grid-cols-1 ">
+            <div className="grid grid-cols-2 md:grid-cols-1 ">
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> React
+                <RiRadioButtonFill className="pr-1 mr-1" /> React
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Tailwind
+                <RiRadioButtonFill className="pr-1 mr-1" /> Tailwind
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> TypeScript
+                <RiRadioButtonFill className="pr-1 mr-1" /> TypeScript
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> NextJs
+                <RiRadioButtonFill className="pr-1 mr-1" /> NextJs
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> AstroJs
+                <RiRadioButtonFill className="pr-1 mr-1" /> AstroJs
               </p>
             </div>
           </div>
