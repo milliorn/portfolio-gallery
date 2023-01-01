@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
@@ -14,7 +15,7 @@ function Contact(): JSX.Element {
           <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl hidden md:flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
             <Image
               alt="/"
-              blurDataURL="../public/assets/navbarLogo.png"
+              blurDataURL="../public/Linkssets/navbarLogo.png"
               className="rounded-xl md:flex hidden"
               height={1080}
               placeholder="blur"
@@ -33,7 +34,7 @@ function Contact(): JSX.Element {
               let&apos;s start our journey!
             </p>
             <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-              <a
+              <Link
                 href="https://github.com/milliorn"
                 target="_blank"
                 rel="noreferrer"
@@ -41,8 +42,8 @@ function Contact(): JSX.Element {
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <FaGithub />
                 </div>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.linkedin.com/in/scott-milliorn/"
                 target="_blank"
                 rel="noreferrer"
@@ -50,8 +51,8 @@ function Contact(): JSX.Element {
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-sky-600">
                   <FaLinkedinIn />
                 </div>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://twitter.com/scottmilliorn"
                 target="_blank"
                 rel="noreferrer"
@@ -59,8 +60,8 @@ function Contact(): JSX.Element {
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-sky-500">
                   <FaTwitter />
                 </div>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://milliorn.github.io/digital-resume/"
                 target="_blank"
                 rel="noreferrer"
@@ -68,7 +69,7 @@ function Contact(): JSX.Element {
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-pink-500">
                   <BsFillPersonLinesFill />
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

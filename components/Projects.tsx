@@ -14,8 +14,10 @@ function Projects(): JSX.Element {
         <p className="text-xl tracking-widest uppercase text-[#5651e5] text-center xl:text-start pt-12">
           Projects
         </p>
-        <h2 className="py-4 text-center xl:text-start">Projects I Enjoyed Developing</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <h2 className="py-4 text-center xl:text-start">
+          Projects I Enjoyed Developing
+        </h2>
+        <div className="grid md:grid-cols-3 gap-8">
           <ProjectItem
             backgroundImg={travelAgencyImg}
             projectUrl="/landing-pages"

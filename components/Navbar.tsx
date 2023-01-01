@@ -62,7 +62,11 @@ function Navbar(): JSX.Element {
               </Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link scroll={false} href="/resume">
+              <Link
+                scroll={false}
+                href="https://milliorn.github.io/digital-resume/"
+                target="_blank"
+              >
                 Resume
               </Link>
             </li>
@@ -133,7 +137,11 @@ function Navbar(): JSX.Element {
                   Projects
                 </li>
               </Link>
-              <Link scroll={false} href="/resume">
+              <Link
+                scroll={false}
+                href="https://milliorn.github.io/digital-resume/"
+                target="_blank"
+              >
                 <li onClick={() => setNav(false)} className="py-2 text-sm">
                   Resume
                 </li>
@@ -149,7 +157,7 @@ function Navbar(): JSX.Element {
                 Let&#39;s Connect
               </p>
               <div className="flex items-center justify-evenly my-4 w-full sm:w-[80%]">
-                <a
+                <Link
                   href="https://www.linkedin.com/in/scott-milliorn/"
                   target="_blank"
                   rel="noreferrer"
@@ -157,8 +165,8 @@ function Navbar(): JSX.Element {
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaLinkedinIn />
                   </div>
-                </a>
-                <a
+                </Link>
+                <Link
                   href="https://github.com/milliorn"
                   target="_blank"
                   rel="noreferrer"
@@ -166,7 +174,7 @@ function Navbar(): JSX.Element {
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaGithub />
                   </div>
-                </a>
+                </Link>
                 <Link scroll={false} href="/#contact">
                   <div
                     onClick={() => setNav(!nav)}
@@ -175,7 +183,11 @@ function Navbar(): JSX.Element {
                     <AiOutlineMail />
                   </div>
                 </Link>
-                <Link scroll={false} href="/resume">
+                <Link
+                  scroll={false}
+                  href="https://milliorn.github.io/digital-resume/"
+                  target="_blank"
+                >
                   <div
                     onClick={() => setNav(!nav)}
                     className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"

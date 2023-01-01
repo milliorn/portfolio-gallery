@@ -28,41 +28,41 @@ function LandingPage(): JSX.Element {
             I built many mock landing pages with various technologies. Objective
             was to learn front end technologies and frameworks. SpaceX landing
             page was made with{" "}
-            <a
+            <Link
               href="https://milliorn.github.io/SpaceX-Website/"
               target="_blank"
               rel="noreferrer"
               className="text-blue-500"
             >
               AstroJs{" "}
-            </a>
+            </Link>
             <span>
               Newest framework I have begun to use is NextJs which is what I
               used to build this{" "}
             </span>
-            <a
+            <Link
               href="https://github.com/milliorn/Portfolio"
               target="_blank"
               rel="noreferrer"
               className="text-blue-500"
             >
               portfoilio.
-            </a>
+            </Link>
           </p>
-          <a
+          <Link
             href="https://github.com/milliorn?tab=repositories&q=landing&type=&language=&sort="
             target="_blank"
             rel="noreferrer"
           >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://milliorn.github.io/travel-agency/"
             target="_blank"
             rel="noreferrer"
           >
             <button className="px-8 py-2 mt-4">Demo</button>
-          </a>
+          </Link>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
           <div className="p-2">
