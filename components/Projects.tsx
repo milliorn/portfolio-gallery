@@ -27,7 +27,7 @@ function Projects(): JSX.Element {
 
           <ProjectItem
             backgroundImg={movieDatabaseImg}
-            projectUrl="/"
+            projectUrl="/movie-database"
             tech="React, Typescript, Netlify"
             title="Movie Database"
           />
