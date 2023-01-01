@@ -40,9 +40,11 @@ function Navbar(): JSX.Element {
           <Image src={NavLogo} alt="/" className="cursor-pointer w-20" />
         </Link>
         <div>
-          <ul className="hidden md:flex">
+          <ul className="hidden md:flex mr-8">
             <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link scroll={false} href="/#hero">Home</Link>
+              <Link scroll={false} href="/#hero">
+                Home
+              </Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:border-b">
               <Link scroll={false} href="/#about">
@@ -90,29 +92,26 @@ function Navbar(): JSX.Element {
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-8 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
           <div>
-            <div className="flex w-full items-center justify-between">
-              <Link href="/">
-                <Image src={NavLogo} width="100" height="100" alt="/" />
-              </Link>
+            <div className="relative">
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+                className="rounded-full shadow-lg shadow-gray-400 p-1 cursor-pointer absolute top-0 right-0"
               >
                 <AiOutlineClose />
               </div>
             </div>
-            <div className="border-b border-gray-300 my-4">
+            <div className="border-b border-gray-300">
               <p className="w-[85%] md:w-[90%] py-4">
                 Let&apos;s build web applications!
               </p>
             </div>
           </div>
-          <div className="py-4 flex flex-col">
+          <div className="py-1 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
                 <li onClick={() => setNav(false)} className="py-2 text-sm">

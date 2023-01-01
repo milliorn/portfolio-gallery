@@ -18,7 +18,7 @@ function Projects(): JSX.Element {
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
             backgroundImg={travelAgencyImg}
-            projectUrl="/"
+            projectUrl="/landing-pages"
             tech="React, TypeScript, Tailwind CSS"
             title="Landing Pages"
           />
