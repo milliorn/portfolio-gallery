@@ -34,7 +34,7 @@ function Projects(): JSX.Element {
 
           <ProjectItem
             backgroundImg={currentWeatherImg}
-            projectUrl="/"
+            projectUrl="/weather"
             tech="React, Tailwind CSS"
             title="Current Weather"
           />
