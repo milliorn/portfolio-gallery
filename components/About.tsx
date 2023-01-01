@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function About(): JSX.Element {
   return (
-    <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
+    <div id="about" className="w-full md:h-screen p-2 flex items-center py-24">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-[#5651e5] text-center xl:text-start">
@@ -22,9 +22,9 @@ function About(): JSX.Element {
             doloremque neque facilis commodi in tenetur aperiam explicabo natus.
             Iure eaque suscipit possimus? Voluptates.
           </p>
-          <Link href="/#projects">
+          <Link href="/#projects" scroll={false}>
             <p className="py-2 text-gray-600 underline cursor-pointer">
-              Click to see my latest projects.
+              Click to see my favorite projects.
             </p>
           </Link>
         </div>
