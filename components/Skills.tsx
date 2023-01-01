@@ -28,10 +28,10 @@ function Skills(): JSX.Element {
   return (
     <div id="skills" className="w-full lg:h-screen p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+        <p className="text-xl tracking-widest uppercase text-[#5651e5] text-center xl:text-start">
           Skills
         </p>
-        <h2 className="py-4">What Can I Do?</h2>
+        <h2 className="py-4 text-center xl:text-start">What Can I Do?</h2>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">

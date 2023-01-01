@@ -42,7 +42,7 @@ function Navbar(): JSX.Element {
         <div>
           <ul className="hidden md:flex">
             <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/">Home</Link>
+              <Link scroll={false} href="/#hero">Home</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:border-b">
               <Link scroll={false} href="/#about">

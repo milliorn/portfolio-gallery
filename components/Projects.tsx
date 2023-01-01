@@ -11,10 +11,10 @@ function Projects(): JSX.Element {
   return (
     <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+        <p className="text-xl tracking-widest uppercase text-[#5651e5] text-center xl:text-start">
           Projects
         </p>
-        <h2 className="py-4">Projects I Enjoyed Developing</h2>
+        <h2 className="py-4 text-center xl:text-start">Projects I Enjoyed Developing</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
             backgroundImg={travelAgencyImg}
