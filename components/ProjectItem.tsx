@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 function ProjectItem(props: {
   title: string;
-  backgroundImg: string;
+  backgroundImg: StaticImageData;
   projectUrl: string;
   tech: string;
 }) {
@@ -22,7 +22,7 @@ function ProjectItem(props: {
         <p className="pb-4 pt-2 text-white text-center">{tech}</p>
         <Link href={projectUrl}>
           <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
-            More Info
+            Learn More
           </p>
         </Link>
       </div>
