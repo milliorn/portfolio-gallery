@@ -13,13 +13,13 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Wed Developer Portfolio</title>
+        <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
           content="My Web Developer Portfolio site, Scott Milliorn"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Scott Milliorn Portfolio</title>
       </Head>
       <Hero />
       <About />
