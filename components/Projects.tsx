@@ -41,8 +41,8 @@ function Projects(): JSX.Element {
 
           <ProjectItem
             backgroundImg={dictionaryImg}
-            projectUrl="/"
-            tech="React, Material UI"
+            projectUrl="/dictionary"
+            tech="React, Material UI, Netlify"
             title="Dictionary"
           />
 
