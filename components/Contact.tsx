@@ -9,7 +9,7 @@ function Contact(): JSX.Element {
     <>
       <div
         id="contact"
-        className="w-full md:h-screen p-2 flex items-center py-16"
+        className="w-full md:h-screen p-2 flex items-center py-16 md:py-32"
       >
         <div className="max-w-7xl	m-auto md:grid grid-cols-2 gap-8">
           <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl hidden md:flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">

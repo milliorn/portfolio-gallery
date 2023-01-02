@@ -11,7 +11,7 @@ function Projects(): JSX.Element {
   return (
     <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5] text-center xl:text-start pt-12">
+        <p className="text-xl tracking-widest uppercase text-[#5651e5] text-center xl:text-start pt-12 lg:pt-64">
           Projects
         </p>
         <h2 className="py-4 text-center xl:text-start">
@@ -48,8 +48,8 @@ function Projects(): JSX.Element {
 
           <ProjectItem
             backgroundImg={gatsbyRecipeImg}
-            projectUrl="/"
-            tech="Gatsby"
+            projectUrl="/recipes"
+            tech="Gatsby, Contentful CMS, GraphQL"
             title="Gatsby Recipes"
           />
 
