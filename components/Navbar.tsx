@@ -172,20 +172,20 @@ function Navbar(): JSX.Element {
                 </Link>
                 <Link scroll={false} href="/#contact">
                   <div
-                    onClick={() => setNav(!nav)}
                     className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                    onClick={() => setNav(!nav)}
                   >
                     <AiOutlineMail />
                   </div>
                 </Link>
                 <Link
-                  scroll={false}
                   href="https://milliorn.github.io/digital-resume/"
+                  scroll={false}
                   target="_blank"
                 >
                   <div
-                    onClick={() => setNav(!nav)}
                     className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                    onClick={() => setNav(!nav)}
                   >
                     <BsFillPersonLinesFill />
                   </div>
