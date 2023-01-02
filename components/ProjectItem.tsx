@@ -2,18 +2,18 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 function ProjectItem(props: {
-  title: string;
   backgroundImg: StaticImageData;
   projectUrl: string;
   tech: string;
+  title: string;
 }) {
   const { title, backgroundImg, projectUrl, tech } = props;
   return (
     <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-indigo-600 to-blue-400">
       <Image
+        alt="/"
         className="rounded-xl group-hover:opacity-10"
         src={backgroundImg}
-        alt="/"
       />
       <div className="hidden group-hover:block absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]">
         <h3 className="text-2xl text-white tracking-wider text-center">

@@ -3,6 +3,7 @@ import { DiLinux, DiWindows, DiCode, DiSass } from "react-icons/di";
 import { FaStrava, FaNodeJs } from "react-icons/fa";
 import {
   SiBootstrap,
+  SiBulma,
   SiCss3,
   SiDocker,
   SiDotnet,
@@ -20,7 +21,6 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiVercel,
-  SiBulma,
 } from "react-icons/si";
 
 import { TbBrandNextjs } from "react-icons/tb";
