@@ -24,7 +24,7 @@ function Contact(): JSX.Element {
             />
           </div>
           <div className="pt-8">
-            <p className="uppercase text-xl tracking-widest text-[#5651e5] text-center ">
+            <p className="uppercase text-xl tracking-widest text-indigo-600 text-center ">
               Contact
             </p>
             <h2 className="py-4 text-center">Scott Milliorn</h2>

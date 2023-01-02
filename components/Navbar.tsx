@@ -40,28 +40,28 @@ function Navbar(): JSX.Element {
           <Image src={NavLogo} alt="/" className="cursor-pointer w-20" />
         </Link>
         <div>
-          <ul className="hidden md:flex mr-8">
-            <li className="ml-10 text-sm uppercase hover:border-b">
+          <ul className="hidden md:flex mr-8 uppercase">
+            <li className="ml-10 text-sm  hover:border-b border-indigo-600/100">
               <Link scroll={false} href="/#hero">
                 Home
               </Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10 text-sm hover:border-b border-indigo-600/100">
               <Link scroll={false} href="/#about">
                 About
               </Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10 text-sm hover:border-b border-indigo-600/100">
               <Link scroll={false} href="/#skills">
                 Skills
               </Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10 text-sm hover:border-b border-indigo-600/100">
               <Link scroll={false} href="/#projects">
                 Projects
               </Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10 text-sm hover:border-b border-indigo-600/100">
               <Link
                 scroll={false}
                 href="https://milliorn.github.io/digital-resume/"
@@ -70,7 +70,7 @@ function Navbar(): JSX.Element {
                 Resume
               </Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10 text-sm uppercase hover:border-b border-indigo-600/100">
               <Link scroll={false} href="/#contact">
                 Contact
               </Link>
@@ -96,7 +96,7 @@ function Navbar(): JSX.Element {
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#F3F4F6] p-8 ease-in duration-500"
+              ? "fixed left-0 top-0 w-9/12 h-screen bg-[#F3F4F6] p-8 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
@@ -110,14 +110,14 @@ function Navbar(): JSX.Element {
               </div>
             </div>
             <div className="border-b border-gray-300">
-              <p className="w-[85%] md:w-[90%] py-4">
+              <p className="w-10/12 sm:w-11/12 py-4">
                 Let&apos;s build web applications!
               </p>
             </div>
           </div>
           <div className="py-1 flex flex-col">
             <ul className="uppercase">
-              <Link href="/">
+              <Link href="/#">
                 <li onClick={() => setNav(false)} className="py-2 text-sm">
                   Home
                 </li>
@@ -153,10 +153,10 @@ function Navbar(): JSX.Element {
               </Link>
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#5651e5]">
+              <p className="uppercase tracking-widest text-indigo-600">
                 Let&#39;s Connect
               </p>
-              <div className="flex items-center justify-evenly my-4 w-full sm:w-[80%]">
+              <div className="flex items-center justify-evenly my-4 w-full sm:w-4/5">
                 <Link
                   href="https://www.linkedin.com/in/scott-milliorn/"
                   target="_blank"
