@@ -37,6 +37,7 @@ function About(): JSX.Element {
             placeholder="blur"
             src="https://source.unsplash.com/random/?web+developer"
             width={1920}
+            priority
           />
         </div>
       </div>

@@ -37,7 +37,7 @@ function Navbar(): JSX.Element {
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-white">
         <Link href="/">
-          <Image src={NavLogo} alt="/" className="cursor-pointer w-20" />
+          <Image src={NavLogo} alt="/" className="cursor-pointer w-20" priority />
         </Link>
         <div>
           <ul className="hidden md:flex mr-8">
@@ -160,7 +160,7 @@ function Navbar(): JSX.Element {
                 <Link
                   href="https://www.linkedin.com/in/scott-milliorn/"
                   target="_blank"
-                  rel="noreferrer"
+                  
                 >
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaLinkedinIn />
@@ -169,7 +169,7 @@ function Navbar(): JSX.Element {
                 <Link
                   href="https://github.com/milliorn"
                   target="_blank"
-                  rel="noreferrer"
+                  
                 >
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaGithub />

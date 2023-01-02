@@ -16,7 +16,7 @@ function Weather(): JSX.Element {
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2">Current Weather</h2>
-          <h3>React - JavaScript - Tailwind CSS</h3>
+          <h3>React, JavaScript, Tailwind CSS</h3>
         </div>
       </div>
 
@@ -31,7 +31,7 @@ function Weather(): JSX.Element {
             <Link
               href="https://openweathermap.org/"
               target="_blank"
-              rel="noreferrer"
+              
               className="text-blue-500 cursor-pointer"
             >
               OpenWeather API.{" "}
@@ -43,7 +43,7 @@ function Weather(): JSX.Element {
             <Link
               href="https://rapidapi.com/wirefreethought/api/geodb-cities"
               target="_blank"
-              rel="noreferrer"
+              
               className="text-blue-500 cursor-pointer"
             >
               GeoDB Cities API.{" "}
@@ -58,14 +58,14 @@ function Weather(): JSX.Element {
           <Link
             href="https://github.com/milliorn/Current-Weather"
             target="_blank"
-            rel="noreferrer"
+            
           >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </Link>
           <Link
             href="https://milliorn.github.io/Current-Weather/"
             target="_blank"
-            rel="noreferrer"
+            
           >
             <button className="px-8 py-2 mt-4">Demo</button>
           </Link>

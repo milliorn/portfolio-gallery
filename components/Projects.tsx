@@ -55,7 +55,7 @@ function Projects(): JSX.Element {
 
           <ProjectItem
             backgroundImg={openAiImg}
-            projectUrl="/"
+            projectUrl="/open-ai"
             tech="OpenAI, NodeJS, ExpressJS, Render"
             title="Open AI Image Generator"
           />

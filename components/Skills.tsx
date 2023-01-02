@@ -40,7 +40,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=js&type=public&language=html&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 text-white bg-orange-600 sm:text-5xl">
                 <SiHtml5 />
@@ -56,7 +56,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=css&type=public&language=&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 bg-blue-700 text-white sm:text-5xl">
                 <SiCss3 />
@@ -72,7 +72,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=&type=public&language=javascript&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 text-black bg-amber-300 sm:text-5xl">
                 <SiJavascript />
@@ -88,7 +88,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=react&type=public&language=javascript&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 text-blue-500 sm:text-5xl">
                 <SiReact />
@@ -104,7 +104,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=tailwind&type=public&language=javascript&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 text-blue-500 sm:text-5xl">
                 <SiTailwindcss />
@@ -120,7 +120,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=firebase&type=public&language=javascript&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 text-amber-400 sm:text-5xl">
                 <SiFirebase />
@@ -136,7 +136,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=nextjs&type=&language=&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 sm:text-5xl">
                 <TbBrandNextjs />
@@ -152,7 +152,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=bootstrap&type=&language=&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 text-white bg-purple-800 sm:text-5xl">
                 <SiBootstrap />
@@ -168,7 +168,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=&type=&language=c%23&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 bg-indigo-700 text-white sm:text-5xl">
                 <SiDotnet />
@@ -198,7 +198,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=gatsby&type=&language=&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 text-purple-800 sm:text-5xl">
                 <SiGatsby />
@@ -214,7 +214,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn"
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 sm:text-5xl text-red-500">
                 <SiGit />
@@ -230,7 +230,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=postcss&type=&language=&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 sm:text-5xl bg-orange-700 text-white">
                 <SiPostcss />
@@ -246,7 +246,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=&type=&language=rust&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 text-black sm:text-5xl">
                 <SiRust />
@@ -262,7 +262,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=&type=&language=astro&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 sm:text-5xl">
                 <FaStrava />
@@ -278,7 +278,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=netlify&type=&language=&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 sm:text-5xl text-teal-400">
                 <SiNetlify />
@@ -294,7 +294,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=vercel&type=&language=&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 sm:text-5xl">
                 <SiVercel />
@@ -310,7 +310,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=nodejs&type=&language=&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 sm:text-5xl text-green-500">
                 <FaNodeJs />
@@ -326,7 +326,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories"
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 sm:text-5xl">
                 <DiLinux />
@@ -342,7 +342,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories"
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 sm:text-5xl text-sky-500">
                 <DiWindows />
@@ -358,7 +358,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=&type=&language=typescript&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 sm:text-5xl text-blue-600">
                 <SiTypescript />
@@ -374,7 +374,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=&type=&language=nwscript&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 sm:text-5xl">
                 <DiCode />
@@ -390,7 +390,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=material&type=&language=&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 sm:text-5xl text-sky-500">
                 <SiMaterialui />
@@ -406,7 +406,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=sass&type=&language=&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 sm:text-5xl text-pink-500">
                 <DiSass />
@@ -422,7 +422,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=electron&type=&language=&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 sm:text-5xl text-cyan-200 bg-slate-800">
                 <SiElectron />
@@ -438,7 +438,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=bulma&type=&language=&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 sm:text-5xl text-teal-500">
                 <SiBulma />
@@ -454,7 +454,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=express&type=&language=&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 sm:text-5xl bg-black text-yellow-400">
                 <SiJavascript />
@@ -470,7 +470,7 @@ function Skills(): JSX.Element {
               href="https://github.com/milliorn?tab=repositories&q=preact&type=&language=&sort="
               target="_blank"
               className="grid grid-cols-2 gap-4 justify-center items-center"
-              rel="noreferrer"
+              
             >
               <div className="m-auto p-1 sm:text-5xl text-white bg-violet-800">
                 <SiReact />

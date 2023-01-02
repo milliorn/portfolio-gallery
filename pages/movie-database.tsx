@@ -16,7 +16,7 @@ function MovieDatabase(): JSX.Element {
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2">Movie Database</h2>
-          <h3>React - TypeScript - Netlify</h3>
+          <h3>React, TypeScript, Netlify</h3>
         </div>
       </div>
 
@@ -32,7 +32,7 @@ function MovieDatabase(): JSX.Element {
             <Link
               href="https://reactjs.org/docs/components-and-props.html"
               target="_blank"
-              rel="noreferrer"
+              
               className="text-blue-500 cursor-pointer"
             >
               here.{" "}
@@ -44,7 +44,7 @@ function MovieDatabase(): JSX.Element {
             <Link
               href="https://www.themoviedb.org/"
               target="_blank"
-              rel="noreferrer"
+              
               className="text-blue-500 cursor-pointer"
             >
               The Movie Database API.{" "}
@@ -53,14 +53,14 @@ function MovieDatabase(): JSX.Element {
           <Link
             href="https://github.com/milliorn/Movie-Database"
             target="_blank"
-            rel="noreferrer"
+            
           >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </Link>
           <Link
             href="https://reactjs-movie-database.netlify.app/"
             target="_blank"
-            rel="noreferrer"
+            
           >
             <button className="px-8 py-2 mt-4">Demo</button>
           </Link>

@@ -21,6 +21,7 @@ function Contact(): JSX.Element {
               placeholder="blur"
               src="https://source.unsplash.com/random/?programmer"
               width={1920}
+              priority
             />
           </div>
           <div className="pt-8">
@@ -37,7 +38,7 @@ function Contact(): JSX.Element {
               <Link
                 href="https://github.com/milliorn"
                 target="_blank"
-                rel="noreferrer"
+                
               >
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <FaGithub />
@@ -46,7 +47,7 @@ function Contact(): JSX.Element {
               <Link
                 href="https://www.linkedin.com/in/scott-milliorn/"
                 target="_blank"
-                rel="noreferrer"
+                
               >
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-sky-600">
                   <FaLinkedinIn />
@@ -55,7 +56,7 @@ function Contact(): JSX.Element {
               <Link
                 href="https://twitter.com/scottmilliorn"
                 target="_blank"
-                rel="noreferrer"
+                
               >
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-sky-500">
                   <FaTwitter />
@@ -64,7 +65,7 @@ function Contact(): JSX.Element {
               <Link
                 href="https://milliorn.github.io/digital-resume/"
                 target="_blank"
-                rel="noreferrer"
+                
               >
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-pink-500">
                   <BsFillPersonLinesFill />

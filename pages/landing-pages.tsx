@@ -16,7 +16,7 @@ function LandingPage(): JSX.Element {
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2">Landing Pages</h2>
-          <h3>React JS - Tailwind</h3>
+          <h3>React JS, Tailwind</h3>
         </div>
       </div>
 
@@ -31,7 +31,7 @@ function LandingPage(): JSX.Element {
             <Link
               href="https://milliorn.github.io/SpaceX-Website/"
               target="_blank"
-              rel="noreferrer"
+              
               className="text-blue-500 cursor-pointer"
             >
               AstroJs{" "}
@@ -43,7 +43,7 @@ function LandingPage(): JSX.Element {
             <Link
               href="https://github.com/milliorn/Portfolio"
               target="_blank"
-              rel="noreferrer"
+              
               className="text-blue-500 cursor-pointer"
             >
               portfoilio.
@@ -52,14 +52,14 @@ function LandingPage(): JSX.Element {
           <Link
             href="https://github.com/milliorn?tab=repositories&q=landing&type=&language=&sort="
             target="_blank"
-            rel="noreferrer"
+            
           >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </Link>
           <Link
             href="https://milliorn.github.io/travel-agency/"
             target="_blank"
-            rel="noreferrer"
+            
           >
             <button className="px-8 py-2 mt-4">Demo</button>
           </Link>

@@ -16,7 +16,7 @@ function Dictionary(): JSX.Element {
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2">Dictionary</h2>
-          <h3>React - JavaScript - Material-UI</h3>
+          <h3>React, JavaScript, Material-UI</h3>
         </div>
       </div>
 
@@ -30,7 +30,7 @@ function Dictionary(): JSX.Element {
             <Link
               href="https://dictionaryapi.dev/"
               target="_blank"
-              rel="noreferrer"
+              
               className="text-blue-500 cursor-pointer"
             >
               Free Dictionary API{" "}
@@ -40,14 +40,14 @@ function Dictionary(): JSX.Element {
           <Link
             href="https://github.com/milliorn/UI-Dictionary"
             target="_blank"
-            rel="noreferrer"
+            
           >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </Link>
           <Link
             href="https://react-material-ui-dictionary.netlify.app/"
             target="_blank"
-            rel="noreferrer"
+            
           >
             <button className="px-8 py-2 mt-4">Demo</button>
           </Link>

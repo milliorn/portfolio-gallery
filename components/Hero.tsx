@@ -25,7 +25,7 @@ function Hero(): JSX.Element {
             <Link
               href="https://github.com/milliorn"
               target="_blank"
-              rel="noreferrer"
+              
             >
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaGithub />
@@ -34,7 +34,7 @@ function Hero(): JSX.Element {
             <Link
               href="https://www.linkedin.com/in/scott-milliorn/"
               target="_blank"
-              rel="noreferrer"
+              
             >
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-sky-600">
                 <FaLinkedinIn />
@@ -43,7 +43,7 @@ function Hero(): JSX.Element {
             <Link
               href="https://twitter.com/scottmilliorn"
               target="_blank"
-              rel="noreferrer"
+              
             >
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-sky-500">
                 <FaTwitter />
@@ -52,7 +52,7 @@ function Hero(): JSX.Element {
             <Link
               href="https://milliorn.github.io/digital-resume/"
               target="_blank"
-              rel="noreferrer"
+              
             >
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-pink-500">
                 <BsFillPersonLinesFill />
