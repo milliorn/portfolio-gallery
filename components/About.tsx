@@ -6,7 +6,7 @@ function About(): JSX.Element {
   return (
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-32">
       <div className="max-w-7xl m-auto md:grid grid-cols-3 gap-8">
-        <div className="col-span-2">
+        <div className="col-span-2 mx-4">
           <p className="uppercase text-xl tracking-widest text-indigo-600 text-center xl:text-start">
             About Me
           </p>
