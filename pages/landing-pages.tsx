@@ -1,26 +1,29 @@
 import Image from "next/image";
-import travelAgencyImg from "../public/assets/projects/travel-agency.png";
-import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
+import travelAgencyImg from "../public/assets/projects/travel-agency.png";
+
+import { RiRadioButtonFill } from "react-icons/ri";
+
+// projects landing page
 function LandingPage(): JSX.Element {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10" />
+        <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/80 z-20" />
         <Image
-          className="absolute z-1 object-cover"
+          alt="/"
+          className="absolute z-10 object-cover"
           fill
           src={travelAgencyImg}
-          alt="/"
         />
-        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
+        <div className="absolute top-2/3 max-w-7xl w-full left-1/2 right-1/2 translate-x-[-50%] translate-y-[-50%] text-white z-20 p-2">
           <h2 className="py-2">Landing Pages</h2>
           <h3>React JS, Tailwind</h3>
         </div>
       </div>
 
-      <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
+      <div className="max-w-7xl mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
         <div className="col-span-4">
           <p className="my-1">Project</p>
           <h2 className="mb-4">Overview</h2>
@@ -31,7 +34,6 @@ function LandingPage(): JSX.Element {
             <Link
               href="https://milliorn.github.io/SpaceX-Website/"
               target="_blank"
-              
               className="text-blue-500 cursor-pointer"
             >
               AstroJs{" "}
@@ -43,7 +45,6 @@ function LandingPage(): JSX.Element {
             <Link
               href="https://github.com/milliorn/Portfolio"
               target="_blank"
-              
               className="text-blue-500 cursor-pointer"
             >
               portfoilio.
@@ -52,14 +53,12 @@ function LandingPage(): JSX.Element {
           <Link
             href="https://github.com/milliorn?tab=repositories&q=landing&type=&language=&sort="
             target="_blank"
-            
           >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </Link>
           <Link
             href="https://milliorn.github.io/travel-agency/"
             target="_blank"
-            
           >
             <button className="px-8 py-2 mt-4">Demo</button>
           </Link>

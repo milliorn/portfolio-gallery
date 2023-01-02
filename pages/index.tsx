@@ -1,5 +1,5 @@
-import { Inter } from "@next/font/google";
 import Head from "next/head";
+import { Inter } from "@next/font/google";
 
 import About from "../components/About";
 import Contact from "../components/Contact";
@@ -9,6 +9,7 @@ import Skills from "../components/Skills";
 
 const inter = Inter({ subsets: ["latin"] });
 
+// home page
 export default function Home() {
   return (
     <>
