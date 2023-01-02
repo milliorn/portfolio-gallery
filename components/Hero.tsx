@@ -17,11 +17,11 @@ function Hero(): JSX.Element {
             Hello, I&apos;m <span className="text-indigo-600">Scott</span>
           </h1>
           <h1 className="py-4 text-gray-700">Web Developer</h1>
-          <p className="py-4 text-gray-600 max-w-[70%] m-auto">
+          <p className="py-4 text-gray-600 max-w-xs m-auto">
             Focused on building responsive, mobile first web applications while
             learning back-end technologies.
           </p>
-          <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
+          <div className="flex items-center justify-between max-w-sm m-auto py-4">
             <Link
               href="https://github.com/milliorn"
               target="_blank"
