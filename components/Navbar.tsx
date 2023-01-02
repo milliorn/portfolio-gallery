@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { useState, useEffect } from "react";
+
 import NavLogo from "../public/assets/navbarLogo.png";
 
+// global navbar component
 function Navbar(): JSX.Element {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);

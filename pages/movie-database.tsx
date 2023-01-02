@@ -1,8 +1,11 @@
 import Image from "next/image";
-import movieDatabaseImg from "../public/assets/projects/movie-database.png";
-import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
+import movieDatabaseImg from "../public/assets/projects/movie-database.png";
+
+import { RiRadioButtonFill } from "react-icons/ri";
+
+// movie database page
 function MovieDatabase(): JSX.Element {
   return (
     <div className="w-full">

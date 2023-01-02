@@ -1,8 +1,11 @@
 import Image from "next/image";
-import openAiImg from "../public/assets/projects/open-ai-onrender.png";
-import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
+import openAiImg from "../public/assets/projects/open-ai-onrender.png";
+
+import { RiRadioButtonFill } from "react-icons/ri";
+
+// open ai page
 function OpenAi(): JSX.Element {
   return (
     <div className="w-full">
@@ -33,14 +36,12 @@ function OpenAi(): JSX.Element {
           <Link
             href="https://github.com/milliorn/image-generator"
             target="_blank"
-            
           >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </Link>
           <Link
             href="https://image-generator-pbvf.onrender.com/"
             target="_blank"
-            
           >
             <button className="px-8 py-2 mt-4">Demo</button>
           </Link>

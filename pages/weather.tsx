@@ -1,7 +1,9 @@
 import Image from "next/image";
-import currentWeatherImg from "../public/assets/projects/current-weather.png";
-import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
+
+import currentWeatherImg from "../public/assets/projects/current-weather.png";
+
+import { RiRadioButtonFill } from "react-icons/ri";
 
 function Weather(): JSX.Element {
   return (
@@ -31,7 +33,6 @@ function Weather(): JSX.Element {
             <Link
               href="https://openweathermap.org/"
               target="_blank"
-              
               className="text-blue-500 cursor-pointer"
             >
               OpenWeather API.{" "}
@@ -43,7 +44,6 @@ function Weather(): JSX.Element {
             <Link
               href="https://rapidapi.com/wirefreethought/api/geodb-cities"
               target="_blank"
-              
               className="text-blue-500 cursor-pointer"
             >
               GeoDB Cities API.{" "}
@@ -58,14 +58,12 @@ function Weather(): JSX.Element {
           <Link
             href="https://github.com/milliorn/Current-Weather"
             target="_blank"
-            
           >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </Link>
           <Link
             href="https://milliorn.github.io/Current-Weather/"
             target="_blank"
-            
           >
             <button className="px-8 py-2 mt-4">Demo</button>
           </Link>

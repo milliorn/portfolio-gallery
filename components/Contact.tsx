@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 

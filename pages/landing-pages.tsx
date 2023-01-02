@@ -1,8 +1,11 @@
 import Image from "next/image";
-import travelAgencyImg from "../public/assets/projects/travel-agency.png";
-import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
+import travelAgencyImg from "../public/assets/projects/travel-agency.png";
+
+import { RiRadioButtonFill } from "react-icons/ri";
+
+// projects landing page
 function LandingPage(): JSX.Element {
   return (
     <div className="w-full">
@@ -31,7 +34,6 @@ function LandingPage(): JSX.Element {
             <Link
               href="https://milliorn.github.io/SpaceX-Website/"
               target="_blank"
-              
               className="text-blue-500 cursor-pointer"
             >
               AstroJs{" "}
@@ -43,7 +45,6 @@ function LandingPage(): JSX.Element {
             <Link
               href="https://github.com/milliorn/Portfolio"
               target="_blank"
-              
               className="text-blue-500 cursor-pointer"
             >
               portfoilio.
@@ -52,14 +53,12 @@ function LandingPage(): JSX.Element {
           <Link
             href="https://github.com/milliorn?tab=repositories&q=landing&type=&language=&sort="
             target="_blank"
-            
           >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </Link>
           <Link
             href="https://milliorn.github.io/travel-agency/"
             target="_blank"
-            
           >
             <button className="px-8 py-2 mt-4">Demo</button>
           </Link>

@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
+// project item component
 function ProjectItem(props: {
   backgroundImg: StaticImageData;
   projectUrl: string;

@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
@@ -7,8 +8,8 @@ function Hero(): JSX.Element {
   return (
     <div className="w-full h-screen text-center" id="hero">
       <div className="max-w-7xl w-full h-full mx-auto p-2 flex justify-center items-center">
-        <div>
-          <div className="pt-28 sm:pt-0">
+        <div className="pt-56 md:pt-0">
+          <div>
             <p className="uppercase text-sm tracking-widest text-gray-600">
               Let&apos;s build web applications!
             </p>

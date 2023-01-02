@@ -1,4 +1,5 @@
 import ProjectItem from "./ProjectItem";
+
 import currentWeatherImg from "../public/assets/projects/current-weather.png";
 import dictionaryImg from "../public/assets/projects/dictionary.png";
 import gatsbyRecipeImg from "../public/assets/projects/gatsbyrecipes.png";

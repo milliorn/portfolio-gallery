@@ -1,8 +1,11 @@
 import Image from "next/image";
-import gatsbyRecipeImg from "../public/assets/projects/gatsbyrecipes.png";
-import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
+import gatsbyRecipeImg from "../public/assets/projects/gatsbyrecipes.png";
+
+import { RiRadioButtonFill } from "react-icons/ri";
+
+// recipes page
 function Recipes(): JSX.Element {
   return (
     <div className="w-full">

@@ -1,8 +1,11 @@
 import Image from "next/image";
-import dictionaryImg from "../public/assets/projects/dictionary.png";
-import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
+import dictionaryImg from "../public/assets/projects/dictionary.png";
+
+import { RiRadioButtonFill } from "react-icons/ri";
+
+// dictionary page
 function Dictionary(): JSX.Element {
   return (
     <div className="w-full">
@@ -26,11 +29,11 @@ function Dictionary(): JSX.Element {
           <h2 className="mb-4">Overview</h2>
           <p>
             I experimented with a few frontend CSS frameworks. This is the
-            result of one of those occasions using Material-UI. Using this framework I built my first project with a Light-Dark mode toggle.{" "}
+            result of one of those occasions using Material-UI. Using this
+            framework I built my first project with a Light-Dark mode toggle.{" "}
             <Link
               href="https://dictionaryapi.dev/"
               target="_blank"
-              
               className="text-blue-500 cursor-pointer"
             >
               Free Dictionary API{" "}
@@ -40,14 +43,12 @@ function Dictionary(): JSX.Element {
           <Link
             href="https://github.com/milliorn/UI-Dictionary"
             target="_blank"
-            
           >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </Link>
           <Link
             href="https://react-material-ui-dictionary.netlify.app/"
             target="_blank"
-            
           >
             <button className="px-8 py-2 mt-4">Demo</button>
           </Link>
