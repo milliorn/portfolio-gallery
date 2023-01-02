@@ -64,6 +64,11 @@ function Navbar(): JSX.Element {
                 Projects
               </Link>
             </li>
+            <li className="ml-10 text-sm uppercase hover:border-b border-indigo-600/100">
+              <Link scroll={false} href="/#contact">
+                Contact
+              </Link>
+            </li>
             <li className="ml-10 text-sm hover:border-b border-indigo-600/100">
               <Link
                 scroll={false}
@@ -71,11 +76,6 @@ function Navbar(): JSX.Element {
                 target="_blank"
               >
                 Resume
-              </Link>
-            </li>
-            <li className="ml-10 text-sm uppercase hover:border-b border-indigo-600/100">
-              <Link scroll={false} href="/#contact">
-                Contact
               </Link>
             </li>
           </ul>
@@ -140,6 +140,11 @@ function Navbar(): JSX.Element {
                   Projects
                 </li>
               </Link>
+              <Link scroll={false} href="/#contact">
+                <li onClick={() => setNav(false)} className="py-2 text-sm">
+                  Contact
+                </li>
+              </Link>
               <Link
                 scroll={false}
                 href="https://milliorn.github.io/digital-resume/"
@@ -147,11 +152,6 @@ function Navbar(): JSX.Element {
               >
                 <li onClick={() => setNav(false)} className="py-2 text-sm">
                   Resume
-                </li>
-              </Link>
-              <Link scroll={false} href="/#contact">
-                <li onClick={() => setNav(false)} className="py-2 text-sm">
-                  Contact
                 </li>
               </Link>
             </ul>
