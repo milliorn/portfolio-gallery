@@ -28,7 +28,7 @@ function Navbar(): JSX.Element {
 
   return (
     <div
-      style={{ backgroundColor: `#ecf0f3` }}
+      style={{ backgroundColor: `#F3F4F6` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
@@ -96,7 +96,7 @@ function Navbar(): JSX.Element {
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-8 ease-in duration-500"
+              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#F3F4F6] p-8 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
@@ -160,17 +160,12 @@ function Navbar(): JSX.Element {
                 <Link
                   href="https://www.linkedin.com/in/scott-milliorn/"
                   target="_blank"
-                  
                 >
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaLinkedinIn />
                   </div>
                 </Link>
-                <Link
-                  href="https://github.com/milliorn"
-                  target="_blank"
-                  
-                >
+                <Link href="https://github.com/milliorn" target="_blank">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaGithub />
                   </div>
