@@ -14,7 +14,7 @@ function OpenAi(): JSX.Element {
           src={openAiImg}
           alt="/"
         />
-        <div className="absolute top-[70%] max-w-7xl w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-20 p-2">
+        <div className="absolute top-2/3 max-w-7xl w-full left-1/2 right-1/2 translate-x-[-50%] translate-y-[-50%] text-white z-20 p-2">
           <h2 className="py-2">Open AI Image Generator</h2>
           <h3>OpenAI, NodeJS, ExpressJS, Render</h3>
         </div>
