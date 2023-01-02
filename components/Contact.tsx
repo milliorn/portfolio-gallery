@@ -21,7 +21,6 @@ function Contact(): JSX.Element {
               placeholder="blur"
               src="https://source.unsplash.com/random/?programmer"
               width={1920}
-              priority
             />
           </div>
           <div className="pt-8">

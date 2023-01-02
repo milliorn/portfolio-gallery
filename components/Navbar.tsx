@@ -37,7 +37,7 @@ function Navbar(): JSX.Element {
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-white">
         <Link href="/">
-          <Image src={NavLogo} alt="/" className="cursor-pointer w-20" priority />
+          <Image src={NavLogo} alt="/" className="cursor-pointer w-20" />
         </Link>
         <div>
           <ul className="hidden md:flex mr-8">
