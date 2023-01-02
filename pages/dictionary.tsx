@@ -7,7 +7,7 @@ function Dictionary(): JSX.Element {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-20" />
+        <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/80 z-20" />
         <Image
           className="absolute z-10 object-cover"
           fill
