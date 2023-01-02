@@ -31,8 +31,8 @@ function Navbar(): JSX.Element {
       style={{ backgroundColor: `#F3F4F6` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
-          : "fixed w-full h-20 z-[100]"
+          ? "fixed w-full h-20 shadow-xl z-50 ease-in-out duration-300"
+          : "fixed w-full h-20 z-50"
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-white">
