@@ -1,8 +1,38 @@
-# Portfolio
+# portfolio
 
-[![CodeQL](https://github.com/milliorn/Portfolio/actions/workflows/codeql.yml/badge.svg)](https://github.com/milliorn/Portfolio/actions/workflows/codeql.yml)
-[![Lint Code Base](https://github.com/milliorn/Portfolio/actions/workflows/super-linter.yml/badge.svg)](https://github.com/milliorn/Portfolio/actions/workflows/super-linter.yml)
-[![OSSAR](https://github.com/milliorn/Portfolio/actions/workflows/ossar.yml/badge.svg)](https://github.com/milliorn/Portfolio/actions/workflows/ossar.yml)
-[![pages-build-deployment](https://github.com/milliorn/Portfolio/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/milliorn/Portfolio/actions/workflows/pages/pages-build-deployment)
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Personal portfolio website.
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Getting Started
+
+<https://nextjs.org/docs/getting-started#automatic-setup>
+
+## Install Tailwind CSS with Next.js
+
+<https://tailwindcss.com/docs/guides/nextjs>
+
+## Logo
+
+<https://www.canva.com/>
+
+## react-icons
+
+<https://github.com/react-icons/react-icons>
+
+## Generate Random Images From Unsplash Without Using The API
+
+<https://awik.io/generate-random-images-unsplash-without-using-api/>
