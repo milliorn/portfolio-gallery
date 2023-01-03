@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import BackButton from "../components/BackButton";
-import ProjectButtonCode from "../components/ProjectButtonCode";
+import ProjectButtonCode from "../components/Project/ProjectButtonCode";
 import ProjectButtonDemo from "../components/ProjectButtonDemo";
 import ProjectHeroOverlay from "../components/ProjectHeroOverlay";
 import ProjectHeroText from "../components/ProjectHeroText";
@@ -50,8 +50,8 @@ export default function Recipes(): JSX.Element {
           src={gatsbyRecipeImg}
         />
         <ProjectHeroText
-          h2="Current Weather"
-          h3="React, JavaScript, Tailwind CSS"
+          h2="Gatsby Recipes"
+          h3="GatsbyJs, Contentful CMS, GraphQL"
         />
       </div>
 

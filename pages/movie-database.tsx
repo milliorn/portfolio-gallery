@@ -4,7 +4,7 @@ import Link from "next/link";
 import movieDatabaseImg from "../public/assets/projects/movie-database.png";
 
 import BackButton from "../components/BackButton";
-import ProjectButtonCode from "../components/ProjectButtonCode";
+import ProjectButtonCode from "../components/Project/ProjectButtonCode";
 import ProjectButtonDemo from "../components/ProjectButtonDemo";
 import ProjectHeroOverlay from "../components/ProjectHeroOverlay";
 import ProjectHeroText from "../components/ProjectHeroText";
@@ -69,10 +69,7 @@ export default function MovieDatabase(): JSX.Element {
           fill
           src={movieDatabaseImg}
         />
-        <ProjectHeroText
-          h2="Current Weather"
-          h3="React, JavaScript, Tailwind CSS"
-        />
+        <ProjectHeroText h2="Movie Database" h3="React, TypeScript, Netlify" />
       </div>
 
       <div className="max-w-7xl mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">

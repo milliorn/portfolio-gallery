@@ -4,7 +4,7 @@ import Link from "next/link";
 import travelAgencyImg from "../public/assets/projects/travel-agency.png";
 
 import BackButton from "../components/BackButton";
-import ProjectButtonCode from "../components/ProjectButtonCode";
+import ProjectButtonCode from "../components/Project/ProjectButtonCode";
 import ProjectButtonDemo from "../components/ProjectButtonDemo";
 import ProjectHeroOverlay from "../components/ProjectHeroOverlay";
 import ProjectHeroText from "../components/ProjectHeroText";
@@ -66,10 +66,7 @@ export default function LandingPage(): JSX.Element {
           fill
           src={travelAgencyImg}
         />
-        <ProjectHeroText
-          h2="Current Weather"
-          h3="React, JavaScript, Tailwind CSS"
-        />
+        <ProjectHeroText h2="Landing Pages" h3="React, Tailwind CSS" />
       </div>
 
       <div className="max-w-7xl mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">

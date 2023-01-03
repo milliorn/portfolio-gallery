@@ -4,7 +4,7 @@ import Link from "next/link";
 import currentWeatherImg from "../public/assets/projects/current-weather.png";
 
 import BackButton from "../components/BackButton";
-import ProjectButtonCode from "../components/ProjectButtonCode";
+import ProjectButtonCode from "../components/Project/ProjectButtonCode";
 import ProjectButtonDemo from "../components/ProjectButtonDemo";
 import ProjectHeroOverlay from "../components/ProjectHeroOverlay";
 import ProjectHeroText from "../components/ProjectHeroText";

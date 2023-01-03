@@ -3,7 +3,7 @@ import Image from "next/image";
 import openAiImg from "../public/assets/projects/open-ai-onrender.png";
 
 import BackButton from "../components/BackButton";
-import ProjectButtonCode from "../components/ProjectButtonCode";
+import ProjectButtonCode from "../components/Project/ProjectButtonCode";
 import ProjectButtonDemo from "../components/ProjectButtonDemo";
 import ProjectHeroOverlay from "../components/ProjectHeroOverlay";
 import ProjectHeroText from "../components/ProjectHeroText";
@@ -43,8 +43,8 @@ export default function OpenAi(): JSX.Element {
           src={openAiImg}
         />
         <ProjectHeroText
-          h2="Current Weather"
-          h3="React, JavaScript, Tailwind CSS"
+          h2="Open AI Image Generator"
+          h3="OpenAI, NodeJS, ExpressJS, Render"
         />
       </div>
 

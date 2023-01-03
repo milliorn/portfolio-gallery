@@ -1,8 +1,22 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
+function ProjectItemButton({
+  projectUrl,
+}: {
+  projectUrl: string;
+}): JSX.Element {
+  return (
+    <Link href={projectUrl}>
+      <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer">
+        View
+      </p>
+    </Link>
+  );
+}
+
 // project item component
-function ProjectItem(props: {
+export default function ProjectItem(props: {
   backgroundImg: StaticImageData;
   projectUrl: string;
   tech: string;
@@ -21,14 +35,8 @@ function ProjectItem(props: {
           {title}
         </h3>
         <p className="pb-4 pt-2 text-white text-center">{tech}</p>
-        <Link href={projectUrl}>
-          <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer">
-            View
-          </p>
-        </Link>
+        {ProjectItemButton({ projectUrl })}
       </div>
     </div>
   );
 }
-
-export default ProjectItem;
