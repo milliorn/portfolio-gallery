@@ -1,85 +1,65 @@
 import Image from "next/image";
-import Link from "next/link";
+
+import BackButton from "../components/BackButton";
+import ProjectButtonCode from "../components/ProjectButtonCode";
+import ProjectButtonDemo from "../components/ProjectButtonDemo";
+import ProjectHeroOverlay from "../components/ProjectHeroOverlay";
+import ProjectHeroText from "../components/ProjectHeroText";
+import ProjectTextHeading from "../components/ProjectTextBody";
+import TechStack from "../components/TechStack";
 
 import gatsbyRecipeImg from "../public/assets/projects/gatsbyrecipes.png";
 
-import { RiRadioButtonFill } from "react-icons/ri";
+const techStack = [
+  "GatsbyJs",
+  "GatsbyCloud",
+  "GraphQL",
+  "Contentful CMS",
+  "React-Helmet",
+  "Slugify",
+] as const;
+
+// body of text found in project pages
+function RecipeTextBody() {
+  return (
+    <div className="col-span-4">
+      <ProjectTextHeading />
+      <p>
+        GatsbyJS was the first static site generator I used to build websites.
+        This is my favorite since it contains cooking recipes I personally use.
+        I like to cook and needed a way to keep up with recipes I enjoyed
+        making. Pages are generated with the help of Contentful CMS and GraphQL.
+      </p>
+
+      <ProjectButtonCode url="https://github.com/milliorn/Recipe-Page" />
+      <ProjectButtonDemo url="https://gatsbyrecipes.gatsbyjs.io/" />
+    </div>
+  );
+}
 
 // recipes page
-function Recipes(): JSX.Element {
+export default function Recipes(): JSX.Element {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/80 z-20" />
+        <ProjectHeroOverlay />
         <Image
           alt="/"
           className="absolute z-10 object-cover"
           fill
           src={gatsbyRecipeImg}
         />
-        <div className="absolute top-2/3 max-w-7xl w-full left-1/2 right-1/2 translate-x-[-50%] translate-y-[-50%] text-white z-20 p-2">
-          <h2 className="py-2">Gatsby Recipes</h2>
-          <h3>GatsbyJs, Contentful CMS, GraphQL</h3>
-        </div>
+        <ProjectHeroText
+          h2="Current Weather"
+          h3="React, JavaScript, Tailwind CSS"
+        />
       </div>
 
       <div className="max-w-7xl mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
-        <div className="col-span-4">
-          <p className="my-1">Project</p>
-          <h2 className="mb-4">Overview</h2>
-          <p>
-            GatsbyJS was the first static site generator I used to build
-            websites. This is my favorite since it contains cooking recipes I
-            personally use. I like to cook and needed a way to keep up with
-            recipes I enjoyed making. Pages are generated with the help of
-            Contentful CMS and GraphQL.
-          </p>
-          <Link
-            href="https://github.com/milliorn/Recipe-Page"
-            target="_blank"
-            
-          >
-            <button className="px-8 py-2 mt-4 mr-8">Code</button>
-          </Link>
-          <Link
-            href="https://gatsbyrecipes.gatsbyjs.io/"
-            target="_blank"
-            
-          >
-            <button className="px-8 py-2 mt-4">Demo</button>
-          </Link>
-        </div>
-        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
-          <div className="p-2">
-            <p className="text-center font-bold pb-2">Tech Stacks</p>
-            <div className="grid grid-cols-2 md:grid-cols-1 text-sm lg:text-base">
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> GatsbyJs
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> GatsbyCloud
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> GraphQL
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> Contentful CMS
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> React-Helmet
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> Slugify
-              </p>
-            </div>
-          </div>
-        </div>
-        <Link href="/#projects">
-          <p className="underline cursor-pointer ml-4">Back</p>
-        </Link>
+        <RecipeTextBody />
+        <TechStack data={techStack} />
+        <BackButton />
       </div>
     </div>
   );
 }
-
-export default Recipes;

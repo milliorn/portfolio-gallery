@@ -19,6 +19,7 @@ function Navbar(): JSX.Element {
   }
 
   useEffect(() => {
+    // show/hide shadow on navbar based on viewpoint
     const handleShadow = () => {
       if (window.scrollY >= 90) {
         setShadow(true);
