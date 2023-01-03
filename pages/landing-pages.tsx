@@ -6,6 +6,8 @@ import travelAgencyImg from "../public/assets/projects/travel-agency.png";
 import BackButton from "../components/BackButton";
 import ProjectButtonCode from "../components/ProjectButtonCode";
 import ProjectButtonDemo from "../components/ProjectButtonDemo";
+import ProjectHeroOverlay from "../components/ProjectHeroOverlay";
+import ProjectHeroText from "../components/ProjectHeroText";
 import ProjectTextHeading from "../components/ProjectTextBody";
 import TechStack from "../components/TechStack";
 
@@ -22,17 +24,17 @@ function LandingPage(): JSX.Element {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/80 z-20" />
+        <ProjectHeroOverlay />
         <Image
           alt="/"
           className="absolute z-10 object-cover"
           fill
           src={travelAgencyImg}
         />
-        <div className="absolute top-2/3 max-w-7xl w-full left-1/2 right-1/2 translate-x-[-50%] translate-y-[-50%] text-white z-20 p-2">
-          <h2 className="py-2">Landing Pages</h2>
-          <h3>React JS, Tailwind</h3>
-        </div>
+        <ProjectHeroText
+          h2="Current Weather"
+          h3="React, JavaScript, Tailwind CSS"
+        />
       </div>
 
       <div className="max-w-7xl mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
