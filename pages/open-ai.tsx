@@ -3,10 +3,11 @@ import Link from "next/link";
 
 import openAiImg from "../public/assets/projects/open-ai-onrender.png";
 
+import BackButton from "../components/BackButton";
 import ProjectButtonCode from "../components/ProjectButtonCode";
 import ProjectButtonDemo from "../components/ProjectButtonDemo";
+import ProjectTextHeading from "../components/ProjectTextBody";
 import TechStack from "../components/TechStack";
-import { BackButton } from "../components/BackButton";
 
 const techStack = ["ExpressJs", "Open AI", "SweetAlert2", "Render"];
 
@@ -30,8 +31,7 @@ function OpenAi(): JSX.Element {
 
       <div className="max-w-7xl mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
         <div className="col-span-4">
-          <p className="my-1">Project</p>
-          <h2 className="mb-4">Overview</h2>
+          <ProjectTextHeading />
           <p>
             I been wanting to learn more about NodeJs, along with ExpressJs. I
             used them to create my first web service hosted on Render. This site

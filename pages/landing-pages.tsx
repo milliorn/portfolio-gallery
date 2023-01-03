@@ -3,10 +3,11 @@ import Link from "next/link";
 
 import travelAgencyImg from "../public/assets/projects/travel-agency.png";
 
+import BackButton from "../components/BackButton";
 import ProjectButtonCode from "../components/ProjectButtonCode";
 import ProjectButtonDemo from "../components/ProjectButtonDemo";
+import ProjectTextHeading from "../components/ProjectTextBody";
 import TechStack from "../components/TechStack";
-import { BackButton } from "../components/BackButton";
 
 const techStack = [
   "React",
@@ -36,8 +37,7 @@ function LandingPage(): JSX.Element {
 
       <div className="max-w-7xl mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
         <div className="col-span-4">
-          <p className="my-1">Project</p>
-          <h2 className="mb-4">Overview</h2>
+          <ProjectTextHeading />
           <p>
             I built many mock landing pages with various technologies. Objective
             was to learn front end technologies and frameworks. SpaceX landing

@@ -3,10 +3,11 @@ import Link from "next/link";
 
 import currentWeatherImg from "../public/assets/projects/current-weather.png";
 
+import BackButton from "../components/BackButton";
 import ProjectButtonCode from "../components/ProjectButtonCode";
 import ProjectButtonDemo from "../components/ProjectButtonDemo";
+import ProjectTextHeading from "../components/ProjectTextBody";
 import TechStack from "../components/TechStack";
-import { BackButton } from "../components/BackButton";
 
 const techStack = [
   "React",
@@ -16,6 +17,44 @@ const techStack = [
   "Tailwind CSS",
   "API",
 ] as const;
+
+function WeatherTextBody(): JSX.Element {
+  return (
+    <div className="col-span-4">
+      <ProjectTextHeading />
+      <p>
+        My favorite and personally most useful app, I created this app to
+        address some features I find lacking in other apps. I can now check the
+        weather reported from thousands of cities worldwide using{" "}
+        <Link
+          href="https://openweathermap.org/"
+          target="_blank"
+          className="text-blue-500 cursor-pointer"
+        >
+          OpenWeather API.{" "}
+        </Link>
+        <span>
+          API is able to get precision results by using latitude/longitude in
+          the request, which is provided by the{" "}
+        </span>
+        <Link
+          href="https://rapidapi.com/wirefreethought/api/geodb-cities"
+          target="_blank"
+          className="text-blue-500 cursor-pointer"
+        >
+          GeoDB Cities API.{" "}
+        </Link>
+        <span>
+          React Accordion and Pagination is used so you simply search for the
+          city, select return results, and the response will create a weather
+          forecast with collapse/expand elements for the daily forecast.
+        </span>
+      </p>
+      <ProjectButtonCode url="https://github.com/milliorn/Current-Weather" />
+      <ProjectButtonDemo url="https://milliorn.github.io/Current-Weather/" />
+    </div>
+  );
+}
 
 // weather page
 function Weather(): JSX.Element {
@@ -36,44 +75,8 @@ function Weather(): JSX.Element {
       </div>
 
       <div className="max-w-7xl mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
-        <div className="col-span-4">
-          <p className="my-1">Project</p>
-          <h2 className="mb-4">Overview</h2>
-          <p>
-            My favorite and personally most useful app, I created this app to
-            address some features I find lacking in other apps. I can now check
-            the weather reported from thousands of cities worldwide using{" "}
-            <Link
-              href="https://openweathermap.org/"
-              target="_blank"
-              className="text-blue-500 cursor-pointer"
-            >
-              OpenWeather API.{" "}
-            </Link>
-            <span>
-              API is able to get precision results by using latitude/longitude
-              in the request, which is provided by the{" "}
-            </span>
-            <Link
-              href="https://rapidapi.com/wirefreethought/api/geodb-cities"
-              target="_blank"
-              className="text-blue-500 cursor-pointer"
-            >
-              GeoDB Cities API.{" "}
-            </Link>
-            <span>
-              React Accordion and Pagination is used so you simply search for
-              the city, select return results, and the response will create a
-              weather forecast with collapse/expand elements for the daily
-              forecast.
-            </span>
-          </p>
-          <ProjectButtonCode url="https://github.com/milliorn/Current-Weather" />
-          <ProjectButtonDemo url="https://milliorn.github.io/Current-Weather/" />
-        </div>
-
+        <WeatherTextBody />
         <TechStack data={techStack} />
-
         <BackButton />
       </div>
     </div>
