@@ -20,7 +20,7 @@ const techStack = [
   "API",
 ] as const;
 
-// body of text found in weather project page
+// body of text found in project pages
 function WeatherTextBody(): JSX.Element {
   return (
     <div className="col-span-4">
@@ -60,7 +60,7 @@ function WeatherTextBody(): JSX.Element {
 }
 
 // weather page
-function Weather(): JSX.Element {
+export default function Weather(): JSX.Element {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -85,5 +85,3 @@ function Weather(): JSX.Element {
     </div>
   );
 }
-
-export default Weather;

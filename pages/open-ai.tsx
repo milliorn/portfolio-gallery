@@ -12,8 +12,26 @@ import TechStack from "../components/TechStack";
 
 const techStack = ["ExpressJs", "Open AI", "SweetAlert2", "Render"];
 
+// body of text found in project pages
+function OpenAiTextBody(): JSX.Element {
+  return (
+    <div className="col-span-4">
+      <ProjectTextHeading />
+      <p>
+        I been wanting to learn more about NodeJs, along with ExpressJs. I used
+        them to create my first web service hosted on Render. This site will
+        generate images from user input using OpenAi API. Backend was scaffold
+        using ExpressJs.
+      </p>
+
+      <ProjectButtonCode url="https://github.com/milliorn/image-generator" />
+      <ProjectButtonDemo url="https://image-generator-pbvf.onrender.com/" />
+    </div>
+  );
+}
+
 // open ai page
-function OpenAi(): JSX.Element {
+export default function OpenAi(): JSX.Element {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -31,25 +49,10 @@ function OpenAi(): JSX.Element {
       </div>
 
       <div className="max-w-7xl mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
-        <div className="col-span-4">
-          <ProjectTextHeading />
-          <p>
-            I been wanting to learn more about NodeJs, along with ExpressJs. I
-            used them to create my first web service hosted on Render. This site
-            will generate images from user input using OpenAi API. Backend was
-            scaffold using ExpressJs.
-          </p>
-
-          <ProjectButtonCode url="https://github.com/milliorn/image-generator" />
-          <ProjectButtonDemo url="https://image-generator-pbvf.onrender.com/" />
-        </div>
-
+        <OpenAiTextBody />
         <TechStack data={techStack} />
-
         <BackButton />
       </div>
     </div>
   );
 }
-
-export default OpenAi;
