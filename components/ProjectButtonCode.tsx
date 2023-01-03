@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+// Code Button found in project pages
 export default function ProjectButtonCode(props: { url: string }): JSX.Element {
   const { url } = props;
   return (

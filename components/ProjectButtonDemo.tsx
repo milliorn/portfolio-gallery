@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { UrlObject } from "url";
 
+// Demo Button found in project pages
 export default function ProjectButtonDemo(props: { url: string }): JSX.Element {
   const { url } = props;
   return (
