@@ -3,7 +3,6 @@ import Link from "next/link";
 
 import dictionaryImg from "../public/assets/projects/dictionary.png";
 
-import { RiRadioButtonFill } from "react-icons/ri";
 import TechStack from "../components/TechStack";
 
 const techStack = [
