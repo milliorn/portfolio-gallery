@@ -5,6 +5,7 @@ import currentWeatherImg from "../public/assets/projects/current-weather.png";
 
 import { RiRadioButtonFill } from "react-icons/ri";
 
+// weather page
 function Weather(): JSX.Element {
   return (
     <div className="w-full">
