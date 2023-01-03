@@ -56,7 +56,7 @@ function ContactImage(): JSX.Element {
 // template for contact buttons
 function ContactButton(props: {
   className: string;
-  button: string | ReactElement<any, string | JSXElementConstructor<any>>;
+  button: string | ReactElement<string, string | JSXElementConstructor<string>>;
 }): JSX.Element {
   return <div className={props.className}>{props.button}</div>;
 }
@@ -66,12 +66,7 @@ function ContactButtonsContainer(): JSX.Element {
   return (
     <div className="flex items-center justify-between max-w-xs m-auto py-4">
       {contactButtons.map((e) => (
-        <Link
-          aria-label={e.label}
-          href={e.href}
-          target="_blank"
-          key={e.label}
-        >
+        <Link aria-label={e.label} href={e.href} target="_blank" key={e.label}>
           <ContactButton className={e.className} button={e.button} />
         </Link>
       ))}
