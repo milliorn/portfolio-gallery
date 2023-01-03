@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+// link found in project pages that navigates you back to previous page
 export default function BackButton(): JSX.Element {
   return (
     <Link href="/#projects">

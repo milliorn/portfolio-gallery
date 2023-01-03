@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import openAiImg from "../public/assets/projects/open-ai-onrender.png";
 

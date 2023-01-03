@@ -18,6 +18,7 @@ const techStack = [
   "API",
 ] as const;
 
+// body of text found in weather project page
 function WeatherTextBody(): JSX.Element {
   return (
     <div className="col-span-4">
