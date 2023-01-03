@@ -1,8 +1,40 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ReactElement, JSXElementConstructor } from "react";
 
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+
+const contactButtons = [
+  {
+    button: <FaGithub />,
+    className:
+      "rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300",
+    href: "https://github.com/milliorn",
+    label: "Github",
+  },
+  {
+    button: <FaLinkedinIn />,
+    className:
+      "rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-sky-600",
+    href: "https://www.linkedin.com/in/scott-milliorn/",
+    label: "LinkedinIn",
+  },
+  {
+    button: <FaTwitter />,
+    className:
+      "rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-sky-500",
+    href: "https://twitter.com/scottmilliorn",
+    label: "Twitter",
+  },
+  {
+    button: <BsFillPersonLinesFill />,
+    className:
+      "rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-pink-500",
+    href: "https://milliorn.github.io/digital-resume/",
+    label: "Resume",
+  },
+] as const;
 
 // image container for contact
 function ContactImage(): JSX.Element {
@@ -21,49 +53,28 @@ function ContactImage(): JSX.Element {
   );
 }
 
+// template for contact buttons
+function ContactButton(props: {
+  className: string;
+  button: string | ReactElement<any, string | JSXElementConstructor<any>>;
+}): JSX.Element {
+  return <div className={props.className}>{props.button}</div>;
+}
+
 // container to hold contact buttons
-function ContactButtons(): JSX.Element {
+function ContactButtonsContainer(): JSX.Element {
   return (
     <div className="flex items-center justify-between max-w-xs m-auto py-4">
-      <Link
-        aria-label="github"
-        href="https://github.com/milliorn"
-        target="_blank"
-      >
-        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-          <FaGithub />
-        </div>
-      </Link>
-
-      <Link
-        aria-label="linkedin"
-        href="https://www.linkedin.com/in/scott-milliorn/"
-        target="_blank"
-      >
-        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-sky-600">
-          <FaLinkedinIn />
-        </div>
-      </Link>
-
-      <Link
-        aria-label="twitter"
-        href="https://twitter.com/scottmilliorn"
-        target="_blank"
-      >
-        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-sky-500">
-          <FaTwitter />
-        </div>
-      </Link>
-
-      <Link
-        aria-label="resume"
-        href="https://milliorn.github.io/digital-resume/"
-        target="_blank"
-      >
-        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-pink-500">
-          <BsFillPersonLinesFill />
-        </div>
-      </Link>
+      {contactButtons.map((e) => (
+        <Link
+          aria-label={e.label}
+          href={e.href}
+          target="_blank"
+          key={e.label}
+        >
+          <ContactButton className={e.className} button={e.button} />
+        </Link>
+      ))}
     </div>
   );
 }
@@ -81,7 +92,7 @@ function ContactText(): JSX.Element {
         Available for Freelance or Full-Time Positions. Contact me and
         let&apos;s start our journey!
       </p>
-      <ContactButtons />
+      <ContactButtonsContainer />
     </div>
   );
 }
