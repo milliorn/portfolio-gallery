@@ -1,6 +1,9 @@
 import { RiRadioButtonFill } from "react-icons/ri";
 
-export default function TechStack(props: { data: readonly string[] }): JSX.Element {
+// generate tech stack element found in project pages
+export default function TechStack(props: {
+  data: readonly string[];
+}): JSX.Element {
   const { data } = props;
 
   return (
