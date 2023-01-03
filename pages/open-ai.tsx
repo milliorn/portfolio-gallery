@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import openAiImg from "../public/assets/projects/open-ai-onrender.png";
 
+import ProjectButtonCode from "../components/ProjectButtonCode";
+import ProjectButtonDemo from "../components/ProjectButtonDemo";
 import TechStack from "../components/TechStack";
 
 const techStack = ["ExpressJs", "Open AI", "SweetAlert2", "Render"];
@@ -35,28 +37,9 @@ function OpenAi(): JSX.Element {
             will generate images from user input using OpenAi API. Backend was
             scaffold using ExpressJs.
           </p>
-          <Link
-            href="https://github.com/milliorn/image-generator"
-            target="_blank"
-          >
-            <button
-              type="button"
-              className="px-8 py-2 mt-4 mr-8 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#4F46E5] to-[#60A5FA] text-white"
-            >
-              Code
-            </button>
-          </Link>
-          <Link
-            href="https://image-generator-pbvf.onrender.com/"
-            target="_blank"
-          >
-            <button
-              type="button"
-              className="px-8 py-2 mt-4 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#4F46E5] to-[#60A5FA] text-white"
-            >
-              Demo
-            </button>
-          </Link>
+
+          <ProjectButtonCode url="https://github.com/milliorn/image-generator" />
+          <ProjectButtonDemo url="https://image-generator-pbvf.onrender.com/" />
         </div>
 
         <TechStack data={techStack} />

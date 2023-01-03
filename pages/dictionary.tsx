@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import dictionaryImg from "../public/assets/projects/dictionary.png";
 
+import ProjectButtonCode from "../components/ProjectButtonCode";
+import ProjectButtonDemo from "../components/ProjectButtonDemo";
 import TechStack from "../components/TechStack";
 
 const techStack = [
@@ -50,28 +52,9 @@ function Dictionary(): JSX.Element {
             </Link>
             <span>was used here to get results in 12 langauges.</span>
           </p>
-          <Link
-            href="https://github.com/milliorn/UI-Dictionary"
-            target="_blank"
-          >
-            <button
-              type="button"
-              className="px-8 py-2 mt-4 mr-8 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#4F46E5] to-[#60A5FA] text-white"
-            >
-              Code
-            </button>
-          </Link>
-          <Link
-            href="https://react-material-ui-dictionary.netlify.app/"
-            target="_blank"
-          >
-            <button
-              type="button"
-              className="px-8 py-2 mt-4 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#4F46E5] to-[#60A5FA] text-white"
-            >
-              Demo
-            </button>
-          </Link>
+
+          <ProjectButtonCode url="https://github.com/milliorn/UI-Dictionary" />
+          <ProjectButtonDemo url="https://react-material-ui-dictionary.netlify.app/" />
         </div>
 
         <TechStack data={techStack} />

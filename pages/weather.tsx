@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import currentWeatherImg from "../public/assets/projects/current-weather.png";
 
+import ProjectButtonCode from "../components/ProjectButtonCode";
+import ProjectButtonDemo from "../components/ProjectButtonDemo";
 import TechStack from "../components/TechStack";
 
 const techStack = [
@@ -65,28 +67,8 @@ function Weather(): JSX.Element {
               forecast.
             </span>
           </p>
-          <Link
-            href="https://github.com/milliorn/Current-Weather"
-            target="_blank"
-          >
-            <button
-              type="button"
-              className="px-8 py-2 mt-4 mr-8 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#4F46E5] to-[#60A5FA] text-white"
-            >
-              Code
-            </button>
-          </Link>
-          <Link
-            href="https://milliorn.github.io/Current-Weather/"
-            target="_blank"
-          >
-            <button
-              type="button"
-              className="px-8 py-2 mt-4 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#4F46E5] to-[#60A5FA] text-white"
-            >
-              Demo
-            </button>
-          </Link>
+          <ProjectButtonCode url="https://github.com/milliorn/Current-Weather" />
+          <ProjectButtonDemo url="https://milliorn.github.io/Current-Weather/" />
         </div>
 
         <TechStack data={techStack} />
