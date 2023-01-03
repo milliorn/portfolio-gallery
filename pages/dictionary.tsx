@@ -4,11 +4,11 @@ import Link from "next/link";
 import dictionaryImg from "../public/assets/projects/dictionary.png";
 
 import BackButton from "../components/BackButton";
-import ProjectButtonCode from "../components/ProjectButtonCode";
-import ProjectButtonDemo from "../components/ProjectButtonDemo";
-import ProjectHeroOverlay from "../components/ProjectHeroOverlay";
-import ProjectHeroText from "../components/ProjectHeroText";
-import ProjectTextHeading from "../components/ProjectTextBody";
+import ProjectButtonCode from "../components/Project/ProjectButtonCode";
+import ProjectButtonDemo from "../components/Project/ProjectButtonDemo";
+import ProjectHeroOverlay from "../components/Project/ProjectHeroOverlay";
+import ProjectHeroText from "../components/Project/ProjectHeroText";
+import ProjectTextHeading from "../components/Project/ProjectTextBody";
 import TechStack from "../components/TechStack";
 
 const techStack = [
@@ -58,10 +58,7 @@ export default function Dictionary(): JSX.Element {
           fill
           src={dictionaryImg}
         />
-        <ProjectHeroText
-          h2="Current Weather"
-          h3="React, JavaScript, Tailwind CSS"
-        />
+        <ProjectHeroText h2="Dictionary" h3="React, JavaScript, Material-UI" />
       </div>
 
       <div className="max-w-7xl mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
