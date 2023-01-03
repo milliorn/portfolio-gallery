@@ -5,6 +5,15 @@ import currentWeatherImg from "../public/assets/projects/current-weather.png";
 
 import { RiRadioButtonFill } from "react-icons/ri";
 
+const techStack = [
+  "React",
+  "JavaScript",
+  "Accordion",
+  "Paginate",
+  "Tailwind CSS",
+  "API",
+];
+
 // weather page
 function Weather(): JSX.Element {
   return (
@@ -60,7 +69,10 @@ function Weather(): JSX.Element {
             href="https://github.com/milliorn/Current-Weather"
             target="_blank"
           >
-            <button type="button" className="px-8 py-2 mt-4 mr-8">
+            <button
+              type="button"
+              className="px-8 py-2 mt-4 mr-8 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#4F46E5] to-[#60A5FA] text-white"
+            >
               Code
             </button>
           </Link>
@@ -68,7 +80,10 @@ function Weather(): JSX.Element {
             href="https://milliorn.github.io/Current-Weather/"
             target="_blank"
           >
-            <button type="button" className="px-8 py-2 mt-4">
+            <button
+              type="button"
+              className="px-8 py-2 mt-4 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#4F46E5] to-[#60A5FA] text-white"
+            >
               Demo
             </button>
           </Link>
@@ -76,25 +91,14 @@ function Weather(): JSX.Element {
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Tech Stacks</p>
+
             <div className="grid grid-cols-2 md:grid-cols-1 text-sm lg:text-base">
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> React
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> JavaScript
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> Accordion
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> Paginate
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> Tailwind CSS
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> API
-              </p>
+              {techStack.map((e, i) => (
+                <p key={i} className="text-gray-600 py-2 flex items-center">
+                  <RiRadioButtonFill className="pr-1 mr-1" />
+                  {e}
+                </p>
+              ))}
             </div>
           </div>
         </div>

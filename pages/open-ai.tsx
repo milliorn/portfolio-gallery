@@ -37,7 +37,10 @@ function OpenAi(): JSX.Element {
             href="https://github.com/milliorn/image-generator"
             target="_blank"
           >
-            <button type="button" className="px-8 py-2 mt-4 mr-8">
+            <button
+              type="button"
+              className="px-8 py-2 mt-4 mr-8 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#4F46E5] to-[#60A5FA] text-white"
+            >
               Code
             </button>
           </Link>
@@ -45,7 +48,10 @@ function OpenAi(): JSX.Element {
             href="https://image-generator-pbvf.onrender.com/"
             target="_blank"
           >
-            <button type="button" className="px-8 py-2 mt-4">
+            <button
+              type="button"
+              className="px-8 py-2 mt-4 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#4F46E5] to-[#60A5FA] text-white"
+            >
               Demo
             </button>
           </Link>
