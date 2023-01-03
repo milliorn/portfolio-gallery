@@ -5,10 +5,10 @@ import dictionaryImg from "../public/assets/projects/dictionary.png";
 
 import BackButton from "../components/BackButton";
 import ProjectButtonCode from "../components/Project/ProjectButtonCode";
-import ProjectButtonDemo from "../components/ProjectButtonDemo";
-import ProjectHeroOverlay from "../components/ProjectHeroOverlay";
-import ProjectHeroText from "../components/ProjectHeroText";
-import ProjectTextHeading from "../components/ProjectTextBody";
+import ProjectButtonDemo from "../components/Project/ProjectButtonDemo";
+import ProjectHeroOverlay from "../components/Project/ProjectHeroOverlay";
+import ProjectHeroText from "../components/Project/ProjectHeroText";
+import ProjectTextHeading from "../components/Project/ProjectTextBody";
 import TechStack from "../components/TechStack";
 
 const techStack = [

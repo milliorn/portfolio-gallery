@@ -1,11 +1,11 @@
 import ProjectItem from "./ProjectItem";
 
-import currentWeatherImg from "../public/assets/projects/current-weather.png";
-import dictionaryImg from "../public/assets/projects/dictionary.png";
-import gatsbyRecipeImg from "../public/assets/projects/gatsbyrecipes.png";
-import movieDatabaseImg from "../public/assets/projects/movie-database.png";
-import openAiImg from "../public/assets/projects/open-ai-onrender.png";
-import travelAgencyImg from "../public/assets/projects/travel-agency.png";
+import currentWeatherImg from "../../public/assets/projects/current-weather.png";
+import dictionaryImg from "../../public/assets/projects/dictionary.png";
+import gatsbyRecipeImg from "../../public/assets/projects/gatsbyrecipes.png";
+import movieDatabaseImg from "../../public/assets/projects/movie-database.png";
+import openAiImg from "../../public/assets/projects/open-ai-onrender.png";
+import travelAgencyImg from "../../public/assets/projects/travel-agency.png";
 
 // projects component
 function Projects(): JSX.Element {
