@@ -3,7 +3,15 @@ import Link from "next/link";
 
 import travelAgencyImg from "../public/assets/projects/travel-agency.png";
 
-import { RiRadioButtonFill } from "react-icons/ri";
+import TechStack from "../components/TechStack";
+
+const techStack = [
+  "React",
+  "Tailwind",
+  "TypeScript",
+  "NextJs",
+  "AstroJs",
+] as const;
 
 // projects landing page
 function LandingPage(): JSX.Element {
@@ -73,28 +81,9 @@ function LandingPage(): JSX.Element {
             </button>
           </Link>
         </div>
-        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
-          <div className="p-2">
-            <p className="text-center font-bold pb-2">Tech Stacks</p>
-            <div className="grid grid-cols-2 md:grid-cols-1 text-sm lg:text-base">
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> React
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> Tailwind
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> TypeScript
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> NextJs
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> AstroJs
-              </p>
-            </div>
-          </div>
-        </div>
+
+        <TechStack data={techStack} />
+
         <Link href="/#projects">
           <p className="underline cursor-pointer ml-4">Back</p>
         </Link>

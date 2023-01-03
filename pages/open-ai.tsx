@@ -3,7 +3,9 @@ import Link from "next/link";
 
 import openAiImg from "../public/assets/projects/open-ai-onrender.png";
 
-import { RiRadioButtonFill } from "react-icons/ri";
+import TechStack from "../components/TechStack";
+
+const techStack = ["ExpressJs", "Open AI", "SweetAlert2", "Render"];
 
 // open ai page
 function OpenAi(): JSX.Element {
@@ -56,25 +58,9 @@ function OpenAi(): JSX.Element {
             </button>
           </Link>
         </div>
-        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
-          <div className="p-2">
-            <p className="text-center font-bold pb-2">Tech Stacks</p>
-            <div className="grid grid-cols-2 md:grid-cols-1 text-sm lg:text-base">
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> ExpressJs
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> Open Ai
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> SweetAlert2
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> Render
-              </p>
-            </div>
-          </div>
-        </div>
+
+        <TechStack data={techStack} />
+
         <Link href="/#projects">
           <p className="underline cursor-pointer ml-4">Back</p>
         </Link>

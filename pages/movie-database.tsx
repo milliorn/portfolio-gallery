@@ -3,7 +3,17 @@ import Link from "next/link";
 
 import movieDatabaseImg from "../public/assets/projects/movie-database.png";
 
-import { RiRadioButtonFill } from "react-icons/ri";
+import TechStack from "../components/TechStack";
+
+const techStack = [
+  "React",
+  "Netlify",
+  "TypeScript",
+  "Prop Types",
+  "Styled Components",
+  "Router",
+  "TMDB API",
+] as const;
 
 // movie database page
 function MovieDatabase(): JSX.Element {
@@ -74,34 +84,9 @@ function MovieDatabase(): JSX.Element {
             </button>
           </Link>
         </div>
-        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
-          <div className="p-2">
-            <p className="text-center font-bold pb-2">Tech Stacks</p>
-            <div className="grid grid-cols-2 md:grid-cols-1 text-sm lg:text-base">
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> React
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> Netlify
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> TypeScript
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> Prop Types
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> Styled Components
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> Router
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1 mr-1" /> TMDB API
-              </p>
-            </div>
-          </div>
-        </div>
+
+        <TechStack data={techStack} />
+
         <Link href="/#projects">
           <p className="underline cursor-pointer ml-4">Back</p>
         </Link>
