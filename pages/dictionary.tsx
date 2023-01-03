@@ -6,6 +6,7 @@ import dictionaryImg from "../public/assets/projects/dictionary.png";
 import ProjectButtonCode from "../components/ProjectButtonCode";
 import ProjectButtonDemo from "../components/ProjectButtonDemo";
 import TechStack from "../components/TechStack";
+import { BackButton } from "../components/BackButton";
 
 const techStack = [
   "React",
@@ -59,9 +60,7 @@ function Dictionary(): JSX.Element {
 
         <TechStack data={techStack} />
 
-        <Link href="/#projects">
-          <p className="underline cursor-pointer ml-4">Back</p>
-        </Link>
+        <BackButton />
       </div>
     </div>
   );

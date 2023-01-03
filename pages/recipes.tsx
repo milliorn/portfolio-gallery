@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { BackButton } from "../components/BackButton";
 
 import ProjectButtonCode from "../components/ProjectButtonCode";
 import ProjectButtonDemo from "../components/ProjectButtonDemo";
@@ -52,9 +53,8 @@ function Recipes(): JSX.Element {
 
         <TechStack data={techStack} />
 
-        <Link href="/#projects">
-          <p className="underline cursor-pointer ml-4">Back</p>
-        </Link>
+        <BackButton />
+
       </div>
     </div>
   );
