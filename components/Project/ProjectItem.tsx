@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
+// create button in project items
 function ProjectItemButton({
   projectUrl,
 }: {
