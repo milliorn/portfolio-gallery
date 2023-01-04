@@ -3,11 +3,11 @@ import Image from "next/image";
 import openAiImg from "../public/assets/projects/open-ai-onrender.png";
 
 import BackButton from "../components/BackButton";
-import ProjectButtonCode from "../components/Project/ProjectButtonCode";
-import ProjectButtonDemo from "../components/Project/ProjectButtonDemo";
-import ProjectHeroOverlay from "../components/Project/ProjectHeroOverlay";
-import ProjectHeroText from "../components/Project/ProjectHeroText";
-import ProjectTextHeading from "../components/Project/ProjectTextBody";
+import ProjectButtonCode from "../components/project/ProjectButtonCode";
+import ProjectButtonDemo from "../components/project/ProjectButtonDemo";
+import ProjectHeroOverlay from "../components/project/ProjectHeroOverlay";
+import ProjectHeroText from "../components/project/ProjectHeroText";
+import ProjectTextHeading from "../components/project/ProjectTextBody";
 import TechStack from "../components/TechStack";
 
 const techStack = ["ExpressJs", "Open AI", "SweetAlert2", "Render"];
