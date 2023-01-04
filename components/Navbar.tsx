@@ -8,8 +8,43 @@ import { useState, useEffect } from "react";
 
 import NavLogo from "../public/assets/navbarLogo.png";
 
+const navbarLinksData = [
+  { href: "/#hero", text: "Home" },
+  { href: "/#about", text: "About" },
+  { href: "/#skills", text: "Skills" },
+  { href: "/#projects", text: "Projects" },
+  { href: "/#contact", text: "Contact" },
+  { href: "https://milliorn.github.io/digital-resume/", text: "Resume" },
+] as const;
+
+// links found in the navbar component
+function NavbarLinks(props: { nav: () => void }): JSX.Element {
+  const { nav } = props;
+  return (
+    <div>
+      <ul className="hidden md:flex mr-8 uppercase">
+        {navbarLinksData.map((link) => (
+          <li
+            key={link.text}
+            className="ml-10 text-sm hover:border-b border-indigo-600/100"
+          >
+            <Link scroll={false} href={link.href}>
+              {link.text}
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+      {/* Hamburger Icon */}
+      <div onClick={nav} className="md:hidden">
+        <AiOutlineMenu size={25} />
+      </div>
+    </div>
+  );
+}
+
 // global navbar component
-function Navbar(): JSX.Element {
+export default function Navbar(): JSX.Element {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
 
@@ -30,6 +65,10 @@ function Navbar(): JSX.Element {
     window.addEventListener("scroll", handleShadow);
   }, []);
 
+  const showHideNavbar: string = nav
+    ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70"
+    : "invisible";
+
   return (
     <div
       style={{ backgroundColor: `#F3F4F6` }}
@@ -43,59 +82,12 @@ function Navbar(): JSX.Element {
         <Link href="/">
           <Image src={NavLogo} alt="/" className="cursor-pointer w-20" />
         </Link>
-        <div>
-          <ul className="hidden md:flex mr-8 uppercase">
-            <li className="ml-10 text-sm  hover:border-b border-indigo-600/100">
-              <Link scroll={false} href="/#hero">
-                Home
-              </Link>
-            </li>
-            <li className="ml-10 text-sm hover:border-b border-indigo-600/100">
-              <Link scroll={false} href="/#about">
-                About
-              </Link>
-            </li>
-            <li className="ml-10 text-sm hover:border-b border-indigo-600/100">
-              <Link scroll={false} href="/#skills">
-                Skills
-              </Link>
-            </li>
-            <li className="ml-10 text-sm hover:border-b border-indigo-600/100">
-              <Link scroll={false} href="/#projects">
-                Projects
-              </Link>
-            </li>
-            <li className="ml-10 text-sm uppercase hover:border-b border-indigo-600/100">
-              <Link scroll={false} href="/#contact">
-                Contact
-              </Link>
-            </li>
-            <li className="ml-10 text-sm hover:border-b border-indigo-600/100">
-              <Link
-                scroll={false}
-                href="https://milliorn.github.io/digital-resume/"
-                target="_blank"
-              >
-                Resume
-              </Link>
-            </li>
-          </ul>
-          {/* Hamburger Icon */}
-          <div onClick={handleNav} className="md:hidden">
-            <AiOutlineMenu size={25} />
-          </div>
-        </div>
+        <NavbarLinks nav={handleNav} />
       </div>
 
       {/* Mobile Menu */}
       {/* Overlay */}
-      <div
-        className={
-          nav
-            ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70"
-            : "invisible"
-        }
-      >
+      <div className={showHideNavbar}>
         {/* Side Menu */}
         <div
           className={
@@ -202,5 +194,3 @@ function Navbar(): JSX.Element {
     </div>
   );
 }
-
-export default Navbar;
