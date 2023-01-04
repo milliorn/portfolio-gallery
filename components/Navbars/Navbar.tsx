@@ -107,6 +107,7 @@ export default function Navbar(): JSX.Element {
       </>
     );
 
+    // button to close side menu
     function SideMenuTopCloseButton() {
       return (
         <div
