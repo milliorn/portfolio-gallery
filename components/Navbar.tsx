@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { useState, useEffect } from "react";
 
 import NavLogo from "../public/assets/navbarLogo.png";
@@ -134,35 +134,39 @@ export default function Navbar(): JSX.Element {
         <p className="uppercase tracking-widest text-indigo-600">
           Let&#39;s Connect
         </p>
+
         <div className="flex items-center justify-evenly my-4 w-full sm:w-4/5">
           <Link
             href="https://www.linkedin.com/in/scott-milliorn/"
             target="_blank"
           >
-            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 text-sky-600">
               <FaLinkedinIn />
             </div>
           </Link>
+
           <Link href="https://github.com/milliorn" target="_blank">
             <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
               <FaGithub />
             </div>
           </Link>
+
           <Link scroll={false} href="/#contact">
             <div
-              className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+              className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 text-sky-500"
               onClick={() => setNav(!nav)}
             >
-              <AiOutlineMail />
+              <FaTwitter />
             </div>
           </Link>
+
           <Link
             href="https://milliorn.github.io/digital-resume/"
             scroll={false}
             target="_blank"
           >
             <div
-              className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+              className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 text-pink-500"
               onClick={() => setNav(!nav)}
             >
               <BsFillPersonLinesFill />
