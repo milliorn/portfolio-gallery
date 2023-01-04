@@ -127,6 +127,50 @@ export default function Navbar(): JSX.Element {
     );
   }
 
+  // container to hold all side menu navbar buttons
+  function SideMenuNavbarButtons(): JSX.Element {
+    return (
+      <>
+        <Link
+          href="https://www.linkedin.com/in/scott-milliorn/"
+          target="_blank"
+        >
+          <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 text-sky-600">
+            <FaLinkedinIn />
+          </div>
+        </Link>
+
+        <Link href="https://github.com/milliorn" target="_blank">
+          <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+            <FaGithub />
+          </div>
+        </Link>
+
+        <Link scroll={false} href="/#contact">
+          <div
+            className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 text-sky-500"
+            onClick={() => setNav(!nav)}
+          >
+            <FaTwitter />
+          </div>
+        </Link>
+
+        <Link
+          href="https://milliorn.github.io/digital-resume/"
+          scroll={false}
+          target="_blank"
+        >
+          <div
+            className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 text-pink-500"
+            onClick={() => setNav(!nav)}
+          >
+            <BsFillPersonLinesFill />
+          </div>
+        </Link>
+      </>
+    );
+  }
+
   // bottom section of global side menu navbar
   function SideMenuNavbarBottom(): JSX.Element {
     return (
@@ -136,42 +180,7 @@ export default function Navbar(): JSX.Element {
         </p>
 
         <div className="flex items-center justify-evenly my-4 w-full sm:w-4/5">
-          <Link
-            href="https://www.linkedin.com/in/scott-milliorn/"
-            target="_blank"
-          >
-            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 text-sky-600">
-              <FaLinkedinIn />
-            </div>
-          </Link>
-
-          <Link href="https://github.com/milliorn" target="_blank">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-              <FaGithub />
-            </div>
-          </Link>
-
-          <Link scroll={false} href="/#contact">
-            <div
-              className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 text-sky-500"
-              onClick={() => setNav(!nav)}
-            >
-              <FaTwitter />
-            </div>
-          </Link>
-
-          <Link
-            href="https://milliorn.github.io/digital-resume/"
-            scroll={false}
-            target="_blank"
-          >
-            <div
-              className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 text-pink-500"
-              onClick={() => setNav(!nav)}
-            >
-              <BsFillPersonLinesFill />
-            </div>
-          </Link>
+          <SideMenuNavbarButtons />
         </div>
       </div>
     );
