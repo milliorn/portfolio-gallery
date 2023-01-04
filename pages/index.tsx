@@ -5,7 +5,7 @@ import About from "../components/About";
 import Contact from "../components/Contacts/Contact";
 import Hero from "../components/Hero";
 import Projects from "../components/Project/Projects";
-import Skills from "../components/Skills";
+import Skills from "../components/skill/Skills";
 
 const inter = Inter({ subsets: ["latin"] });
 
