@@ -4,11 +4,11 @@ import Link from "next/link";
 import currentWeatherImg from "../public/assets/projects/current-weather.png";
 
 import BackButton from "../components/BackButton";
-import ProjectButtonCode from "../components/Project/ProjectButtonCode";
-import ProjectButtonDemo from "../components/Project/ProjectButtonDemo";
-import ProjectHeroOverlay from "../components/Project/ProjectHeroOverlay";
-import ProjectHeroText from "../components/Project/ProjectHeroText";
-import ProjectTextHeading from "../components/Project/ProjectTextBody";
+import ProjectButtonCode from "../components/project/ProjectButtonCode";
+import ProjectButtonDemo from "../components/project/ProjectButtonDemo";
+import ProjectHeroOverlay from "../components/project/ProjectHeroOverlay";
+import ProjectHeroText from "../components/project/ProjectHeroText";
+import ProjectTextHeading from "../components/project/ProjectTextBody";
 import TechStack from "../components/TechStack";
 
 const techStack = [
