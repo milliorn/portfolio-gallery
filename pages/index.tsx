@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Inter } from "@next/font/google";
 
 import About from "../components/About";
-import Contact from "../components/contacts/Contact";
+import Contact from "../components/ontacts/Contact";
 import Hero from "../components/heros/Hero";
 import Projects from "../components/project/Projects";
 import Skills from "../components/skill/Skills";
