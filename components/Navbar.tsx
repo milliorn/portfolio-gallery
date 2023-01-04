@@ -4,7 +4,7 @@ import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { useState, useEffect } from "react";
+import { useState, useEffect, SetStateAction, Dispatch } from "react";
 
 import NavLogo from "../public/assets/navbarLogo.png";
 
@@ -21,7 +21,7 @@ const navbarLinksData = [
 function NavbarLinks(props: { nav: () => void }): JSX.Element {
   const { nav } = props;
   return (
-    <div>
+    <>
       <ul className="hidden md:flex mr-8 uppercase">
         {navbarLinksData.map((link) => (
           <li
@@ -39,7 +39,38 @@ function NavbarLinks(props: { nav: () => void }): JSX.Element {
       <div onClick={nav} className="md:hidden">
         <AiOutlineMenu size={25} />
       </div>
-    </div>
+    </>
+  );
+}
+
+// top of side bar menu
+function SideMenuTop(props: { nav: () => void }): JSX.Element {
+  const { nav } = props;
+  return (
+    <>
+      <div className="relative">
+        <div
+          onClick={nav}
+          className="rounded-full shadow-lg shadow-gray-400 p-1 cursor-pointer absolute top-0 right-0"
+        >
+          <AiOutlineClose />
+        </div>
+      </div>
+      <div className="border-b border-gray-300">
+        <p className="w-10/12 sm:w-11/12 py-4">
+          Let&apos;s build web applications!
+        </p>
+      </div>
+    </>
+  );
+}
+
+// global navbar logo
+function NavbarLogoGlobal(): JSX.Element {
+  return (
+    <Link href="/">
+      <Image src={NavLogo} alt="/" className="cursor-pointer w-20" />
+    </Link>
   );
 }
 
@@ -69,19 +100,100 @@ export default function Navbar(): JSX.Element {
     ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70"
     : "invisible";
 
+  const showHideSideMenu: string = nav
+    ? "fixed left-0 top-0 w-9/12 h-screen bg-[#F3F4F6] p-8 ease-in duration-500"
+    : "fixed left-[-100%] top-0 p-10 ease-in duration-500";
+
+  const showHideShadow: string = shadow
+    ? "fixed w-full h-20 shadow-xl z-50 ease-in-out duration-300"
+    : "fixed w-full h-20 z-50";
+
+  // links found in the navbar component
+  function SideMenuNavbarLinks(): JSX.Element {
+    return (
+      <ul className="uppercase">
+        {navbarLinksData.map((link) => (
+          <li
+            key={link.text}
+            onClick={() => setNav(false)}
+            className="py-2 text-sm"
+          >
+            <Link scroll={false} href={link.href}>
+              {link.text}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
+  // bottom section of global side menu navbar
+  function SideMenuNavbarBottom(props: {
+    navSet: Dispatch<SetStateAction<boolean>>;
+    getNav: boolean;
+  }): JSX.Element {
+    const { navSet, getNav } = props;
+    return (
+      <div className="pt-40">
+        <p className="uppercase tracking-widest text-indigo-600">
+          Let&#39;s Connect
+        </p>
+        <div className="flex items-center justify-evenly my-4 w-full sm:w-4/5">
+          <Link
+            href="https://www.linkedin.com/in/scott-milliorn/"
+            target="_blank"
+          >
+            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+              <FaLinkedinIn />
+            </div>
+          </Link>
+          <Link href="https://github.com/milliorn" target="_blank">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+              <FaGithub />
+            </div>
+          </Link>
+          <Link scroll={false} href="/#contact">
+            <div
+              className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+              onClick={() => setNav(!nav)}
+            >
+              <AiOutlineMail />
+            </div>
+          </Link>
+          <Link
+            href="https://milliorn.github.io/digital-resume/"
+            scroll={false}
+            target="_blank"
+          >
+            <div
+              className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+              onClick={() => setNav(!nav)}
+            >
+              <BsFillPersonLinesFill />
+            </div>
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+  function SideMenu() {
+    return (
+      <div className={showHideNavbar}>
+        {/* Side Menu */}
+        <div className={showHideSideMenu}>
+          <SideMenuTop nav={handleNav} />
+          <SideMenuNavbarLinks />
+          <SideMenuNavbarBottom navSet={setNav} getNav={nav} />
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div
-      style={{ backgroundColor: `#F3F4F6` }}
-      className={
-        shadow
-          ? "fixed w-full h-20 shadow-xl z-50 ease-in-out duration-300"
-          : "fixed w-full h-20 z-50"
-      }
-    >
+    <div style={{ backgroundColor: `#F3F4F6` }} className={showHideShadow}>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-white">
-        <Link href="/">
-          <Image src={NavLogo} alt="/" className="cursor-pointer w-20" />
-        </Link>
+        <NavbarLogoGlobal />
         <NavbarLinks nav={handleNav} />
       </div>
 
@@ -89,106 +201,10 @@ export default function Navbar(): JSX.Element {
       {/* Overlay */}
       <div className={showHideNavbar}>
         {/* Side Menu */}
-        <div
-          className={
-            nav
-              ? "fixed left-0 top-0 w-9/12 h-screen bg-[#F3F4F6] p-8 ease-in duration-500"
-              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
-          }
-        >
-          <div>
-            <div className="relative">
-              <div
-                onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-400 p-1 cursor-pointer absolute top-0 right-0"
-              >
-                <AiOutlineClose />
-              </div>
-            </div>
-            <div className="border-b border-gray-300">
-              <p className="w-10/12 sm:w-11/12 py-4">
-                Let&apos;s build web applications!
-              </p>
-            </div>
-          </div>
-          <div className="py-1 flex flex-col">
-            <ul className="uppercase">
-              <Link href="/#">
-                <li onClick={() => setNav(false)} className="py-2 text-sm">
-                  Home
-                </li>
-              </Link>
-              <Link scroll={false} href="/#about">
-                <li onClick={() => setNav(false)} className="py-2 text-sm">
-                  About
-                </li>
-              </Link>
-              <Link scroll={false} href="/#skills">
-                <li onClick={() => setNav(false)} className="py-2 text-sm">
-                  Skills
-                </li>
-              </Link>
-              <Link scroll={false} href="/#projects">
-                <li onClick={() => setNav(false)} className="py-2 text-sm">
-                  Projects
-                </li>
-              </Link>
-              <Link scroll={false} href="/#contact">
-                <li onClick={() => setNav(false)} className="py-2 text-sm">
-                  Contact
-                </li>
-              </Link>
-              <Link
-                scroll={false}
-                href="https://milliorn.github.io/digital-resume/"
-                target="_blank"
-              >
-                <li onClick={() => setNav(false)} className="py-2 text-sm">
-                  Resume
-                </li>
-              </Link>
-            </ul>
-            <div className="pt-40">
-              <p className="uppercase tracking-widest text-indigo-600">
-                Let&#39;s Connect
-              </p>
-              <div className="flex items-center justify-evenly my-4 w-full sm:w-4/5">
-                <Link
-                  href="https://www.linkedin.com/in/scott-milliorn/"
-                  target="_blank"
-                >
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaLinkedinIn />
-                  </div>
-                </Link>
-                <Link href="https://github.com/milliorn" target="_blank">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaGithub />
-                  </div>
-                </Link>
-                <Link scroll={false} href="/#contact">
-                  <div
-                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
-                    onClick={() => setNav(!nav)}
-                  >
-                    <AiOutlineMail />
-                  </div>
-                </Link>
-                <Link
-                  href="https://milliorn.github.io/digital-resume/"
-                  scroll={false}
-                  target="_blank"
-                >
-                  <div
-                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
-                    onClick={() => setNav(!nav)}
-                  >
-                    <BsFillPersonLinesFill />
-                  </div>
-                </Link>
-              </div>
-            </div>
-          </div>
+        <div className={showHideSideMenu}>
+          <SideMenuTop nav={handleNav} />
+          <SideMenuNavbarLinks />
+          <SideMenuNavbarBottom navSet={setNav} getNav={nav} />
         </div>
       </div>
     </div>
