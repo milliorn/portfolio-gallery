@@ -1,12 +1,11 @@
-import Image from "next/image";
 import Link from "next/link";
 
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+
 import { useState, useEffect } from "react";
 
-import NavLogo from "../public/assets/navbarLogo.png";
+import { NavbarLogoGlobal } from "./NavbarLogoGlobal";
+import NavbarBottomSideMenu from "./NavbarBottomSideMenu";
 
 const navbarLinksData = [
   { href: "/#hero", text: "Home" },
@@ -16,63 +15,6 @@ const navbarLinksData = [
   { href: "/#contact", text: "Contact" },
   { href: "https://milliorn.github.io/digital-resume/", text: "Resume" },
 ] as const;
-
-// links found in the navbar component
-function NavbarLinks(props: { nav: () => void }): JSX.Element {
-  const { nav } = props;
-  return (
-    <>
-      <ul className="hidden md:flex mr-8 uppercase">
-        {navbarLinksData.map((link) => (
-          <li
-            key={link.text}
-            className="ml-10 text-sm hover:border-b border-indigo-600/100"
-          >
-            <Link scroll={false} href={link.href}>
-              {link.text}
-            </Link>
-          </li>
-        ))}
-      </ul>
-
-      {/* Hamburger Icon */}
-      <div onClick={nav} className="md:hidden">
-        <AiOutlineMenu size={25} />
-      </div>
-    </>
-  );
-}
-
-// top of side bar menu
-function SideMenuTop(props: { nav: () => void }): JSX.Element {
-  const { nav } = props;
-  return (
-    <>
-      <div className="relative">
-        <div
-          onClick={nav}
-          className="rounded-full shadow-lg shadow-gray-400 p-1 cursor-pointer absolute top-0 right-0"
-        >
-          <AiOutlineClose />
-        </div>
-      </div>
-      <div className="border-b border-gray-300">
-        <p className="w-10/12 sm:w-11/12 py-4">
-          Let&apos;s build web applications!
-        </p>
-      </div>
-    </>
-  );
-}
-
-// global navbar logo
-function NavbarLogoGlobal(): JSX.Element {
-  return (
-    <Link href="/">
-      <Image src={NavLogo} alt="/" className="cursor-pointer w-20" />
-    </Link>
-  );
-}
 
 // global navbar component
 export default function Navbar(): JSX.Element {
@@ -127,62 +69,49 @@ export default function Navbar(): JSX.Element {
     );
   }
 
-  // container to hold all side menu navbar buttons
-  function SideMenuNavbarButtons(): JSX.Element {
+  // links found in the navbar component
+  function NavbarLinks(): JSX.Element {
     return (
       <>
-        <Link
-          href="https://www.linkedin.com/in/scott-milliorn/"
-          target="_blank"
-        >
-          <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 text-sky-600">
-            <FaLinkedinIn />
-          </div>
-        </Link>
+        <ul className="hidden md:flex mr-8 uppercase">
+          {navbarLinksData.map((link) => (
+            <li
+              key={link.text}
+              className="ml-10 text-sm hover:border-b border-indigo-600/100"
+            >
+              <Link scroll={false} href={link.href}>
+                {link.text}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
-        <Link href="https://github.com/milliorn" target="_blank">
-          <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-            <FaGithub />
-          </div>
-        </Link>
-
-        <Link scroll={false} href="/#contact">
-          <div
-            className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 text-sky-500"
-            onClick={() => setNav(!nav)}
-          >
-            <FaTwitter />
-          </div>
-        </Link>
-
-        <Link
-          href="https://milliorn.github.io/digital-resume/"
-          scroll={false}
-          target="_blank"
-        >
-          <div
-            className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 text-pink-500"
-            onClick={() => setNav(!nav)}
-          >
-            <BsFillPersonLinesFill />
-          </div>
-        </Link>
+        {/* Hamburger Icon */}
+        <div onClick={handleNav} className="md:hidden">
+          <AiOutlineMenu size={25} />
+        </div>
       </>
     );
   }
 
-  // bottom section of global side menu navbar
-  function SideMenuNavbarBottom(): JSX.Element {
+  // top of side bar menu
+  function SideMenuTop(): JSX.Element {
     return (
-      <div className="pt-40">
-        <p className="uppercase tracking-widest text-indigo-600">
-          Let&#39;s Connect
-        </p>
-
-        <div className="flex items-center justify-evenly my-4 w-full sm:w-4/5">
-          <SideMenuNavbarButtons />
+      <>
+        <div className="relative">
+          <div
+            onClick={handleNav}
+            className="rounded-full shadow-lg shadow-gray-400 p-1 cursor-pointer absolute top-0 right-0"
+          >
+            <AiOutlineClose />
+          </div>
         </div>
-      </div>
+        <div className="border-b border-gray-300">
+          <p className="w-10/12 sm:w-11/12 py-4">
+            Let&apos;s build web applications!
+          </p>
+        </div>
+      </>
     );
   }
 
@@ -190,7 +119,7 @@ export default function Navbar(): JSX.Element {
     <div style={{ backgroundColor: `#F3F4F6` }} className={showHideShadow}>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-white">
         <NavbarLogoGlobal />
-        <NavbarLinks nav={handleNav} />
+        <NavbarLinks />
       </div>
 
       {/* Mobile Menu */}
@@ -198,9 +127,9 @@ export default function Navbar(): JSX.Element {
       <div className={showHideNavbar}>
         {/* Side Menu */}
         <div className={showHideSideMenu}>
-          <SideMenuTop nav={handleNav} />
+          <SideMenuTop />
           <SideMenuNavbarLinks />
-          <SideMenuNavbarBottom />
+          <NavbarBottomSideMenu />
         </div>
       </div>
     </div>
