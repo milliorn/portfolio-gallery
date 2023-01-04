@@ -177,6 +177,7 @@ export default function Navbar(): JSX.Element {
     );
   }
 
+  // side menu that pops up on mobile
   function SideMenu() {
     return (
       <div className={showHideNavbar}>
