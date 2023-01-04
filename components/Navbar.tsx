@@ -128,11 +128,7 @@ export default function Navbar(): JSX.Element {
   }
 
   // bottom section of global side menu navbar
-  function SideMenuNavbarBottom(props: {
-    navSet: Dispatch<SetStateAction<boolean>>;
-    getNav: boolean;
-  }): JSX.Element {
-    const { navSet, getNav } = props;
+  function SideMenuNavbarBottom(): JSX.Element {
     return (
       <div className="pt-40">
         <p className="uppercase tracking-widest text-indigo-600">
@@ -191,7 +187,7 @@ export default function Navbar(): JSX.Element {
         <div className={showHideSideMenu}>
           <SideMenuTop nav={handleNav} />
           <SideMenuNavbarLinks />
-          <SideMenuNavbarBottom navSet={setNav} getNav={nav} />
+          <SideMenuNavbarBottom />
         </div>
       </div>
     </div>
