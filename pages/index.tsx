@@ -3,7 +3,7 @@ import { Inter } from "@next/font/google";
 
 import About from "../components/About";
 import Contact from "../components/contacts/Contact";
-import Hero from "../components/Hero";
+import Hero from "../components/hero/Hero";
 import Projects from "../components/project/Projects";
 import Skills from "../components/skill/Skills";
 
