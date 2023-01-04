@@ -177,20 +177,6 @@ export default function Navbar(): JSX.Element {
     );
   }
 
-  // side menu that pops up on mobile
-  function SideMenu() {
-    return (
-      <div className={showHideNavbar}>
-        {/* Side Menu */}
-        <div className={showHideSideMenu}>
-          <SideMenuTop nav={handleNav} />
-          <SideMenuNavbarLinks />
-          <SideMenuNavbarBottom navSet={setNav} getNav={nav} />
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div style={{ backgroundColor: `#F3F4F6` }} className={showHideShadow}>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-white">
