@@ -98,14 +98,7 @@ export default function Navbar(): JSX.Element {
   function SideMenuTop(): JSX.Element {
     return (
       <>
-        <div className="relative">
-          <div
-            onClick={handleNav}
-            className="rounded-full shadow-lg shadow-gray-400 p-1 cursor-pointer absolute top-0 right-0"
-          >
-            <AiOutlineClose />
-          </div>
-        </div>
+        <div className="relative">{<SideMenuTopCloseButton />}</div>
         <div className="border-b border-gray-300">
           <p className="w-10/12 sm:w-11/12 py-4">
             Let&apos;s build web applications!
@@ -113,6 +106,17 @@ export default function Navbar(): JSX.Element {
         </div>
       </>
     );
+
+    function SideMenuTopCloseButton() {
+      return (
+        <div
+          onClick={handleNav}
+          className="rounded-full shadow-lg shadow-gray-400 p-1 cursor-pointer absolute top-0 right-0"
+        >
+          <AiOutlineClose />
+        </div>
+      );
+    }
   }
 
   return (
