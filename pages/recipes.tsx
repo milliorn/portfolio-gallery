@@ -1,11 +1,11 @@
 import Image from "next/image";
 
 import BackButton from "../components/BackButton";
-import ProjectButtonCode from "../components/roject/ProjectButtonCode";
-import ProjectButtonDemo from "../components/roject/ProjectButtonDemo";
-import ProjectHeroOverlay from "../components/roject/ProjectHeroOverlay";
-import ProjectHeroText from "../components/roject/ProjectHeroText";
-import ProjectTextHeading from "../components/roject/ProjectTextBody";
+import ProjectButtonCode from "../components/project/ProjectButtonCode";
+import ProjectButtonDemo from "../components/project/ProjectButtonDemo";
+import ProjectHeroOverlay from "../components/project/ProjectHeroOverlay";
+import ProjectHeroText from "../components/project/ProjectHeroText";
+import ProjectTextHeading from "../components/project/ProjectTextBody";
 import TechStack from "../components/TechStack";
 
 import gatsbyRecipeImg from "../public/assets/projects/gatsbyrecipes.png";
