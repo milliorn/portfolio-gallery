@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import NavLogo from "../public/assets/navbarLogo.png";
+import NavLogo from "../../public/assets/navbarLogo.png";
 
 // global navbar logo
-export function NavbarLogoGlobal(): JSX.Element {
+export default function NavbarLogoGlobal(): JSX.Element {
   return (
     <Link href="/">
       <Image src={NavLogo} alt="/" className="cursor-pointer w-20" />

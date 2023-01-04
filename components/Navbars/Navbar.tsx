@@ -4,7 +4,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 import { useState, useEffect } from "react";
 
-import { NavbarLogoGlobal } from "./NavbarLogoGlobal";
+import NavbarLogoGlobal from "./NavbarLogoGlobal";
 import NavbarBottomSideMenu from "./NavbarBottomSideMenu";
 
 const navbarLinksData = [
