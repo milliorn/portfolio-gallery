@@ -2,9 +2,7 @@
 
 [![DeepSource](https://deepsource.io/gh/milliorn/Portfolio.svg/?label=active+issues&show_trend=true&token=fziuS-ZFdAqGFRHfMFxQgvjD)](https://deepsource.io/gh/milliorn/Portfolio/?ref=repository-badge)
 [![DeepSource](https://deepsource.io/gh/milliorn/Portfolio.svg/?label=resolved+issues&show_trend=true&token=fziuS-ZFdAqGFRHfMFxQgvjD)](https://deepsource.io/gh/milliorn/Portfolio/?ref=repository-badge)
-[![CodeQL](https://github.com/milliorn/Portfolio/actions/workflows/codeql.yml/badge.svg)](https://github.com/milliorn/Portfolio/actions/workflows/codeql.yml)
 [![Dependency Review](https://github.com/milliorn/Portfolio/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/milliorn/Portfolio/actions/workflows/dependency-review.yml)
-[![Lint Code Base](https://github.com/milliorn/Portfolio/actions/workflows/super-linter.yml/badge.svg)](https://github.com/milliorn/Portfolio/actions/workflows/super-linter.yml)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
