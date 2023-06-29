@@ -4,7 +4,7 @@
 [![DeepSource](https://deepsource.io/gh/milliorn/Portfolio.svg/?label=resolved+issues&show_trend=true&token=fziuS-ZFdAqGFRHfMFxQgvjD)](https://deepsource.io/gh/milliorn/Portfolio/?ref=repository-badge)
 [![Dependency Review](https://github.com/milliorn/Portfolio/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/milliorn/Portfolio/actions/workflows/dependency-review.yml)
 
-Portfolio is a personal website built with Next.js, React, and TypeScript to showcase your projects and skills.
+Portfolio is a personal website built with Next.js, React, and TypeScript to showcase projects and skills.
 
 ## Features
 
