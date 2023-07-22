@@ -65,7 +65,7 @@ export default function Projects(): JSX.Element {
           Projects
         </p>
         <h2 className="py-4 text-center xl:text-start">
-          Projects I Enjoyed Developing
+          Projects I loved Developing
         </h2>
         <ProjectsContainer />
       </div>

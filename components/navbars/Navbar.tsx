@@ -13,7 +13,7 @@ const navbarLinksData = [
   { href: "/#skills", text: "Skills" },
   { href: "/#projects", text: "Projects" },
   { href: "/#contact", text: "Contact" },
-  { href: "https://milliorn.github.io/digital-resume/", text: "Resume" },
+  { href: "https://github.com", text: "Resume" },
 ] as const;
 
 // global navbar component

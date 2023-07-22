@@ -8,18 +8,18 @@ function AboutText(): JSX.Element {
       <p className="uppercase text-xl tracking-widest text-indigo-600 text-center xl:text-start">
         About Me
       </p>
-      <h2 className="py-4 text-center xl:text-start">Diligent Developer</h2>
+      <h2 className="py-4 text-center xl:text-start">Intellectual Developer</h2>
       <p className="py-2 text-gray-600">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia aperiam
-        sint dignissimos, vel possimus porro nam atque, laboriosam, sit ullam
-        rem quo laborum fugiat. Consequuntur, ipsam! Accusantium pariatur
-        cupiditate cum?
+        Hello! I am a passionate Web Developer with over 10 years in the industry. 
+        I specialize in crafting efficient, user-friendly websites and web applications 
+        using modern technologies like HTML5, CSS3, JavaScript, and frameworks such as React 
+        and Angular. 
+       
       </p>
       <p className="py-2 text-gray-600">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
-        aspernatur, deserunt obcaecati eligendi aliquam expedita odit doloremque
-        neque facilis commodi in tenetur aperiam explicabo natus. Iure eaque
-        suscipit possimus? Voluptates.
+        My background in both front-end and back-end development, 
+        combined with my keen eye for design and user experience, allows me to create comprehensive, 
+        engaging digital solutions. 
       </p>
       <Link href="/#projects" scroll={false}>
         <p className="py-2 text-gray-600 underline cursor-pointer">

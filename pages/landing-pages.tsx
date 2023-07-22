@@ -40,7 +40,7 @@ function LandingPageTextBody() {
           build this{" "}
         </span>
         <Link
-          href="https://github.com/milliorn/Portfolio"
+          href="https://github.com/itsjagdeep"
           target="_blank"
           className="text-blue-500 cursor-pointer"
         >

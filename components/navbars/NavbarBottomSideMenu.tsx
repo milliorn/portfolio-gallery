@@ -9,19 +9,19 @@ export default function NavbarBottomSideMenu(): JSX.Element {
     {
       className:
         "rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 text-sky-600",
-      href: "https://www.linkedin.com/in/scott-milliorn/",
+      href: "https://www.linkedin.com/in/thisisjagdeep/",
       icon: <FaLinkedinIn />,
     },
     {
       className:
         "rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300",
-      href: "https://github.com/milliorn",
+      href: "https://github.com/itsjagdeep",
       icon: <FaGithub />,
     },
     {
       className:
         "rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 text-sky-500",
-      href: "https://twitter.com/scottmilliorn",
+      href: "https://twitter.com",
       icon: <FaTwitter />,
     },
     {
