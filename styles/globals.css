@@ -12,7 +12,7 @@ html {
 /* global styles for tailwind */
 @layer base {
   body {
-    @apply bg-[#F3F4F6] text-[#1f2937] tracking-wide;
+    @apply bg-[#24EFD3] text-[#1f2937] tracking-wide;
   }
 
   h1,
