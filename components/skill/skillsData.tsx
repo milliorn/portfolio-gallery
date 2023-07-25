@@ -118,53 +118,6 @@ export const skillsData = [
     icon: <SiNetlify />,
     h3: "Netlify",
   },
-  {
-    href: "https://github.com/milliorn?tab=repositories&q=vercel&type=&language=&sort=",
-    style: "m-auto p-1 sm:text-5xl",
-    icon: <SiVercel />,
-    h3: "Vercel",
-  },
-  {
-    href: "https://github.com/milliorn?tab=repositories&q=nodejs&type=&language=&sort=",
-    style: "m-auto p-1 sm:text-5xl text-green-500",
-    icon: <FaNodeJs />,
-    h3: "NodeJs",
-  },
-  {
-    href: "https://github.com/milliorn?tab=repositories",
-    style: "m-auto p-1 sm:text-5xl",
-    icon: <DiLinux />,
-    h3: "Linux",
-  },
-  {
-    href: "https://github.com/milliorn?tab=repositories",
-    style: "m-auto p-1 sm:text-5xl text-sky-500",
-    icon: <DiWindows />,
-    h3: "Windows",
-  },
-  {
-    href: "https://github.com/milliorn?tab=repositories&q=&type=&language=typescript&sort=",
-    style: "m-auto p-1 sm:text-5xl text-blue-600",
-    icon: <SiTypescript />,
-    h3: "Typescript",
-  },
-  {
-    href: "https://github.com/milliorn?tab=repositories&q=&type=&language=nwscript&sort=",
-    style: "m-auto p-1 sm:text-5xl",
-    icon: <DiCode />,
-    h3: "NwScript",
-  },
-  {
-    href: "https://github.com/milliorn?tab=repositories&q=material&type=&language=&sort=",
-    style: "m-auto p-1 sm:text-5xl text-sky-500",
-    icon: <SiMaterialui />,
-    h3: "MaterialUI",
-  },
-  {
-    href: "https://github.com/milliorn?tab=repositories&q=sass&type=&language=&sort=",
-    style: "m-auto p-1 sm:text-5xl text-pink-500",
-    icon: <DiSass />,
-    h3: "Sass",
-  },
+ 
   
 ] as const;
