@@ -2,11 +2,9 @@ import { DiLinux, DiWindows, DiCode, DiSass } from "react-icons/di";
 import { FaStrava, FaNodeJs } from "react-icons/fa";
 import {
   SiBootstrap,
-  SiBulma,
   SiCss3,
   SiDocker,
   SiDotnet,
-  SiElectron,
   SiFirebase,
   SiGatsby,
   SiGit,
@@ -168,28 +166,5 @@ export const skillsData = [
     icon: <DiSass />,
     h3: "Sass",
   },
-  {
-    href: "https://github.com/milliorn?tab=repositories&q=Electron&type=&language=&sort=",
-    style: "m-auto p-1 sm:text-5xl text-cyan-200 bg-slate-800",
-    icon: <SiElectron />,
-    h3: "Electron",
-  },
-  {
-    href: "https://github.com/milliorn?tab=repositories&q=bulma&type=&language=&sort=",
-    style: "m-auto p-1 sm:text-5xl text-teal-500",
-    icon: <SiBulma />,
-    h3: "Bulma",
-  },
-  {
-    href: "https://github.com/milliorn?tab=repositories&q=express&type=&language=&sort=",
-    style: "m-auto p-1 sm:text-5xl bg-black text-yellow-400",
-    icon: <SiJavascript />,
-    h3: "ExpressJs",
-  },
-  {
-    href: "https://github.com/milliorn?tab=repositories&q=preact&type=&language=&sort=",
-    style: "m-auto p-1 sm:text-5xl text-white bg-violet-800",
-    icon: <SiReact />,
-    h3: "Preact",
-  },
+  
 ] as const;
