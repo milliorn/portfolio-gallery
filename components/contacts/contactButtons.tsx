@@ -10,9 +10,15 @@ export const contactButtons = [
   },
   {
     button: <FaLinkedinIn />,
-    className: "rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-sky-600 margin-left-6px",
+    className: "rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-sky-600",
     href: "https://www.linkedin.com/in/thisisjagdeep/",
     label: "LinkedinIn",
   },
-
+  {
+    button: <FaTwitter />,
+    className: "rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-sky-500",
+    href: "https://twitter.com",
+    label: "Twitter",
+  },
+  
 ] as const;
