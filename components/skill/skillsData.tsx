@@ -19,6 +19,7 @@ import {
   SiTypescript,
   SiVercel,
   SiAdobecreativecloud,
+  SiAdobephotoshop,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
@@ -26,7 +27,7 @@ export const skillsData = [
   {
     href: "https://github.com/milliorn?tab=repositories&q=&type=public&language=html&sort=",
     style: "m-auto p-1 text-white bg-orange-600 sm:text-5xl",
-    icon: <SiAdobecreativecloud />,
+    icon: <SiAdobephotoshop />,
     h3: "Adobe Photoshop",
   },
   {
