@@ -3,13 +3,13 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 export const contactButtons = [
   {
     button: <FaGithub />,
-    className: "rounded-full m-auto p-1 sm:text-6xl",
+    className: "rounded-full grid-cols-2 md:grid-cols-2 gap-2",
     href: "https://github.com/itsjagdeep",
     label: "Github",
   },
   {
     button: <FaLinkedinIn />,
-    className: "rounded-full m-auto p-1 sm:text-6xl",
+    className: "rounded-full grid-cols-2 md:grid-cols-2 gap-2",
     href: "https://www.linkedin.com/in/thisisjagdeep/",
     label: "LinkedinIn",
   },
