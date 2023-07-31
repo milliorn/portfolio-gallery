@@ -9,7 +9,7 @@ export const contactButtons = [
   },
   {
     button: <FaLinkedinIn />,
-    className: "rounded-full m-2 p-1 sm:text-6xl",
+    className: "rounded-full m-1 p-1 sm:text-6xl",
     href: "https://www.linkedin.com/in/thisisjagdeep/",
     label: "LinkedinIn",
   },
