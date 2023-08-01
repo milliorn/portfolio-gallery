@@ -4,7 +4,7 @@ import { heroData } from "./heroData";
 // hero links component that creates buttons in hero
 export default function HeroLinks(): JSX.Element {
   return (
-    <div className="flex items-center justify-between m-auto py-4">
+    <div className="text-5xl flex justify-center gap-16 py-3">
       {heroData.map((hero) => (
         <Link
           key={hero.label}
