@@ -20,8 +20,3 @@ updates:
     directory: "/nextjs-tailwind-typescript-portfolio"
     schedule:
       interval: "monthly"
-    # Maintain dependencies for npm
-  - package-ecosystem: "npm"
-    directory: "/nextjs-tailwind-typescript-portfolio"
-    schedule:
-      interval: "monthly"
