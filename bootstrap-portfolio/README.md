@@ -10,7 +10,3 @@ This repository contains the code for a simple portfolio website built using Boo
 - Bootstrap CSS and JavaScript included from CDNs
 - Font Awesome icons included from a CDN
 - Custom styles and layout using Bootstrap classes
-
-## Getting Started
-
-To get started, simply click the `Use this template` button.
