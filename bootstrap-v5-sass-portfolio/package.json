@@ -18,10 +18,10 @@
   "author": "Scott Milliorn",
   "license": "ISC",
   "devDependencies": {
-    "sass": "1.63.6"
+    "sass": "1.64.2"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.3.0",
+    "@fortawesome/fontawesome-free": "^6.4.2",
     "autoprefixer": "^10.4.13",
     "bootstrap": "^5.3.1",
     "postcss-cli": "^10.1.0"
