@@ -1,0 +1,34 @@
+.contact {
+  background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.3)
+    ),
+    url("https://source.unsplash.com/random/?light") center top;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 30vh;
+
+  h2 {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    display: grid;
+    font-size: 1.5rem;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    line-height: 2rem;
+  }
+
+  .social-icons {
+    margin-top: 2rem;
+    position: initial;
+  }
+}

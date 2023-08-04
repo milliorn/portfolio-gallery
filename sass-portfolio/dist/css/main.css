@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  padding-bottom: 2rem;
+}
+.about__bio-image {
+  background: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.3)), url("https://source.unsplash.com/random/?light") center top;
+  align-items: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: flex-end;
+  width: 100%;
+}
+.about__bio-image p {
+  margin-bottom: 2rem;
+}
+.about__bio {
+  width: 83%;
+  text-align: center;
+}
+.about__bio .text-secondary {
+  padding-bottom: 1rem;
+}
+.about .jobs {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  margin: 2rem auto 0 auto;
+  width: 60vw;
+}
+.about .jobs__job {
+  background: #404040;
+  border-bottom: 0.5rem solid #f97316;
+  padding: 0.5rem;
+}
+.about .jobs__job h2,
+.about .jobs__job h3 {
+  margin: 0.5rem 0;
+}
+.about .jobs__job h6 {
+  margin: 0.3rem 0;
+}
+.about .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.about footer {
+  transform: rotate(90deg) translate(-3rem, -1rem);
+}
+
+.contact {
+  background: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.3)), url("https://source.unsplash.com/random/?light") center top;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 30vh;
+}
+.contact h2 {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+.contact__list {
+  display: grid;
+  font-size: 1.5rem;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  line-height: 2rem;
+}
+.contact .social-icons {
+  margin-top: 2rem;
+  position: initial;
+}
+
+.home {
+  background: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.3)), url("https://source.unsplash.com/random/?light") center top;
+  align-items: center;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 40vh;
+  text-align: center;
+}
+.home__name {
+  border-bottom: 2px solid #fff;
+  font-size: 4.5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+.home__name--last {
+  color: #f97316;
+  font-weight: bold;
+}
+
+.menu-btn {
+  cursor: pointer;
+  height: 1.25rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 1.75rem;
+  z-index: 1;
+  transition: all 0.9s ease-in-out;
+}
+.menu-btn__burger {
+  background: #fff;
+  height: 0.25rem;
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 1.75rem;
+  transition: all 0.9s ease-in-out;
+}
+.menu-btn__burger::before {
+  background: #fff;
+  content: "";
+  height: 0.25rem;
+  position: absolute;
+  top: -0.5rem;
+  width: 1.75rem;
+  transition: all 0.9s ease-in-out;
+}
+.menu-btn__burger::after {
+  background: #fff;
+  content: "";
+  height: 0.25rem;
+  position: absolute;
+  top: 0.5rem;
+  width: 1.25rem;
+  transition: all 0.9s ease-in-out;
+}
+.menu-btn__burger.open {
+  transform: rotate(720deg);
+  background: transparent;
+}
+.menu-btn__burger.open::before {
+  transform: rotate(45deg) translate(5px, 0.5rem);
+}
+.menu-btn__burger.open::after {
+  width: 1.75rem;
+  transform: rotate(-45deg) translate(0.25rem, -7px);
+}
+
+.nav {
+  left: 0;
+  opacity: 0.98;
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  width: 100vw;
+}
+.nav.open {
+  visibility: visible;
+}
+.nav .menu-nav {
+  align-items: center;
+  background: #262626;
+  display: flex;
+  flex-flow: column wrap;
+  height: 100vh;
+  justify-content: center;
+  list-style-type: none;
+  overflow: hidden;
+  padding-right: 1rem;
+  transform: translateY(-100%);
+  transition: all 0.9s ease-in-out;
+}
+.nav .menu-nav.open {
+  transform: translateY(0);
+}
+.nav .menu-nav__item {
+  transform: translateX(100vw);
+  transition: all 0.9s ease-in-out;
+}
+.nav .menu-nav__item.open {
+  transform: translateX(0);
+}
+.nav .menu-nav__item.active > a {
+  color: #f97316;
+}
+.nav .menu-nav__link {
+  display: inline-block;
+  font-size: 1.875rem;
+  font-weight: 300;
+  line-height: 2.25rem;
+  padding: 2rem 0;
+  text-transform: uppercase;
+  transition: all 0.9s ease-in-out;
+}
+.nav .menu-nav__link:hover {
+  color: #f97316;
+}
+
+.menu-nav__item:nth-child(1) {
+  transition-delay: 0.25s;
+}
+
+.menu-nav__item:nth-child(2) {
+  transition-delay: 0.35s;
+}
+
+.menu-nav__item:nth-child(3) {
+  transition-delay: 0.45s;
+}
+
+.menu-nav__item:nth-child(4) {
+  transition-delay: 0.55s;
+}
+
+.projects {
+  padding-bottom: 2rem;
+}
+.projects__bio-image {
+  background: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.3)), url("https://source.unsplash.com/random/?light") center top;
+  align-items: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  justify-content: flex-end;
+  width: 100%;
+}
+.projects__bio-image .text-secondary {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-bottom: 2rem;
+}
+.projects__items {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  margin: 2rem auto 0 auto;
+  width: 60vw;
+}
+.projects__item {
+  border-bottom: 6px solid #f97316;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.projects__item img {
+  width: 100%;
+}
+.projects__item::after {
+  background: #f97316;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  transition: all 0.9s ease-in-out;
+}
+.projects__item:hover::after {
+  opacity: 0.9;
+  top: 0;
+}
+.projects__item:hover .projects__btn {
+  opacity: 1;
+}
+.projects__btns {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.projects__btn {
+  color: #000;
+  opacity: 0;
+  transition: all 0.9s ease-in-out;
+}
+.projects__btn:hover {
+  color: #fff;
+}
+.projects .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.projects footer {
+  transform: rotate(90deg) translate(-3rem, -1rem);
+}
+
+@media screen and (max-width: 320px) {
+  .home {
+    padding-top: 20vh;
+  }
+  .contact {
+    padding-top: 10vh;
+  }
+  footer {
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    background: transparent;
+    display: block;
+    height: 100%;
+    text-align: right;
+    transform: translateY(0);
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-nav__link {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .about__bio {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .projects__bio-image {
+    height: 40vh;
+  }
+  .projects__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects .text-secondary {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  /*.contact__list {
+    grid-template-columns: repeat(2, 1fr);
+  }*/
+}
+@media screen and (min-width: 1024px) {
+  .projects__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /*.contact__list {
+    grid-template-columns: repeat(3, 1fr);
+  }*/
+}
+@media screen and (min-width: 1366px) {
+  .projects__bio-image {
+    height: 50vh;
+  }
+}
+body {
+  background: #262626;
+  color: #fff;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.text-secondary {
+  color: #f97316;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+main .social-icons {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+}
+main .social-icons a {
+  padding: 0.4rem;
+  transition: all 0.9s ease-in-out;
+}
+main .social-icons a:hover {
+  color: #f97316;
+}
+
+footer {
+  bottom: 0.4rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 1rem;
+  position: fixed;
+  right: 1rem;
+  text-align: right;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */

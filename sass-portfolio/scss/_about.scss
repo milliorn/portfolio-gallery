@@ -1,0 +1,63 @@
+.about {
+  padding-bottom: 2rem;
+
+  &__bio-image {
+    background: linear-gradient(
+        to right,
+        rgba($primary-color, 0.9),
+        rgba($primary-color, 0.3)
+      ),
+      url("https://source.unsplash.com/random/?light") center top;
+    align-items: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: flex-end;
+    width: 100%;
+
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__bio {
+    width: 83%;
+    text-align: center;
+
+    .text-secondary {
+      padding-bottom: 1rem;
+    }
+  }
+
+  .jobs {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    margin: 2rem auto 0 auto;
+    width: 60vw;
+
+    &__job {
+      background: lighten($primary-color, 10%);
+      border-bottom: 0.5rem solid $secondary-color;
+      padding: 0.5rem;
+
+      h2,
+      h3 {
+        margin: 0.5rem 0;
+      }
+      h6 {
+        margin: 0.3rem 0;
+      }
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    transform: rotate(90deg) translate(-3rem, -1rem);
+  }
+}

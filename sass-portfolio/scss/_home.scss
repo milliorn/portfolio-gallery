@@ -1,0 +1,27 @@
+.home {
+  background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.3)
+    ),
+    url("https://source.unsplash.com/random/?light") center top;
+  align-items: center;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 40vh;
+  text-align: center;
+
+  &__name {
+    border-bottom: 2px solid set-text-color($primary-color);
+    font-size: 4.5rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+
+    &--last {
+      color: $secondary-color;
+      font-weight: bold;
+    }
+  }
+}

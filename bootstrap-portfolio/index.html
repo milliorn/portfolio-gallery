@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Include Bootstrap CSS from a CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Set the character encoding and viewport for responsive design -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Include Bootstrap JavaScript bundle from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Include Font Awesome icons from a CDN -->
+    <script
+      src="https://kit.fontawesome.com/31149d48b0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Set the page title -->
+    <title>Bootstrap v5 Portfolio</title>
+  </head>
+
+  <body>
+    <!-- Create a fixed-top navbar with scrolling behavior -->
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+      <div class="container">
+        <!-- Add a brand link in the navbar -->
+        <a class="navbar-brand" href="#">Bootstrap</a>
+
+        <!-- Add a responsive navbar toggler -->
+        <button
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler"
+          data-bs-target="#navbarSupportedContent"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Create a collapsible navbar menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <!-- Add navbar items with links -->
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Create a main banner section with a background image -->
+    <section class="bgimage" id="home">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+            <!-- Add a heading and description in the hero section -->
+            <h2 class="hero_title">Hi, it's me Bootstrap</h2>
+            <p class="hero_desc">Full Stack Web Developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section-->
+    <section id="about">
+      <div class="container mt-4 pt-4">
+        <h1 class="text-center">About Me</h1>
+        <div class="row mt-4">
+          <div class="col-lg-4">
+            <img
+              alt=""
+              class="imageAboutPage"
+              src="https://source.unsplash.com/random/231×233/?nature,water"
+            />
+          </div>
+
+          <div class="col-lg-8">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro et
+              voluptatum neque cumque necessitatibus at temporibus, tempora
+              culpa accusamus, quaerat reiciendis velit laudantium laborum,
+              maiores voluptatem doloremque? Cupiditate, debitis esse!
+            </p>
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <ul>
+                  <li>Name: Alpha Omega</li>
+                  <li>Age: 18</li>
+                  <li>Occupation: Web Developer</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Reprehenderit, voluptas libero! Officia doloremque, facere
+                officiis eius atque, consequuntur ea amet, quaerat debitis
+                aperiam nesciunt libero saepe. Dolorem quibusdam exercitationem
+                corrupti.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services section-->
+    <section id="services">
+      <div class="container">
+        <h1 class="text-center">Services</h1>
+        <div class="row">
+          <div class="col-lg-4 mt-4">
+            <div class="card servicesText">
+              <div class="card-body">
+                <i class="fas servicesIcon fa-clock"></i>
+                <h4 class="card-title mt-3">Full Stack</h4>
+                <p class="card-text mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis saepe illum beatae, sunt similique dolorum.
+                  Dignissimos qui nostrum accusamus eveniet laudantium, vero
+                  culpa necessitatibus numquam repellat illum dolorum officia?
+                  Velit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-4">
+            <div class="card servicesText">
+              <div class="card-body">
+                <i class="fas servicesIcon fa-layer-group"></i>
+                <h4 class="card-title mt-3">Design</h4>
+                <p class="card-text mt-3">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+                  dolorum delectus beatae inventore, dicta vero deserunt harum
+                  deleniti voluptate sit at laudantium ipsam officia saepe,
+                  corrupti eius. Dicta, molestias facilis.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4">
+            <div class="card servicesText">
+              <div class="card-body">
+                <i class="far servicesIcon fa-check-circle"></i>
+                <h4 class="card-title mt-3">Deployment</h4>
+                <p class="card-text mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  hic cumque, ullam molestias at ducimus minima vitae quod
+                  accusamus dolor dicta quisquam ab delectus doloribus fugit
+                  quas ut et aliquid.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 mt-4">
+            <div class="card servicesText">
+              <div class="card-body">
+                <i class="fas servicesIcon fa-search"></i>
+                <h4 class="card-title mt-3">Cloud</h4>
+                <p class="card-text mt-3">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Consequuntur, ipsam culpa qui minima iste maiores asperiores
+                  est! Deserunt, rem. Quia molestiae facere quod deleniti nisi
+                  voluptas dolorem magni labore mollitia!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4">
+            <div class="card servicesText">
+              <div class="card-body">
+                <i class="fas servicesIcon fa-shield-alt"></i>
+                <h4 class="card-title mt-3">DevOps</h4>
+                <p class="card-text mt-3">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet rerum consequuntur recusandae, delectus facilis et
+                  odio commodi. Dolorem ut quidem aliquid ipsa, assumenda, iusto
+                  eveniet ea quas nobis, officia deleniti.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4">
+            <div class="card servicesText">
+              <div class="card-body">
+                <i class="fas servicesIcon fa-wrench"></i>
+                <h4 class="card-title mt-3">Testing</h4>
+                <p class="card-text mt-3">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ipsam, sunt reiciendis corporis quas deserunt aliquam, ipsum
+                  laborum distinctio expedita repellat explicabo fugiat illum
+                  debitis? Vitae dolorum necessitatibus placeat aspernatur
+                  ducimus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio section-->
+    <section id="projects">
+      <div class="container mt-3">
+        <h1 class="text-center">Projects</h1>
+        <div class="row">
+          <div class="col-lg-4 mt-4">
+            <div class="card">
+              <!-- Image for the project -->
+              <img
+                class="card-img-top"
+                src="https://source.unsplash.com/random/300x200"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <!-- Title of the project -->
+                <h4 class="card-title">Project Name</h4>
+                <!-- Description of the project -->
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus iste quaerat eaque debitis iure voluptate
+                  consequuntur provident quae expedita ex dolores sint, nemo
+                  nulla ut odio corrupti incidunt velit fugit?
+                </p>
+                <div class="text-center">
+                  <!-- Link/button for the project -->
+                  <a href="#" class="btn btn-success">Link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Repeat the above structure for additional projects -->
+          <div class="col-lg-4 mt-4">
+            <div class="card portfolioContent">
+              <img
+                alt="Card image"
+                class="card-img-top"
+                src="https://source.unsplash.com/random/300x200"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Project Name</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi, at. Odit eos molestias illo dolorum neque
+                  exercitationem saepe sapiente nobis iusto adipisci, labore
+                  cumque sequi cum dolorem aspernatur esse maiores.
+                </p>
+                <div class="text-center">
+                  <a href="#" class="btn btn-success">Link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4">
+            <div class="card portfolioContent">
+              <img
+                alt="Card image"
+                class="card-img-top"
+                src="https://source.unsplash.com/random/300x200"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Project Name</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                  reiciendis ipsa nihil, labore sed dolor magni eveniet quos
+                  perferendis hic. Facilis sint perspiciatis deserunt quisquam
+                  doloribus, alias error tempora necessitatibus?
+                </p>
+                <div class="text-center">
+                  <a href="#" class="btn btn-success">Link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-4 mt-4">
+            <div class="card portfolioContent">
+              <img
+                alt="Card image"
+                class="card-img-top"
+                src="https://source.unsplash.com/random/300x200"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Project Name</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Veritatis et quisquam est, minus omnis velit in animi
+                  voluptates atque saepe consectetur similique illo sint nulla
+                  tenetur ipsa suscipit facere maxime.
+                </p>
+                <div class="text-center">
+                  <a href="#" class="btn btn-success">Link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4">
+            <div class="card portfolioContent">
+              <img
+                alt="Card image"
+                class="card-img-top"
+                src="https://source.unsplash.com/random/300x200"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Project Name</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Veniam architecto, at, numquam veritatis error aliquid
+                  voluptatum temporibus nesciunt magni soluta natus vitae
+                  tenetur. Et possimus quis dicta, hic perferendis unde.
+                </p>
+                <div class="text-center">
+                  <a href="#" class="btn btn-success">Link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4">
+            <div class="card portfolioContent">
+              <img
+                alt="Card image"
+                class="card-img-top"
+                src="https://source.unsplash.com/random/300x200"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Project Name</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  recusandae dignissimos eius provident illo laudantium, sit
+                  impedit deserunt nam ipsum, voluptatibus corrupti velit ab
+                  voluptates explicabo veniam eligendi cumque fuga.
+                </p>
+                <div class="text-center">
+                  <a href="#" class="btn btn-success">Link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section-->
+    <section id="contact">
+      <div class="container mt-3 contactContent">
+        <h1 class="text-center">Contact Me</h1>
+
+        <div class="row mt-4">
+          <div class="col-lg-6">
+            <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+            <div
+              style="
+                color: red;
+                height: 500px;
+                max-width: 100%;
+                overflow: hidden;
+                width: 500px;
+              "
+            >
+              <div
+                id="embedmap-canvas"
+                style="height: 100%; width: 100%; max-width: 100%"
+              >
+                <iframe
+                  frameborder="0"
+                  src="https://www.google.com/maps/embed/v1/place?q=san+francisco&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                  style="height: 100%; width: 100%; border: 0"
+                >
+                </iframe>
+              </div>
+              <a
+                class="googlemaps-html"
+                href="https://www.embed-map.com"
+                id="get-data-forembedmap"
+                >https://www.embed-map.com</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <!-- form fields -->
+            <form>
+              <input
+                class="form-control form-control-lg"
+                placeholder="Name"
+                type="text"
+              />
+              <input
+                class="form-control mt-3"
+                placeholder="Email"
+                type="email"
+              />
+              <input
+                class="form-control mt-3"
+                placeholder="Subject"
+                type="text"
+              />
+              <div class="mb-3 mt-3">
+                <textarea
+                  class="form-control"
+                  id="comment"
+                  name="text"
+                  placeholder="Project Details"
+                  rows="5"
+                ></textarea>
+              </div>
+            </form>
+            <button type="button" class="btn btn-success mt-3">
+              Contact Me
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section-->
+    <footer id="footer">
+      <div class="container-fluid">
+        <!-- social media icons -->
+        <div class="social-icons mt-4">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.twitter.com/" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://www.twitch.tv/" target="_blank"
+            ><i class="fab fa-twitch"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <!-- Add custom CSS styles -->
+  <style>
+    /* CSS for the hero background image */
+    .bgimage {
+      background-size: cover;
+      background: url("https://source.unsplash.com/random/1153×750/?nature,water");
+      height: 100vh;
+      position: relative;
+    }
+    /* CSS for the text above the hero image */
+    .hero_title {
+      font-size: 4.5rem;
+    }
+    .hero_desc {
+      font-size: 2rem;
+    }
+    .hero-text {
+      color: white;
+      left: 50%;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* about section image css */
+    .imageAboutPage {
+      width: 100%;
+    }
+
+    /* services section css */
+    .servicesText.card {
+      cursor: pointer;
+      height: 280px;
+    }
+    .servicesIcon {
+      font-size: 36px;
+      text-align: center;
+      width: 100%;
+    }
+    .card-title {
+      text-align: center;
+    }
+    .card:hover .servicesIcon {
+      color: #008000;
+    }
+    .servicesText:hover {
+      border: 1px solid #008000;
+    }
+
+    /* display background color black on navbar scroll */
+    .navbarScroll.navbarDark {
+      background-color: black;
+    }
+
+    #embedmap-canvas img {
+      background: none;
+      font-size: inherit;
+      font-weight: inherit;
+      max-width: none;
+    }
+
+    .map-generator {
+      background: none;
+      max-height: 100%;
+      max-width: 100%;
+    }
+
+    /* social media icons styling */
+    .social-icons {
+      cursor: pointer;
+      font-size: 36px;
+    }
+    .fa-facebook:hover,
+    .fa-instagram:hover,
+    .fa-linkedin:hover,
+    .fa-twitter:hover,
+    .fa-twitch:hover {
+      color: #008000;
+    }
+    .fab {
+      color: #000000;
+    }
+    /* footer styling */
+    #footer {
+      background-color: #808080;
+      text-align: center;
+    }
+
+    /* spacing on all sections */
+    #about,
+    #contact,
+    #portfolio,
+    #services {
+      margin-top: 4rem;
+      padding-top: 4rem;
+    }
+    
+    #contact {
+      padding-bottom: 4rem;
+    }
+  </style>
+
+  <script>
+    // add class navbarDark on navbar scroll
+    const header = document.querySelector(".navbar");
+
+    window.onscroll = function () {
+      var top = window.scrollY;
+      if (top >= 100) {
+        header.classList.add("navbarDark");
+      } else {
+        header.classList.remove("navbarDark");
+      }
+    };
+  </script>
+</html>
