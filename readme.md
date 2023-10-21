@@ -1,5 +1,7 @@
 # Portfolio Gallery
 
+[![CodeQL](https://github.com/milliorn/portfolio-gallery/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/milliorn/portfolio-gallery/actions/workflows/github-code-scanning/codeql)
+
 ## Overview
 
 The Portfolio Gallery is a comprehensive collection of portfolios created with various technologies to showcase projects and experiences. This repository serves as a valuable resource for exploring and gaining insights into the diverse range of portfolios. You can also leverage the Portfolio Gallery to get inspired and create your own portfolio.
