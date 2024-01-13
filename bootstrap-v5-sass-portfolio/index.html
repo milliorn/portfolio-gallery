@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="Learning bootstrap v5 with sass">
+  <meta name="description" content="Put your description here.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sample Portfolio with Bootstrap v5 and sass</title>
   <link rel="stylesheet" href="assets/css/style.css">
@@ -84,7 +85,7 @@
   <section id="companies" class="companies">
     <div class="container">
       <div class="row text-center">
-        <h4 class="fw-bold lead mb-3">Trusted by companies like</h4>
+        <span class="fw-bold lead mb-3">Trusted by companies like</span>
         <div class="heading-line mb-5"></div>
       </div>
     </div>
@@ -342,10 +343,10 @@
               </div>
             </div>
             <div class="text-center">
-              <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button"
+              <button aria-label="left arrow" class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button"
                 data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
               </button>
-              <button class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button"
+              <button aria-label="right arrow" class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button"
                 data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
               </button>
             </div>
