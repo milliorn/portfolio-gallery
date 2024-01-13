@@ -11650,6 +11650,7 @@ fieldset:disabled .btn {
   font-size: 0.8rem;
   color: #6c757d;
   text-decoration: none;
+  color: #aaa;
 }
 @media (min-width: 576px) {
   .contact-box__info--subtitle {
