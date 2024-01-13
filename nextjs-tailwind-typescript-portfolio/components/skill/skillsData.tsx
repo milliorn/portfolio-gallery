@@ -12,7 +12,6 @@ import {
   SiGit,
   SiHtml5,
   SiJavascript,
-  SiMaterialui,
   SiNetlify,
   SiPostcss,
   SiReact,
@@ -22,6 +21,7 @@ import {
   SiVercel,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import { SiMaterialdesign } from "react-icons/si";
 
 export const skillsData = [
   {
@@ -159,7 +159,7 @@ export const skillsData = [
   {
     href: "https://github.com/milliorn?tab=repositories&q=material&type=&language=&sort=",
     style: "m-auto p-1 sm:text-5xl text-sky-500",
-    icon: <SiMaterialui />,
+    icon: <SiMaterialdesign />,
     h3: "MaterialUI",
   },
   {

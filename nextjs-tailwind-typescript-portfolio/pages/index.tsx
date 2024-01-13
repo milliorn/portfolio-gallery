@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
 
 import About from "../components/About";
 import Contact from "../components/contacts/Contact";
