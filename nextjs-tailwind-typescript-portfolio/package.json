@@ -12,7 +12,7 @@
     "@types/node": "20.8.10",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.17",
-    "eslint": "8.53.0",
+    "eslint": "8.56.0",
     "eslint-config-next": "13.5.3",
     "next": "14.0.3",
     "react": "18.2.0",
