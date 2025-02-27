@@ -17,13 +17,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Include Font Awesome icons from a CDN -->
-    <script
-      src="https://kit.fontawesome.com/31149d48b0.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+
 
     <!-- Set the page title -->
     <title>Bootstrap v5 Portfolio</title>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -48,7 +48,7 @@
 
         <!-- Create a collapsible navbar menu -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto flex justify-center gap-5">
             <!-- Add navbar items with links -->
             <li class="nav-item active">
               <a class="nav-link" href="#home">Home</a>
@@ -458,12 +458,12 @@
     <footer id="footer">
       <div class="container-fluid">
         <!-- social media icons -->
-        <div class="social-icons mt-4">
+        <div class="social-icons mt-4 ">
           <a
             aria-label="facebook"
             href="https://www.facebook.com/"
             target="_blank"
-            ><i class="fab fa-facebook"></i
+            ><i class="fab fa-facebook-f"></i
           ></a>
           <a
             aria-label="instagram"
@@ -491,114 +491,8 @@
     </footer>
   </body>
 
-  <!-- Add custom CSS styles -->
-  <style>
-    /* CSS for the hero background image */
-    /* CSS for the hero background image */
-    .bgimage {
-      background: url("https://source.unsplash.com/random/1153×750/?nature,water")
-        center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 100vh;
-      position: relative;
-    }
-
-    /* CSS for the text above the hero image */
-    .hero_title {
-      font-size: 4.5rem;
-    }
-    .hero_desc {
-      font-size: 2rem;
-    }
-    .hero-text {
-      color: white;
-      left: 50%;
-      position: absolute;
-      text-align: center;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    /* about section image css */
-    .imageAboutPage {
-      width: 100%;
-    }
-
-    /* services section css */
-    .servicesText.card {
-      cursor: pointer;
-      height: 280px;
-    }
-    .servicesIcon {
-      font-size: 36px;
-      text-align: center;
-      width: 100%;
-    }
-    .card-title {
-      text-align: center;
-      font-weight: bold;
-      font-size: 1.5rem;
-    }
-    .card:hover .servicesIcon {
-      color: #008000;
-    }
-    .servicesText:hover {
-      border: 1px solid #008000;
-    }
-
-    /* display background color black on navbar scroll */
-    .navbarScroll.navbarDark {
-      background-color: black;
-    }
-
-    #embedmap-canvas img {
-      background: none;
-      font-size: inherit;
-      font-weight: inherit;
-      max-width: none;
-    }
-
-    .map-generator {
-      background: none;
-      max-height: 100%;
-      max-width: 100%;
-    }
-
-    /* social media icons styling */
-    .social-icons {
-      cursor: pointer;
-      font-size: 36px;
-    }
-    .fa-facebook:hover,
-    .fa-instagram:hover,
-    .fa-linkedin:hover,
-    .fa-twitter:hover,
-    .fa-twitch:hover {
-      color: #008000;
-    }
-    .fab {
-      color: #000000;
-    }
-    /* footer styling */
-    #footer {
-      background-color: #808080;
-      text-align: center;
-    }
-
-    /* spacing on all sections */
-    #about,
-    #contact,
-    #portfolio,
-    #services {
-      margin-top: 4rem;
-      padding-top: 4rem;
-    }
-
-    #contact {
-      padding-bottom: 4rem;
-    }
-  </style>
+  
+ 
 
   <script>
     // add class navbarDark on navbar scroll
