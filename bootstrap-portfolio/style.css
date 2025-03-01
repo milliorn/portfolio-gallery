@@ -22,21 +22,29 @@ h6 {
   color: black;
 }
 
-/* Ensure background color appears when navbar is collapsed */
-.navbar-collapse {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.9
-  ); /* Dark background with slight transparency */
-  padding: 10px;
-  border-radius: 5px;
+.navbar-brand:hover {
+  color: goldenrod;
 }
 
-/* Ensure links are visible */
-.navbar-collapse .nav-link {
-  color: white !important;
+/* Default: Transparent when navbar is expanded */
+/* When the navbar is collapsed and expanded (visible on mobile), apply black background */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: black;
+    border-radius: 8px;
+    padding: 16px 0;
+    text-align: center;
+  }
+
+  /* Ensure nav links are visible when menu is expanded */
+  .navbar-collapse.show .nav-link {
+    color: white;
+  }
+
+  /* Adjust hover color for visibility */
+  .navbar-collapse.show .nav-link:hover {
+    color: goldenrod;
+  }
 }
 
 /* Ensure navbar toggler button is visible */
@@ -47,28 +55,24 @@ h6 {
   color: white;
 }
 
-/* When toggled, make sure it remains visible */
 .navbar-toggler:focus,
 .navbar-toggler:active {
   outline: none;
   box-shadow: none;
 }
 
-/* Change navbar background on scroll */
-.navbarScroll.navbarDark,
-.navbarScroll.navbarDark .navbar-collapse {
-  background-color: black !important;
+/* Navbar on Scroll */
+.navbarScroll.navbarDark {
+  background-color: black;
 }
 
-.navbar-toggler {
-  border: 1px solid white !important; /* Ensures visibility */
-  color: white; /* Change to contrast background */
-  font-size: 24px; /* Adjust size */
-  background: transparent;
+.navbarScroll.navbarDark .navbar-brand,
+.navbarScroll.navbarDark .nav-link {
+  color: white;
 }
 
-.navbar-toggler-icon {
-  filter: invert(1); /* Makes the icon visible on dark backgrounds */
+.navbarScroll.navbarDark .nav-link:hover {
+  color: goldenrod;
 }
 
 .nav-link {
@@ -77,22 +81,6 @@ h6 {
 
 .nav-link:hover {
   color: goldenrod;
-}
-
-/* Navbar on Scroll */
-.navbarScroll.navbarDark {
-  background-color: black;
-}
-
-/* Change text color to white when navbar turns black */
-.navbarScroll.navbarDark .navbar-brand,
-.navbarScroll.navbarDark .nav-link {
-  color: white !important;
-}
-
-/* Change hover color for better visibility */
-.navbarScroll.navbarDark .nav-link:hover {
-  color: goldenrod !important;
 }
 
 /* ==========================
@@ -105,11 +93,9 @@ h6 {
   background-repeat: no-repeat;
   height: 100vh;
   position: relative;
-  color: black;
   opacity: 0.8;
 }
 
-/* Hero Section Text */
 .hero_title {
   font-size: 4.5rem;
   color: black;
@@ -130,25 +116,21 @@ h6 {
 }
 
 /* ==========================
-   About Section Styles
-========================== */
-
-/* ==========================
    Services Section Styles
 ========================== */
 .servicesText.card {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  height: auto; /* Allows the card to expand based on content */
-  justify-content: space-between; /* Distributes content evenly */
-  min-height: 280px; /* Ensures a minimum height */
-  overflow: hidden; /* Ensures content stays within borders */
-  word-wrap: break-word; /* Prevents text overflow */
+  height: auto;
+  justify-content: space-between;
+  min-height: 280px;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
 .servicesText .card-body {
-  flex-grow: 1; /* Ensures the text fills the available space */
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -184,15 +166,15 @@ h6 {
 }
 
 .btn-success {
-  background-color: #198754 !important; /* Darker green for better contrast */
-  color: #ffffff !important; /* Ensure white text for contrast */
-  font-weight: bold; /* Increase readability */
+  background-color: #198754 !important;
+  color: #ffffff;
+  font-weight: bold;
   border: none;
 }
 
 .btn-success:hover {
-  background-color: #145c41 !important; /* Even darker green on hover */
-  color: #ffffff !important;
+  background-color: #145c41;
+  color: #ffffff;
 }
 
 /* ==========================
@@ -215,8 +197,6 @@ h6 {
 /* ==========================
    Miscellaneous Styles
 ========================== */
-
-/* Social Media Icons */
 .social-icons {
   cursor: pointer;
   font-size: 36px;
@@ -263,33 +243,30 @@ h6 {
 }
 
 .portfolioContent {
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  overflow: hidden; /* Ensures content stays inside */
+  overflow: hidden;
 }
 
 .portfolioContent:hover {
-  transform: scale(1.03); /* Slightly enlarges card on hover */
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Increases shadow on hover */
+  transform: scale(1.03);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Ensuring image maintains aspect ratio inside cards */
 .portfolioContent .card-img-top {
   width: 100%;
-  height: 200px; /* Fixed height for uniform look */
-  object-fit: cover; /* Prevents image distortion */
+  height: 200px;
+  object-fit: cover;
 }
 
-/* Improving card content styling */
 .portfolioContent .card-body {
   padding: 15px;
-  text-align: center; /* Centers text inside cards */
+  text-align: center;
 }
 
-/* Ensuring button styles remain consistent */
 .portfolioContent .btn {
-  background-color: #28a745; /* Green Bootstrap color */
+  background-color: #28a745;
   border: none;
   padding: 10px 15px;
   font-size: 14px;
@@ -297,5 +274,5 @@ h6 {
 }
 
 .portfolioContent .btn:hover {
-  background-color: #218838; /* Slightly darker green */
+  background-color: #218838;
 }
