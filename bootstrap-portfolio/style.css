@@ -1,125 +1,192 @@
-/* CSS for the hero background image */
-    /* CSS for the hero background image */
-    .bgimage {
-        background: url("https://plus.unsplash.com/premium_photo-1683309567322-e95b9f182dcc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D")
-      
-          center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-        position: relative;
-        color:black;
-        opacity: 0.8;
-      }
-      .navbar-brand{
-color:black;
+/* ==========================
+   Global Styles
+========================== */
+body {
+  font-family: Arial, sans-serif;
+}
 
-      }
-      .nav-link{
-        color:black;
-      }
-      .nav-link:hover{
-        color:goldenrod;
-      }
-  
-      /* CSS for the text above the hero image */
-      .hero_title {
-        font-size: 4.5rem;
-        color: black;
-      }
-      .hero_desc {
-        color:#080606;
-        font-size: 2rem;
-      }
-      .hero-text {
-        color: white;
-        left: 50%;
-        position: absolute;
-        text-align: center;
-        top: 50%;
-        transform: translate(-50%, -50%);
-      }
-  
-      /* about section image css */
-      .imageAboutPage {
-        width: 100%;
-      }
-  
-      /* services section css */
-      .servicesText.card {
-        
-        cursor: pointer;
-        height: 280px;
-      }
-      .servicesIcon {
-        font-size: 36px;
-        text-align: center;
-        width: 100%;
-      }
-      .card-title {
-        text-align: center;
-        font-weight: bold;
-        font-size: 1.5rem;
-      }
-      .card:hover .servicesIcon {
-        color: #008000;
-      }
-      .servicesText:hover {
-        border: 1px solid #008000;
-      }
-  
-      /* display background color black on navbar scroll */
-      .navbarScroll.navbarDark {
-        background-color: black;
-      }
-  
-      #embedmap-canvas img {
-        background: none;
-        font-size: inherit;
-        font-weight: inherit;
-        max-width: none;
-      }
-  
-      .map-generator {
-        background: none;
-        max-height: 100%;
-        max-width: 100%;
-      }
-  
-      /* social media icons styling */
-      .social-icons {
-        cursor: pointer;
-        font-size: 36px;
-        display:flex;
-        justify-content: center;
-        gap:20px;
-      }
-      .fa-facebook:hover,
-      .fa-instagram:hover,
-      .fa-linkedin:hover,
-      .fa-twitter:hover,
-      .fa-twitch:hover {
-        color: #008000;
-      }
-      .fab {
-        color: #000000;
-      }
-      /* footer styling */
-      #footer {
-        background-color: #808080;
-        text-align: center;
-      }
-  
-      /* spacing on all sections */
-      #about,
-      #contact,
-      #portfolio,
-      #services {
-        margin-top: 4rem;
-        padding-top: 4rem;
-      }
-  
-      #contact {
-        padding-bottom: 4rem;
-      }
-  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* ==========================
+   Navigation Bar Styles
+========================== */
+.navbar-brand {
+  color: black;
+}
+
+.nav-link {
+  color: black;
+}
+
+.nav-link:hover {
+  color: goldenrod;
+}
+
+/* Navbar on Scroll */
+.navbarScroll.navbarDark {
+  background-color: black;
+}
+
+/* Change text color to white when navbar turns black */
+.navbarScroll.navbarDark .navbar-brand,
+.navbarScroll.navbarDark .nav-link {
+  color: white !important;
+}
+
+/* Change hover color for better visibility */
+.navbarScroll.navbarDark .nav-link:hover {
+  color: goldenrod !important;
+}
+
+/* ==========================
+   Hero Section Styles
+========================== */
+.bgimage {
+  background: url("https://plus.unsplash.com/premium_photo-1683309567322-e95b9f182dcc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D")
+    center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  color: black;
+  opacity: 0.8;
+}
+
+/* Hero Section Text */
+.hero_title {
+  font-size: 4.5rem;
+  color: black;
+}
+
+.hero_desc {
+  color: #080606;
+  font-size: 2rem;
+}
+
+.hero-text {
+  color: white;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ==========================
+   About Section Styles
+========================== */
+.imageAboutPage {
+  width: 100%;
+}
+
+/* ==========================
+   Services Section Styles
+========================== */
+.servicesText.card {
+  cursor: pointer;
+  height: 280px;
+}
+
+.servicesIcon {
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Hover Effects */
+.card:hover .servicesIcon {
+  color: #008000;
+}
+
+.servicesText:hover {
+  border: 1px solid #008000;
+}
+
+/* ==========================
+   Portfolio Section Styles
+========================== */
+#portfolio {
+  margin-top: 4rem;
+  padding-top: 4rem;
+}
+
+/* ==========================
+   Contact Section Styles
+========================== */
+#contact {
+  margin-top: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* ==========================
+   Footer Section Styles
+========================== */
+#footer {
+  background-color: #808080;
+  text-align: center;
+}
+
+/* ==========================
+   Miscellaneous Styles
+========================== */
+
+/* Social Media Icons */
+.social-icons {
+  cursor: pointer;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-linkedin:hover,
+.fa-twitter:hover,
+.fa-twitch:hover {
+  color: #008000;
+}
+
+.fab {
+  color: #000000;
+}
+
+/* Google Map Styling */
+#embedmap-canvas img {
+  background: none;
+  font-size: inherit;
+  font-weight: inherit;
+  max-width: none;
+}
+
+.map-generator {
+  background: none;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* ==========================
+   Section Spacing
+========================== */
+#about,
+#services,
+#projects,
+#contact {
+  margin-top: 4rem;
+  padding-top: 4rem;
+}
