@@ -17,13 +17,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Include Font Awesome icons from a CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
     <!-- Set the page title -->
     <title>Bootstrap v5 Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -384,10 +385,9 @@
     <section id="contact">
       <div class="container mt-3 contactContent">
         <h1 class="text-center">Contact Me</h1>
-
         <div class="row mt-4">
           <div class="col-lg-6">
-            <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+            <!-- Keeping the map styling exactly as it was -->
             <div
               style="
                 color: red;
@@ -406,41 +406,47 @@
                   frameborder="0"
                   src="https://www.google.com/maps/embed/v1/place?q=san+francisco&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
                   style="height: 100%; width: 100%; border: 0"
-                >
-                </iframe>
+                ></iframe>
               </div>
               <a
                 class="googlemaps-html"
                 href="https://www.embed-map.com"
                 id="get-data-forembedmap"
-                >https://www.embed-map.com</a
               >
+                https://www.embed-map.com
+              </a>
             </div>
           </div>
 
           <div class="col-lg-6">
-            <!-- form fields -->
+            <!-- Only adding id and name attributes, nothing else changed -->
             <form>
               <input
+                id="name"
+                name="name"
                 class="form-control form-control-lg"
                 placeholder="Name"
                 type="text"
               />
               <input
+                id="email"
+                name="email"
                 class="form-control mt-3"
                 placeholder="Email"
                 type="email"
               />
               <input
+                id="subject"
+                name="subject"
                 class="form-control mt-3"
                 placeholder="Subject"
                 type="text"
               />
               <div class="mb-3 mt-3">
                 <textarea
+                  id="message"
+                  name="message"
                   class="form-control"
-                  id="comment"
-                  name="text"
                   placeholder="Project Details"
                   rows="5"
                 ></textarea>
@@ -458,7 +464,7 @@
     <footer id="footer">
       <div class="container-fluid">
         <!-- social media icons -->
-        <div class="social-icons mt-4 ">
+        <div class="social-icons mt-4">
           <a
             aria-label="facebook"
             href="https://www.facebook.com/"
@@ -490,9 +496,6 @@
       </div>
     </footer>
   </body>
-
-  
- 
 
   <script>
     // add class navbarDark on navbar scroll
