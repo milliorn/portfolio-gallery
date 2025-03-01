@@ -27,17 +27,13 @@ h6 {
 }
 
 /* Default: Transparent when navbar is expanded */
-.navbar-collapse {
-  background-color: transparent;
-  transition: background-color 0.3s ease-in-out;
-}
-
 /* When the navbar is collapsed and expanded (visible on mobile), apply black background */
 @media (max-width: 992px) {
-  .navbar-collapse.show {
+  .navbar-collapse {
     background-color: black;
-    padding: 10px;
     border-radius: 8px;
+    padding: 16px 0;
+    text-align: center;
   }
 
   /* Ensure nav links are visible when menu is expanded */
