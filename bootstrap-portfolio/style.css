@@ -89,7 +89,20 @@ h6 {
 ========================== */
 .servicesText.card {
   cursor: pointer;
-  height: 280px;
+  display: flex;
+  flex-direction: column;
+  height: auto; /* Allows the card to expand based on content */
+  justify-content: space-between; /* Distributes content evenly */
+  min-height: 280px; /* Ensures a minimum height */
+  overflow: hidden; /* Ensures content stays within borders */
+  word-wrap: break-word; /* Prevents text overflow */
+}
+
+.servicesText .card-body {
+  flex-grow: 1; /* Ensures the text fills the available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .servicesIcon {
@@ -119,6 +132,18 @@ h6 {
 #portfolio {
   margin-top: 4rem;
   padding-top: 4rem;
+}
+
+.btn-success {
+  background-color: #198754 !important; /* Darker green for better contrast */
+  color: #ffffff !important; /* Ensure white text for contrast */
+  font-weight: bold; /* Increase readability */
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #145c41 !important; /* Even darker green on hover */
+  color: #ffffff !important;
 }
 
 /* ==========================
