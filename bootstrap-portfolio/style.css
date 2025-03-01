@@ -166,7 +166,7 @@ h6 {
 }
 
 .btn-success {
-  background-color: #198754;
+  background-color: #198754 !important;
   color: #ffffff;
   font-weight: bold;
   border: none;
