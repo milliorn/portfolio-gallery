@@ -22,6 +22,55 @@ h6 {
   color: black;
 }
 
+/* Ensure background color appears when navbar is collapsed */
+.navbar-collapse {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.9
+  ); /* Dark background with slight transparency */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Ensure links are visible */
+.navbar-collapse .nav-link {
+  color: white !important;
+}
+
+/* Ensure navbar toggler button is visible */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  color: white;
+}
+
+/* When toggled, make sure it remains visible */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Change navbar background on scroll */
+.navbarScroll.navbarDark,
+.navbarScroll.navbarDark .navbar-collapse {
+  background-color: black !important;
+}
+
+.navbar-toggler {
+  border: 1px solid white !important; /* Ensures visibility */
+  color: white; /* Change to contrast background */
+  font-size: 24px; /* Adjust size */
+  background: transparent;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); /* Makes the icon visible on dark backgrounds */
+}
+
 .nav-link {
   color: black;
 }
