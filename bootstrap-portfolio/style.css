@@ -79,6 +79,10 @@ h6 {
   color: black;
 }
 
+.nav-link:hover {
+  color: goldenrod;
+}
+
 /* ==========================
    Hero Section Styles
 ========================== */
