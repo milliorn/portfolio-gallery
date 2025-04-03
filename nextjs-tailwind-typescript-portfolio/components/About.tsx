@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { JSX } from "react";
 
 // about text component
 function AboutText(): JSX.Element {
@@ -35,13 +36,11 @@ function AboutImage(): JSX.Element {
   return (
     <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
       <Image
-        alt="/"
-        blurDataURL="../public/assets/navbarLogo.png"
-        className="rounded-xl"
-        height={1080}
-        placeholder="blur"
-        src="https://source.unsplash.com/random/?web+developer"
+        src="https://picsum.photos/seed/webdeveloper/1920/1080.webp"
         width={1920}
+        height={1080}
+        alt="Web developer placeholder"
+        className="rounded-xl"
       />
     </div>
   );
