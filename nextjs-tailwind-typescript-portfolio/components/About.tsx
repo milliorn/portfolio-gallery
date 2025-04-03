@@ -36,7 +36,7 @@ function AboutImage(): JSX.Element {
   return (
     <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
       <Image
-        src="https://picsum.photos/seed/webdeveloper/1920/1080"
+        src="https://picsum.photos/seed/webdeveloper/1920/1080.webp"
         width={1920}
         height={1080}
         alt="Web developer placeholder"
