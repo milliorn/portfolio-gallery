@@ -25,5 +25,10 @@
     "autoprefixer": "^10.4.21",
     "bootstrap": "^5.3.7",
     "postcss-cli": "^11.0.1"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
