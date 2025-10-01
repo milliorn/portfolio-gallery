@@ -10,13 +10,22 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
   # Maintain dependencies for npm
   - package-ecosystem: "npm"
     directory: "/bootstrap-v5-sass-portfolio"
     schedule:
       interval: "monthly"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
     # Maintain dependencies for npm
   - package-ecosystem: "npm"
     directory: "/nextjs-tailwind-typescript-portfolio"
     schedule:
       interval: "monthly"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
