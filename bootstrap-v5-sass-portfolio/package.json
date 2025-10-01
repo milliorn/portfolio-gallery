@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.0.1",
-    "bootstrap": "^5.3.7",
+    "bootstrap": "^5.3.8",
     "postcss-cli": "^11.0.1"
   },
   "browserslist": [
