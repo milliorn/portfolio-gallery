@@ -15,13 +15,16 @@ jobs:
         id: dependabot-metadata
         uses: dependabot/fetch-metadata@v2.4.0
 
-      # Auto-close when update-type is null/empty
-      - name: Auto-close updates with null update-type
+      # Handle when update-type is null/empty
+      - name: Handle updates with null update-type
         if: ${{ steps.dependabot-metadata.outputs.update-type == '' || steps.dependabot-metadata.outputs.update-type == null }}
         run: |
-          gh pr comment "$PR_URL" --body "❌ Auto-closed: \`update-type\` from dependabot/fetch-metadata is **null**, so this PR was automatically closed."
-          gh pr edit "$PR_URL" --add-label "dependabot-update-type-null"
-          gh pr close "$PR_URL"
+          if gh pr close "$PR_URL"; then
+            gh pr comment "$PR_URL" --body "❌ Auto-closed: \`update-type\` from dependabot/fetch-metadata is **null**, so this PR was automatically closed."
+            gh pr edit "$PR_URL" --add-label "dependabot-update-type-null"
+          else
+            gh pr comment "$PR_URL" --body "⚠️ Tried to auto-close this Dependabot PR because \`update-type\` is **null**, but \`gh pr close\` failed. Please close this PR manually. See workflow logs for details."
+          fi
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
