@@ -20,8 +20,16 @@ jobs:
         if: ${{ steps.dependabot-metadata.outputs.update-type == '' || steps.dependabot-metadata.outputs.update-type == null }}
         run: |
           if gh pr close "$PR_URL"; then
+            # Best-effort: ensure the label exists (create if missing)
+            gh label create "dependabot-update-type-null" \
+              --color "d73a4a" \
+              --description "Dependabot PR with null update-type (auto-closed)" \
+              || true
+
+            # Best-effort: add label; don't fail the job if this errors
+            gh pr edit "$PR_URL" --add-label "dependabot-update-type-null" || true
+
             gh pr comment "$PR_URL" --body "❌ Auto-closed: \`update-type\` from dependabot/fetch-metadata is **null**, so this PR was automatically closed."
-            gh pr edit "$PR_URL" --add-label "dependabot-update-type-null"
           else
             gh pr comment "$PR_URL" --body "⚠️ Tried to auto-close this Dependabot PR because \`update-type\` is **null**, but \`gh pr close\` failed. Please close this PR manually. See workflow logs for details."
           fi
