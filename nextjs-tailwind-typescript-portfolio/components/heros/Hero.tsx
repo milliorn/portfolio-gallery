@@ -12,5 +12,3 @@ function Hero(): JSX.Element {
 }
 
 export default Hero;
-
-

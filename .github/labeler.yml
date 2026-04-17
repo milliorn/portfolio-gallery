@@ -31,8 +31,8 @@ pages:
 styles:
   - changed-files:
       - any-glob-to-any-file:
-          - '**/*.scss'
-          - '**/*.css'
+          - "**/*.scss"
+          - "**/*.css"
           - nextjs-tailwind-typescript-portfolio/styles/**
           - bootstrap-v5-sass-portfolio/scss/**
           - sass-portfolio/scss/**
@@ -40,15 +40,15 @@ styles:
 typescript:
   - changed-files:
       - any-glob-to-any-file:
-          - '**/*.ts'
-          - '**/*.tsx'
+          - "**/*.ts"
+          - "**/*.tsx"
 
 javascript:
   - changed-files:
       - any-glob-to-any-file:
-          - '**/*.js'
-          - '**/*.mjs'
-          - '**/*.cjs'
+          - "**/*.js"
+          - "**/*.mjs"
+          - "**/*.cjs"
 
 assets:
   - changed-files:
@@ -59,27 +59,27 @@ assets:
 config:
   - changed-files:
       - any-glob-to-any-file:
-          - '**/*.config.js'
-          - '**/*.config.ts'
-          - '**/*.config.mjs'
-          - '**/.eslintrc*'
-          - '**/.prettierrc*'
-          - '**/tsconfig*.json'
-          - '**/tailwind.config*'
-          - '**/next.config*'
-          - '**/postcss.config*'
+          - "**/*.config.js"
+          - "**/*.config.ts"
+          - "**/*.config.mjs"
+          - "**/.eslintrc*"
+          - "**/.prettierrc*"
+          - "**/tsconfig*.json"
+          - "**/tailwind.config*"
+          - "**/next.config*"
+          - "**/postcss.config*"
 
 dependencies:
   - changed-files:
       - any-glob-to-any-file:
-          - '**/package.json'
-          - '**/package-lock.json'
+          - "**/package.json"
+          - "**/package-lock.json"
 
 documentation:
   - changed-files:
       - any-glob-to-any-file:
-          - '**/*.md'
-          - '**/*.mdx'
+          - "**/*.md"
+          - "**/*.mdx"
 
 github_actions:
   - changed-files:

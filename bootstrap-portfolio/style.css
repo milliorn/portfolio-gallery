@@ -87,8 +87,7 @@ h6 {
    Hero Section Styles
 ========================== */
 .bgimage {
-  background: url("https://picsum.photos/2560/1666.webp")
-    center center;
+  background: url("https://picsum.photos/2560/1666.webp") center center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -245,7 +244,9 @@ h6 {
 .portfolioContent {
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition:
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
   overflow: hidden;
 }
 

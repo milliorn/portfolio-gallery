@@ -9,7 +9,9 @@
   padding-bottom: 2rem;
 }
 .about__bio-image {
-  background: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.3)), url("https://picsum.photos/seed/light") center top;
+  background:
+    linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.3)),
+    url("https://picsum.photos/seed/light") center top;
   align-items: center;
   background-size: cover;
   display: flex;
@@ -56,7 +58,9 @@
 }
 
 .contact {
-  background: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.3)), url("https://picsum.photos/seed/light") center top;
+  background:
+    linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.3)),
+    url("https://picsum.photos/seed/light") center top;
   background-size: cover;
   align-items: center;
   display: flex;
@@ -83,7 +87,9 @@
 }
 
 .home {
-  background: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.3)), url("https://picsum.photos/seed/light") center top;
+  background:
+    linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.3)),
+    url("https://picsum.photos/seed/light") center top;
   align-items: center;
   background-size: cover;
   height: 100%;
@@ -222,7 +228,9 @@
   padding-bottom: 2rem;
 }
 .projects__bio-image {
-  background: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.3)), url("https://picsum.photos/seed/light") center top;
+  background:
+    linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.3)),
+    url("https://picsum.photos/seed/light") center top;
   align-items: center;
   background-size: cover;
   display: flex;
@@ -417,4 +425,4 @@ footer {
   right: 1rem;
   text-align: right;
   color: #fff;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
