@@ -1,0 +1,88 @@
+bootstrap-portfolio:
+  - changed-files:
+      - any-glob-to-any-file:
+          - bootstrap-portfolio/**
+
+bootstrap-v5-sass-portfolio:
+  - changed-files:
+      - any-glob-to-any-file:
+          - bootstrap-v5-sass-portfolio/**
+
+nextjs-tailwind-typescript-portfolio:
+  - changed-files:
+      - any-glob-to-any-file:
+          - nextjs-tailwind-typescript-portfolio/**
+
+sass-portfolio:
+  - changed-files:
+      - any-glob-to-any-file:
+          - sass-portfolio/**
+
+components:
+  - changed-files:
+      - any-glob-to-any-file:
+          - nextjs-tailwind-typescript-portfolio/components/**
+
+pages:
+  - changed-files:
+      - any-glob-to-any-file:
+          - nextjs-tailwind-typescript-portfolio/pages/**
+
+styles:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.scss'
+          - '**/*.css'
+          - nextjs-tailwind-typescript-portfolio/styles/**
+          - bootstrap-v5-sass-portfolio/scss/**
+          - sass-portfolio/scss/**
+
+typescript:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.ts'
+          - '**/*.tsx'
+
+javascript:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.js'
+          - '**/*.mjs'
+          - '**/*.cjs'
+
+assets:
+  - changed-files:
+      - any-glob-to-any-file:
+          - nextjs-tailwind-typescript-portfolio/public/**
+          - bootstrap-v5-sass-portfolio/assets/**
+
+config:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.config.js'
+          - '**/*.config.ts'
+          - '**/*.config.mjs'
+          - '**/.eslintrc*'
+          - '**/.prettierrc*'
+          - '**/tsconfig*.json'
+          - '**/tailwind.config*'
+          - '**/next.config*'
+          - '**/postcss.config*'
+
+dependencies:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/package.json'
+          - '**/package-lock.json'
+
+documentation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.md'
+          - '**/*.mdx'
+
+github_actions:
+  - changed-files:
+      - any-glob-to-any-file:
+          - .github/workflows/**
+          - .github/actions/**
