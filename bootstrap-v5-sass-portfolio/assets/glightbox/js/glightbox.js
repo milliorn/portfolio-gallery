@@ -2,8 +2,8 @@
   typeof exports === "object" && typeof module !== "undefined"
     ? (module.exports = factory())
     : typeof define === "function" && define.amd
-    ? define(factory)
-    : ((global = global || self), (global.GLightbox = factory()));
+      ? define(factory)
+      : ((global = global || self), (global.GLightbox = factory()));
 })(this, function () {
   "use strict";
 
@@ -482,7 +482,7 @@
             },
             function () {
               callback();
-            }
+            },
           );
           return false;
         }
@@ -506,7 +506,7 @@
             },
             function () {
               callback();
-            }
+            },
           );
           return false;
         }
@@ -522,7 +522,7 @@
     return (
       "navigator" in window &&
       window.navigator.userAgent.match(
-        /(iPad)|(iPhone)|(iPod)|(Android)|(PlayBook)|(BB10)|(BlackBerry)|(Opera Mini)|(IEMobile)|(webOS)|(MeeGo)/i
+        /(iPad)|(iPhone)|(iPod)|(Android)|(PlayBook)|(BB10)|(BlackBerry)|(Opera Mini)|(IEMobile)|(webOS)|(MeeGo)/i,
       )
     );
   }
@@ -616,7 +616,7 @@
     });
     var nextFocus = nextOrders.sort()[0];
     return document.querySelector(
-      '.gbtn[data-taborder="'.concat(nextFocus, '"]')
+      '.gbtn[data-taborder="'.concat(nextFocus, '"]'),
     );
   }
 
@@ -809,7 +809,7 @@
       this.touchStart = wrapFunc(this.element, option.touchStart || noop);
       this.multipointStart = wrapFunc(
         this.element,
-        option.multipointStart || noop
+        option.multipointStart || noop,
       );
       this.multipointEnd = wrapFunc(this.element, option.multipointEnd || noop);
       this.pinch = wrapFunc(this.element, option.pinch || noop);
@@ -821,7 +821,7 @@
       this.pressMove = wrapFunc(this.element, option.pressMove || noop);
       this.twoFingerPressMove = wrapFunc(
         this.element,
-        option.twoFingerPressMove || noop
+        option.twoFingerPressMove || noop,
       );
       this.touchMove = wrapFunc(this.element, option.touchMove || noop);
       this.touchEnd = wrapFunc(this.element, option.touchEnd || noop);
@@ -895,7 +895,7 @@
               this.longTap.dispatch(evt, this.element);
               this._preventTap = true;
             }.bind(this),
-            750
+            750,
           );
         },
       },
@@ -998,7 +998,7 @@
               this.x1,
               this.x2,
               this.y1,
-              this.y2
+              this.y2,
             );
             this.swipeTimeout = setTimeout(function () {
               self.swipe.dispatch(evt, self.element);
@@ -1067,8 +1067,8 @@
               ? "Left"
               : "Right"
             : y1 - y2 > 0
-            ? "Up"
-            : "Down";
+              ? "Up"
+              : "Down";
         },
       },
       {
@@ -1326,7 +1326,7 @@
         if (!mediaImage) {
           return cssTransform(
             media,
-            "translate3d(".concat(hDistancePercent, "%, 0, 0)")
+            "translate3d(".concat(hDistancePercent, "%, 0, 0)"),
           );
         }
 
@@ -1334,7 +1334,7 @@
           media,
           "translate3d("
             .concat(hDistancePercent, "%, ")
-            .concat(vDistancePercent, "%, 0)")
+            .concat(vDistancePercent, "%, 0)"),
         );
       },
       touchEnd: function touchEnd() {
@@ -1494,21 +1494,21 @@
         function (e) {
           return _this.dragStart(e);
         },
-        false
+        false,
       );
       this.img.addEventListener(
         "mouseup",
         function (e) {
           return _this.dragEnd(e);
         },
-        false
+        false,
       );
       this.img.addEventListener(
         "mousemove",
         function (e) {
           return _this.drag(e);
         },
-        false
+        false,
       );
       this.img.addEventListener(
         "click",
@@ -1527,7 +1527,7 @@
             _this.zoomOut();
           }
         },
-        false
+        false,
       );
       this.img.setZoomEvents = true;
     }
@@ -1712,21 +1712,21 @@
         function (e) {
           return _this.dragStart(e);
         },
-        false
+        false,
       );
       this.el.addEventListener(
         "mouseup",
         function (e) {
           return _this.dragEnd(e);
         },
-        false
+        false,
       );
       this.el.addEventListener(
         "mousemove",
         function (e) {
           return _this.drag(e);
         },
-        false
+        false,
       );
     }
 
@@ -1962,7 +1962,7 @@
           callback();
         }
       },
-      false
+      false,
     );
     img.src = data.href;
     img.alt = "";
@@ -1989,7 +1989,7 @@
     addClass(slideContainer, "gvideo-container");
     slideMedia.insertBefore(
       createHTML('<div class="gvideo-wrapper"></div>'),
-      slideMedia.firstChild
+      slideMedia.firstChild,
     );
     var videoWrapper = slide.querySelector(".gvideo-wrapper");
     injectAssets(this.settings.plyr.css, "Plyr");
@@ -2013,11 +2013,11 @@
 
       if (
         url.match(
-          /(youtube\.com|youtube-nocookie\.com)\/watch\?v=([a-zA-Z0-9\-_]+)/
+          /(youtube\.com|youtube-nocookie\.com)\/watch\?v=([a-zA-Z0-9\-_]+)/,
         ) ||
         url.match(/youtu\.be\/([a-zA-Z0-9\-_]+)/) ||
         url.match(
-          /(youtube\.com|youtube-nocookie\.com)\/embed\/([a-zA-Z0-9\-_]+)/
+          /(youtube\.com|youtube-nocookie\.com)\/embed\/([a-zA-Z0-9\-_]+)/,
         )
       ) {
         var youtubeID = getYoutubeID(url);
@@ -2069,7 +2069,7 @@
             '<div id="'
               .concat(videoID, '" data-plyr-provider="')
               .concat(videoSource, '" data-plyr-embed-id="')
-              .concat(embedID, '"></div>')
+              .concat(embedID, '"></div>'),
           );
       addClass(videoWrapper, "".concat(videoSource, "-video gvideo"));
       videoWrapper.appendChild(placeholder);
@@ -2096,7 +2096,7 @@
         },
         function () {
           _this.resize(slide);
-        }
+        },
       );
       player.on("enterfullscreen", handleMediaFullScreen);
       player.on("exitfullscreen", handleMediaFullScreen);
@@ -2145,7 +2145,7 @@
     if (content) {
       if (isString(content)) {
         innerContent = createHTML(
-          '<div class="ginlined-content">'.concat(content, "</div>")
+          '<div class="ginlined-content">'.concat(content, "</div>"),
         );
       }
 
@@ -2250,11 +2250,11 @@
 
           if (
             url.match(
-              /(youtube\.com|youtube-nocookie\.com)\/watch\?v=([a-zA-Z0-9\-_]+)/
+              /(youtube\.com|youtube-nocookie\.com)\/watch\?v=([a-zA-Z0-9\-_]+)/,
             ) ||
             url.match(/youtu\.be\/([a-zA-Z0-9\-_]+)/) ||
             url.match(
-              /(youtube\.com|youtube-nocookie\.com)\/embed\/([a-zA-Z0-9\-_]+)/
+              /(youtube\.com|youtube-nocookie\.com)\/embed\/([a-zA-Z0-9\-_]+)/,
             )
           ) {
             return "video";
@@ -2296,7 +2296,7 @@
             {
               descPosition: settings.descPosition,
             },
-            this.defaults
+            this.defaults,
           );
 
           if (isObject(element) && !isNode(element)) {
@@ -2390,7 +2390,7 @@
             document.querySelector(data.description)
           ) {
             data.description = document.querySelector(
-              data.description
+              data.description,
             ).innerHTML;
           } else {
             var nodeDesc = element.querySelector(".glightbox-desc");
@@ -2528,7 +2528,7 @@
                 slideConfig.smallDescription = this.slideShortDesc(
                   slideConfig.description,
                   settings.moreLength,
-                  settings.moreText
+                  settings.moreText,
                 );
                 slideText.innerHTML = slideConfig.smallDescription;
                 this.descriptionEvents(slideText, slideConfig);
@@ -2711,11 +2711,11 @@
         key: "getConfig",
         value: function getConfig() {
           var parser = new SlideConfigParser(
-            this.instance.settings.slideExtraAttributes
+            this.instance.settings.slideExtraAttributes,
           );
           this.slideConfig = parser.parseConfig(
             this.element,
-            this.instance.settings
+            this.instance.settings,
           );
           return this.slideConfig;
         },
@@ -2913,7 +2913,7 @@
             this.overlay,
             this.settings.openEffect == "none"
               ? "none"
-              : this.settings.cssEfects.fade["in"]
+              : this.settings.cssEfects.fade["in"],
           );
 
           var body = document.body;
@@ -2926,7 +2926,7 @@
             styleSheet.className = "gcss-styles";
             styleSheet.innerText = ".gscrollbar-fixer {margin-right: ".concat(
               scrollBar,
-              "px}"
+              "px}",
             );
             document.head.appendChild(styleSheet);
 
@@ -3038,7 +3038,7 @@
           }
 
           this.slideDescription = slideNode.querySelector(
-            ".gslide-description"
+            ".gslide-description",
           );
           this.slideDescriptionContained =
             this.slideDescription &&
@@ -3306,7 +3306,7 @@
                     nextData,
                   ]);
                 }
-              }
+              },
             );
           } else {
             var effectName = this.settings.slideEffect;
@@ -3872,12 +3872,12 @@
 
               _imgNode.setAttribute(
                 "style",
-                "max-height: calc(100vh - ".concat(descHeight, "px)")
+                "max-height: calc(100vh - ".concat(descHeight, "px)"),
               );
 
               description.setAttribute(
                 "style",
-                "max-width: ".concat(_imgNode.offsetWidth, "px;")
+                "max-width: ".concat(_imgNode.offsetWidth, "px;"),
               );
             }
           }
@@ -3938,13 +3938,13 @@
               };
               video.parentNode.setAttribute(
                 "style",
-                "max-width: ".concat(vsize.width, "px")
+                "max-width: ".concat(vsize.width, "px"),
               );
 
               if (descriptionResize) {
                 description.setAttribute(
                   "style",
-                  "max-width: ".concat(vsize.width, "px;")
+                  "max-width: ".concat(vsize.width, "px;"),
                 );
               }
             } else {
@@ -3953,7 +3953,7 @@
               if (descriptionResize) {
                 description.setAttribute(
                   "style",
-                  "max-width: ".concat(maxWidth, ";")
+                  "max-width: ".concat(maxWidth, ";"),
                 );
               }
             }
@@ -4038,7 +4038,7 @@
             this.overlay,
             this.settings.openEffect == "none"
               ? "none"
-              : this.settings.cssEfects.fade.out
+              : this.settings.cssEfects.fade.out,
           );
 
           animateElement(
@@ -4066,7 +4066,7 @@
 
               removeClass(
                 body,
-                "glightbox-open touching gdesc-open glightbox-touch glightbox-mobile gscrollbar-fixer"
+                "glightbox-open touching gdesc-open glightbox-touch glightbox-mobile gscrollbar-fixer",
               );
 
               _this8.modal.parentNode.removeChild(_this8.modal);
@@ -4085,7 +4085,7 @@
 
               _this8.lightboxOpen = false;
               _this8.closing = null;
-            }
+            },
           );
         },
       },
