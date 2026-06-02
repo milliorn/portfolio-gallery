@@ -13,9 +13,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 5
     # Only fire when a Dependabot PR was actually merged (not closed/abandoned)
-    if: |
-      github.event.pull_request.merged == true &&
-      github.event.pull_request.user.login == 'dependabot[bot]'
+    if: ${{ github.event.pull_request.merged == true && github.event.pull_request.user.login == 'dependabot[bot]' }}
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -24,7 +22,7 @@ jobs:
         run: |
           gh pr list \
             --repo "${{ github.repository }}" \
-            --author "app/dependabot" \
+            --author "dependabot[bot]" \
             --state open \
             --json number \
             --jq '.[].number' | \
