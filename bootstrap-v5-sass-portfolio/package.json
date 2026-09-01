@@ -22,7 +22,7 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.5.4",
-    "concurrently": "^10.0.4",
+    "concurrently": "^10.0.5",
     "sass": "1.102.0"
   },
   "dependencies": {
