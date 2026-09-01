@@ -23,7 +23,7 @@
   "devDependencies": {
     "autoprefixer": "^10.5.4",
     "concurrently": "^10.0.5",
-    "sass": "1.102.0"
+    "sass": "1.103.1"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.3.1",
