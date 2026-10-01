@@ -21,7 +21,7 @@
   "author": "Scott Milliorn",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.5.4",
+    "autoprefixer": "^10.6.1",
     "concurrently": "^10.0.5",
     "sass": "1.105.0"
   },
